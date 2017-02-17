@@ -1,0 +1,37 @@
+{
+  "name": "mf-icons",
+  "version": "0.1.0",
+  "description": "MicroFocus Identity and Access Management icon font",
+  "main": "",
+  "engines": {
+    "node": ">=6.2",
+    "npm": ">=3.9"
+  },
+  "engineStrict": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mf-icons.git"
+  },
+  "author": "Joe Hawkins <joe.hawkins@microfocus.com>",
+  "contributors": [
+    "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
+    "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
+  ],
+  "scripts": {
+    "preversion": "gulp clean",
+    "version": "gulp icons && git add -A dist"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "https://github.com/jedwardhawkins/mfux#readme",
+  "devDependencies": {
+    "async": "2.1.4",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-clean-css": "3.0.2",
+    "gulp-connect": "5.0.0",
+    "gulp-consolidate": "0.2.0",
+    "gulp-iconfont": "8.0.1",
+    "gulp-rename": "1.2.2",
+    "gulp-watch": "4.3.11"
+  }
+}
