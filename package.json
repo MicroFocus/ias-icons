@@ -19,7 +19,8 @@
   ],
   "scripts": {
     "preversion": "gulp clean",
-    "version": "gulp icons && git add -A dist"
+    "version": "gulp icons && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://github.com/jedwardhawkins/mfux#readme",
