@@ -42,9 +42,7 @@ gulp.task('icons', function(done) {
 			fontPath: './fonts/',
 			formats: ['eot', 'svg', 'ttf', 'woff', 'woff2'],
 			normalize: true,
-			prependUnicode: true,
-			round: 10e4,
-			startUnicode: 0xE900
+			round: 10e4
 		}));
 
 	async.series([
