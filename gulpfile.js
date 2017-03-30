@@ -36,15 +36,15 @@ gulp.task('icons', function(done) {
 		.src(iconFiles)
 		.pipe(gulpIconFont({
 			appendCodepoints: true,
-			startUnicode: '0xE900',
-			prependUnicode: true,
 			cssClass: 'mf-icon',
 			fontHeight: 1000,
 			fontName: iconFontName,
 			fontPath: './fonts/',
 			formats: ['eot', 'svg', 'ttf', 'woff', 'woff2'],
 			normalize: true,
-			round: 10e4
+			prependUnicode: true,
+			round: 10e4,
+			startUnicode: 0xE900
 		}));
 
 	async.series([
