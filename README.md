@@ -1,5 +1,5 @@
-# mf-icons
-MicroFocus Identity and Access Management Group icon font.
+# ias-icons
+Micro Focus Identity and Access Security group icon font.
 
 ### Benefits
 

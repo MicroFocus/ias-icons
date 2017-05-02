@@ -11,7 +11,7 @@ var gulpWatch = require('gulp-watch');
 
 
 var iconFiles = './icons/*.svg';
-var iconFontName = 'mf-icons';
+var iconFontName = 'ias-icons';
 var outputDirectory = './dist/';
 
 
@@ -36,7 +36,7 @@ gulp.task('icons', function(done) {
 		.src(iconFiles)
 		.pipe(gulpIconFont({
 			appendCodepoints: true,
-			cssClass: 'mf-icon',
+			cssClass: 'ias-icon',
 			fontHeight: 1000,
 			fontName: iconFontName,
 			fontPath: './fonts/',
