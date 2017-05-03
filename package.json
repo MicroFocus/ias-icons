@@ -1,7 +1,7 @@
 {
-  "name": "mf-icons",
-  "version": "0.1.1",
-  "description": "MicroFocus Identity and Access Management icon font",
+  "name": "ias-icons",
+  "version": "1.0.0",
+  "description": "Micro Focus Identity and Access Security group icon font",
   "main": "",
   "engines": {
     "node": ">=6.2",
@@ -10,7 +10,7 @@
   "engineStrict": true,
   "repository": {
     "type": "git",
-    "url": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mf-icons.git"
+    "url": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git"
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com>",
   "contributors": [
@@ -23,7 +23,7 @@
     "postversion": "git push && git push --tags"
   },
   "license": "SEE LICENSE IN LICENSE.md",
-  "homepage": "https://github.com/jedwardhawkins/mfux#readme",
+  "homepage": "https://secmgmtgit.provo.novell.com:8443/users/jhawkins/repos/ias-icons/browse",
   "devDependencies": {
     "async": "2.1.4",
     "gulp": "3.9.1",
