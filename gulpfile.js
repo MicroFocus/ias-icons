@@ -23,9 +23,11 @@ gulp.task('clean', function() {
 gulp.task('serve', function() {
 	gulpConnect.server({
 		livereload: true,
-		index: iconFontName + '.html',
 		port: 8083,
-		root: outputDirectory
+		root: [
+			'./',
+			'docs'
+		]
 	});
 });
 
@@ -67,10 +69,10 @@ gulp.task('icons', function(done) {
 							.pipe(gulp.dest(outputDirectory))
 							.on('finish', callback);
 					},
-					function generateHtml(callback) {
-						gulp.src('templates/icons.html.template')
+					function generateJavascript(callback) {
+						gulp.src('templates/icons.js.template')
 							.pipe(gulpConsolidate('lodash', options))
-							.pipe(gulpRename({ basename: iconFontName, extname: '.html' }))
+							.pipe(gulpRename({ basename: iconFontName, extname: '.js' }))
 							.pipe(gulp.dest(outputDirectory))
 							.on('finish', callback);
 					}
