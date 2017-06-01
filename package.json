@@ -25,6 +25,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://secmgmtgit.provo.novell.com:8443/users/jhawkins/repos/ias-icons/browse",
   "devDependencies": {
+    "angular": "1.6.4",
     "async": "2.1.4",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
@@ -33,6 +34,7 @@
     "gulp-consolidate": "0.2.0",
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
-    "gulp-watch": "4.3.11"
+    "gulp-watch": "4.3.11",
+    "ias-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ng-ias.git"
   }
 }
