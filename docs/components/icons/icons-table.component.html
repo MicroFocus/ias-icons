@@ -1,0 +1,25 @@
+<table ias-sort="$ctrl.sort">
+    <thead>
+    <tr>
+        <th>Icon</th>
+        <th ias-sort-on="'name'">Name</th>
+        <th ias-sort-on="'className'">Class</th>
+        <th ias-sort-on="'glyph'">Glyph</th>
+        <th>Uses</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--<tr ng-repeat="icon in filteredData = icons | filter:query">-->
+    <tr ng-repeat="icon in $ctrl.filteredData = ($ctrl.icons | orderBy:$ctrl.sort | filter:$ctrl.query)">
+        <td>
+            <ias-icon icon="{{icon.name}}"></ias-icon>
+        </td>
+        <td>{{icon.name}}</td>
+        <td>{{icon.className}}</td>
+        <td>{{icon.glyph}}</td>
+        <td>{{$ctrl.iconsInfo[icon.name].uses}}</td>
+        <td>{{$ctrl.iconsInfo[icon.name].notes}}</td>
+    </tr>
+    </tbody>
+</table>

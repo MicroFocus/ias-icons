@@ -36,5 +36,8 @@
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
     "ias-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ng-ias.git"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3"
   }
 }

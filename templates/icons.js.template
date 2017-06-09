@@ -3,7 +3,7 @@ angular.module('app')
 <% _.each(glyphs, function(glyph) { %>
         {
             name: '<%= glyph.name %>',
-            glyph: '\<%= glyph.unicode.toString(16).toUpperCase() %>',
+            glyph: '\\<%= glyph.unicode.toString(16).toUpperCase() %>',
             className: '<%= cssClass %>-<%= glyph.name %>'
         },
 <% }) %>

@@ -1,3 +1,20 @@
 body {
     margin: 0;
 }
+ias-tile.ias-medium > .ias-tile-content > .ias-tile-body > h3 {
+    font-size: 12px;
+}
+.ias-tile-content > .ias-tile-body > p {
+    font-size: 10px;
+}
+ias-tile.ias-medium {
+    height: 72px;
+    width: 240px;
+}
+ias-header ias-input-container {
+    margin-bottom: 0;
+
+}
+.ias-header-sub-title {
+    margin-top: 1em;
+}

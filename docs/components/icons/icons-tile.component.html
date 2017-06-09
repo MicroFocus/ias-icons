@@ -1,0 +1,12 @@
+<ias-tile-grid>
+    <ias-tile class="ias-large" ng-repeat="icon in $ctrl.filteredData = ($ctrl.icons | filter:$ctrl.query)">
+        <ias-icon icon="{{icon.name }}"></ias-icon>
+        <div class="ias-tile-body">
+            <h3>{{icon.name}} {{icon.glyph}}</h3>
+            <p>0 lines show on tiny and small, 2 lines on medium, and three on large</p>
+        </div>
+        <div class="ias-tile-actions">
+            <ias-icon ng-if="app.favorite" icon="favorite_fill"></ias-icon>
+        </div>
+    </ias-tile>
+</ias-tile-grid>
