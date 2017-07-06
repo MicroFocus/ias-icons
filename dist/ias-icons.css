@@ -817,6 +817,10 @@
     content: "\E9C9";
 }
 
+.ias-icon-sys_suse:before {
+    content: "\E9CA";
+}
+
 .ias-icon-sys_unix:before {
     content: "\E9CB";
 }
@@ -923,4 +927,16 @@
 
 .ias-icon-strength5:before {
     content: "\E9E5";
-}
+}
+
+.ias-icon-open_in_window:before {
+    content: "\E9E6";
+}
+
+.ias-icon-queue-list-add:before {
+    content: "\E9E8";
+}
+
+.ias-icon-U9E7-queue-list:before {
+    content: "\EA01";
+}
