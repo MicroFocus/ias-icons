@@ -933,10 +933,10 @@
     content: "\E9E6";
 }
 
-.ias-icon-queue-list-add:before {
-    content: "\E9E8";
+.ias-icon-queue-list:before {
+    content: "\E9E7";
 }
 
-.ias-icon-U9E7-queue-list:before {
-    content: "\EA01";
+.ias-icon-queue-list-add:before {
+    content: "\E9E8";
 }
