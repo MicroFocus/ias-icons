@@ -26,6 +26,7 @@
   "homepage": "https://secmgmtgit.provo.novell.com:8443/users/jhawkins/repos/ias-icons/browse",
   "devDependencies": {
     "angular": "1.6.4",
+    "angular-ui-router": "1.0.3",
     "async": "2.1.4",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
