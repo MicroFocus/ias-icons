@@ -1058,6 +1058,30 @@ angular.module('ias.icons', [])
         },
 
         {
+            name: 'colors',
+            glyph: '\\E9B0',
+            className: 'ias-icon-colors'
+        },
+
+        {
+            name: 'brand_console',
+            glyph: '\\E9B1',
+            className: 'ias-icon-brand_console'
+        },
+
+        {
+            name: 'brand_settings',
+            glyph: '\\E9B2',
+            className: 'ias-icon-brand_settings'
+        },
+
+        {
+            name: 'brand_user',
+            glyph: '\\E9B3',
+            className: 'ias-icon-brand_user'
+        },
+
+        {
             name: 'admin_user_audit',
             glyph: '\\E9B4',
             className: 'ias-icon-admin_user_audit'
@@ -1187,6 +1211,12 @@ angular.module('ias.icons', [])
             name: 'sys_linux',
             glyph: '\\E9C9',
             className: 'ias-icon-sys_linux'
+        },
+
+        {
+            name: 'sys_suse',
+            glyph: '\\E9CA',
+            className: 'ias-icon-sys_suse'
         },
 
         {
@@ -1349,6 +1379,30 @@ angular.module('ias.icons', [])
             name: 'strength5',
             glyph: '\\E9E5',
             className: 'ias-icon-strength5'
+        },
+
+        {
+            name: 'open_in_window',
+            glyph: '\\E9E6',
+            className: 'ias-icon-open_in_window'
+        },
+
+        {
+            name: 'queue-list',
+            glyph: '\\E9E7',
+            className: 'ias-icon-queue-list'
+        },
+
+        {
+            name: 'queue-list-add',
+            glyph: '\\E9E8',
+            className: 'ias-icon-queue-list-add'
+        },
+
+        {
+            name: 'partner',
+            glyph: '\\E9E9',
+            className: 'ias-icon-partner'
         },
 
     ]);
