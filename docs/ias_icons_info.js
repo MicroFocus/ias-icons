@@ -5,12 +5,12 @@ angular.module('app')
     .constant('ICON_INFO', {
 
         down_thick: {
-            uses: '',
+            uses: 'menu',
             notes: ''
         },
 
         down_thin: {
-            uses: '',
+            uses: 'menu',
             notes: ''
         },
 
@@ -535,7 +535,7 @@ angular.module('app')
         },
 
         brand_thin: {
-            uses: '',
+            uses: 'brand',
             notes: ''
         },
 
@@ -650,16 +650,21 @@ angular.module('app')
         },
 
         resource_assign: {
-            uses: '',
+            uses: 'resource, asset',
             notes: ''
         },
 
         resource_thick: {
-            uses: '',
+            uses: 'resource, asset',
             notes: ''
         },
 
-        time_thick: {
+        partner: {
+            uses: 'partner, shared resource, asset, user',
+            notes: ''
+        },
+
+  time_thick: {
             uses: '',
             notes: ''
         },
