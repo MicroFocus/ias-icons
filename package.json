@@ -36,7 +36,8 @@
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
-    "ng-ias": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ng-ias.git"
+    "ng-ias": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ng-ias.git",
+    "run-sequence": "2.0.0"
   },
   "dependencies": {}
 }

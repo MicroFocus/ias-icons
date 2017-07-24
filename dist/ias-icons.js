@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('ias.icons', [])
     .constant('ICONS', [
 
         {
@@ -1351,4 +1351,4 @@ angular.module('app')
             className: 'ias-icon-strength5'
         },
 
-    ]);
+    ]);

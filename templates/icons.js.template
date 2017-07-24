@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('ias.icons', [])
     .constant('ICONS', [
 <% _.each(glyphs, function(glyph) { %>
         {
