@@ -729,6 +729,22 @@
     content: "\E9AF";
 }
 
+.ias-icon-colors:before {
+    content: "\E9B0";
+}
+
+.ias-icon-brand_console:before {
+    content: "\E9B1";
+}
+
+.ias-icon-brand_settings:before {
+    content: "\E9B2";
+}
+
+.ias-icon-brand_user:before {
+    content: "\E9B3";
+}
+
 .ias-icon-admin_user_audit:before {
     content: "\E9B4";
 }
@@ -815,6 +831,10 @@
 
 .ias-icon-sys_linux:before {
     content: "\E9C9";
+}
+
+.ias-icon-sys_suse:before {
+    content: "\E9CA";
 }
 
 .ias-icon-sys_unix:before {
@@ -923,4 +943,20 @@
 
 .ias-icon-strength5:before {
     content: "\E9E5";
+}
+
+.ias-icon-open_in_window:before {
+    content: "\E9E6";
+}
+
+.ias-icon-queue-list:before {
+    content: "\E9E7";
+}
+
+.ias-icon-queue-list-add:before {
+    content: "\E9E8";
+}
+
+.ias-icon-partner:before {
+    content: "\E9E9";
 }
