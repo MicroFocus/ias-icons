@@ -1,11 +1,11 @@
-body {
+body, input {
     margin: 0;
+}
+ias-tile.ias-large > .ias-tile-content > ias-icon {
+    font-size: 80px;
 }
 ias-tile.ias-medium > .ias-tile-content > .ias-tile-body > h3 {
     font-size: 12px;
-}
-.ias-tile-content > .ias-tile-body > p {
-    font-size: 10px;
 }
 ias-tile.ias-medium {
     height: 72px;
@@ -18,3 +18,4 @@ ias-header ias-input-container {
 .ias-header-sub-title {
     margin-top: 1em;
 }
+
