@@ -8,30 +8,30 @@ var gulpConnect = require('gulp-connect');
 var gulpIconFont = require('gulp-iconfont');
 var gulpRename = require('gulp-rename');
 var gulpWatch = require('gulp-watch');
-
+var runSequence = require('run-sequence');
 
 var iconFiles = './icons/*.svg';
 var iconFontName = 'ias-icons';
 var outputDirectory = './dist/';
 
 
+gulp.task('build', ['icons', 'docs', 'vendor']);
+
 gulp.task('clean', function() {
 	return gulp.src(outputDirectory)
 		.pipe(gulpClean());
 });
 
-gulp.task('serve', function() {
-	gulpConnect.server({
-		livereload: true,
-		port: 8083,
-		root: [
-			'./',
-			'docs'
-		]
-	});
+gulp.task('default', function(callback) {
+    runSequence('build', [ 'watch', 'serve' ], callback);
 });
 
-gulp.task('default', [ 'icons', 'watch:icons', 'serve' ]);
+gulp.task('docs', function() {
+	return gulp
+		.src('docs/**/*')
+        .pipe(gulpConnect.reload())
+		.pipe(gulp.dest(outputDirectory + '/docs'));
+});
 
 gulp.task('icons', function(done) {
 	var iconStream = gulp
@@ -87,6 +87,36 @@ gulp.task('icons', function(done) {
 				.on('finish', callback);
 		}
 	], done);
+});
+
+gulp.task('serve', function() {
+    gulpConnect.server({
+        livereload: true,
+        port: 8083,
+        root: [
+            'dist/',
+            'dist/docs'
+        ]
+    });
+});
+
+gulp.task('vendor', function() {
+	return gulp
+		.src([
+			'node_modules/ng-ias/dist/ng-ias.css',
+            'node_modules/angular/angular.js',
+        	'node_modules/angular-ui-router/release/angular-ui-router.js',
+        	'node_modules/ng-ias/dist/ng-ias.js'
+		])
+		.pipe(gulp.dest(outputDirectory + '/docs/vendor'));
+});
+
+gulp.task('watch', ['watch:icons', 'watch:docs']);
+
+gulp.task('watch:docs', function() {
+	gulpWatch('docs/**/*', function() {
+		gulp.start('docs');
+	});
 });
 
 gulp.task('watch:icons', function() {

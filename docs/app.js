@@ -1,21 +1,18 @@
-// import { routes } from './config/routes';
-//
-    app = angular.module('app', ['ng-ias','ui.router']);
-
-
-    app.config(function($stateProvider, $urlServiceProvider) {
+angular
+    .module('app', [ 'ng-ias', 'ias.icons', 'ui.router' ])
+    .config(function($stateProvider, $urlServiceProvider) {
         $urlServiceProvider.rules.otherwise({state: 'app.icons.table'});
 
         $stateProvider.state('app', {
             url: '/app',
             component: 'app',
-            abstract: true,
+            abstract: true
         });
 
         $stateProvider.state('app.icons', {
             url: '/icons?query',
             component: 'icons',
-            abstract: true,
+            abstract: true
         });
 
         $stateProvider.state('app.icons.table', {
@@ -31,8 +28,8 @@
     });
 
 
-    angular.element(document).ready(function() {
-        angular.bootstrap(document, ['app']);
-    });
+angular.element(document).ready(function() {
+    angular.bootstrap(document, ['app']);
+});
 
 
