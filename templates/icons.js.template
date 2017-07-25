@@ -1,0 +1,10 @@
+angular.module('ias.icons', [])
+    .constant('ICONS', [
+<% _.each(glyphs, function(glyph) { %>
+        {
+            name: '<%= glyph.name %>',
+            glyph: '\\<%= glyph.unicode.toString(16).toUpperCase() %>',
+            className: '<%= cssClass %>-<%= glyph.name %>'
+        },
+<% }) %>
+    ]);

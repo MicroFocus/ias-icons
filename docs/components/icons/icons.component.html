@@ -1,0 +1,13 @@
+<ias-header>
+    <ias-search-box ng-model="$ctrl.query"></ias-search-box>
+    <div class="ias-header-sub-title">Number of icons: {{$ctrl.filteredData.length}}</div>
+    <span class="ias-fill"></span>
+    <ias-button class="ias-icon-button" ui-sref="app.icons.tile">
+        <ias-icon icon="view_tile_thin"></ias-icon>
+    </ias-button>
+    <ias-button class="ias-icon-button" ui-sref="app.icons.table">
+        <ias-icon icon="view_list_thin"></ias-icon>
+    </ias-button>
+</ias-header>
+
+<ui-view></ui-view>
