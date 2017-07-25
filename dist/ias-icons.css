@@ -729,6 +729,22 @@
     content: "\E9AF";
 }
 
+.ias-icon-colors:before {
+    content: "\E9B0";
+}
+
+.ias-icon-brand_console:before {
+    content: "\E9B1";
+}
+
+.ias-icon-brand_settings:before {
+    content: "\E9B2";
+}
+
+.ias-icon-brand_user:before {
+    content: "\E9B3";
+}
+
 .ias-icon-admin_user_audit:before {
     content: "\E9B4";
 }
@@ -940,3 +956,7 @@
 .ias-icon-queue-list-add:before {
     content: "\E9E8";
 }
+
+.ias-icon-partner:before {
+    content: "\E9E9";
+}
