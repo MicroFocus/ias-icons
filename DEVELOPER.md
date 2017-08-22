@@ -1,29 +1,38 @@
-# Setting up the Developer Environment
+# Setting up the Development Environment
+
+The development environment has two parts. One part handles building `ias-icons.css`, while
+another builds and serves the documentation application.
 
 1. Clone the repository and install packages via NPM
 
        git clone git@github.com:jedwardhawkins/ias-icons.git
+       cd ias-icons
        npm install -g gulp-cli
        npm install
 
-2. Build the project
+2. In one terminal window:
 
        ~/ias-icons# gulp
+       
+   This will build ias-icons and watch files under src/ for changes.
    
-   In a new terminal:
+3. In a new terminal:
 
        ~/ias-icons# cd docs
        ~/ias-icons/docs# gulp
 
-3. Navigate to localhost:8080 to view the application.
+   This will build the documentation application, start a local server, and watch files under docs/ for changes.
 
-## Build Command Explanation
+4. Navigate to localhost:8080 to view the documentation application.
 
-This project uses [gulp.js](https://gulpjs.com/) and 
-[ng-gulp](https://github.com/jedwardhawkins/ng-gulp) to build ias-icons as well as the documentation
-site for it. Running gulp tasks from the project root builds ias-icons. Running gulp tasks from
-`/docs` inside the project root builds the documentation site for ias-icons, which can be viewed on
-localhost:8080. Running `gulp` builds and serves the given application, watching the files for 
-changes and recompiling as necessary. (This command doesn't serve ias-icons since it does not have 
-any content to be served.) For a one-time build, run `gulp build:production`. To simply serve 
-files, run `gulp serve:production`.
+## ng-gulp
+
+This project uses [Gulp](https://gulpjs.com/) and 
+[ng-gulp](https://github.com/jedwardhawkins/ng-gulp) to build the project, watch the source for changes, and start
+a local server which hosts the application.
+
+### Useful ng-gulp commands
+
+- `gulp build:production` Build project without watching for changes or starting server
+- `gulp serve:production` Start local server
+- `gulp clean` Remove build output directory
