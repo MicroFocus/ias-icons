@@ -1,8 +1,7 @@
 {
   "name": "ias-icons",
   "version": "0.2.0",
-  "description": "Micro Focus Identity and Access Security group icon font",
-  "main": "",
+  "description": "Icon font for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
     "npm": ">=3.9"
@@ -10,20 +9,14 @@
   "engineStrict": true,
   "repository": {
     "type": "git",
-    "url": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git"
+    "url": "git+https://github.com/jedwardhawkins/ias-icons.git"
   },
-  "author": "Joe Hawkins <joe.hawkins@microfocus.com>",
-  "contributors": [
-    "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
-    "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
-  ],
+  "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "scripts": {
-    "preversion": "gulp clean",
-    "version": "gulp icons && git add -A dist",
-    "postversion": "git push && git push --tags"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
-  "homepage": "https://secmgmtgit.provo.novell.com:8443/users/jhawkins/repos/ias-icons/browse",
+  "license": "MIT",
+  "bugs": "https://github.com/jedwardhawkins/ias-icons/issues",
+  "homepage": "https://github.com/jedwardhawkins/ias-icons#readme",
   "devDependencies": {
     "angular": "1.6.4",
     "angular-ui-router": "1.0.3",
@@ -36,8 +29,7 @@
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
-    "ng-ias": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ng-ias.git",
+    "ng-ias": "jedwardhawkins/ng-ias",
     "run-sequence": "2.0.0"
-  },
-  "dependencies": {}
+  }
 }
