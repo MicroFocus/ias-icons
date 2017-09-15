@@ -30,7 +30,7 @@
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
-    "ng-ias": "@microfocus/ng-ias",
+    "@microfocus/ng-ias": "1.0.0-alpha",
     "run-sequence": "2.0.0"
   }
 }
