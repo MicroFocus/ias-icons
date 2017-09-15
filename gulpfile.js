@@ -103,10 +103,10 @@ gulp.task('serve', function() {
 gulp.task('vendor', function() {
 	return gulp
 		.src([
-			'node_modules/ng-ias/dist/ng-ias.css',
+			'node_modules/@microfocus/ng-ias/dist/ng-ias.css',
             'node_modules/angular/angular.js',
         	'node_modules/angular-ui-router/release/angular-ui-router.js',
-        	'node_modules/ng-ias/dist/ng-ias.js'
+        	'node_modules/@microfocus/ng-ias/dist/ng-ias.js'
 		])
 		.pipe(gulp.dest(outputDirectory + '/docs/vendor'));
 });
