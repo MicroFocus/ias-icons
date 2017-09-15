@@ -1,6 +1,6 @@
 {
-  "name": "ias-icons",
-  "version": "0.2.0",
+  "name": "@microfocus/ias-icons",
+  "version": "1.0.0-alpha",
   "description": "Icon font for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
@@ -9,14 +9,15 @@
   "engineStrict": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedwardhawkins/ias-icons.git"
+    "url": "git+https://github.com/microfocus/ias-icons.git"
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "scripts": {
+    "prepublish": "gulp build"
   },
   "license": "MIT",
-  "bugs": "https://github.com/jedwardhawkins/ias-icons/issues",
-  "homepage": "https://github.com/jedwardhawkins/ias-icons#readme",
+  "bugs": "https://github.com/microfocus/ias-icons/issues",
+  "homepage": "https://github.com/microfocus/ias-icons#readme",
   "devDependencies": {
     "angular": "1.6.4",
     "angular-ui-router": "1.0.3",
@@ -29,7 +30,7 @@
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
-    "ng-ias": "jedwardhawkins/ng-ias",
+    "ng-ias": "@microfocus/ng-ias",
     "run-sequence": "2.0.0"
   }
 }
