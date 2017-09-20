@@ -5,7 +5,7 @@ a documentation application showing all the icon fonts.
 
 1. Clone the repository and install packages via NPM
 
-       git clone git@github.com:jedwardhawkins/ias-icons.git
+       git clone git@github.com:microfocus/ias-icons.git
        cd ias-icons
        npm install -g gulp-cli
        npm install

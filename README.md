@@ -7,6 +7,7 @@ throughout these applications.
 
 ### Helpful Links
 
+- [Documentation Site](https://microfocus.github.io/ias-icons)
 - [Changelog](./CHANGELOG.md)
 - [Developer Guide](./DEVELOPER.md)
 - [Guidelines for Contribution](./CONTRIBUTING.md)
