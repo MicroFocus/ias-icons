@@ -17,12 +17,12 @@ angular
 
         $stateProvider.state('app.icons.table', {
             url: '/table',
-            templateUrl: '/components/icons/icons-table.component.html'
+            templateUrl: 'components/icons/icons-table.component.html'
         });
 
         $stateProvider.state('app.icons.tile', {
             url: '/tile',
-            templateUrl: '/components/icons/icons-tile.component.html'
+            templateUrl: 'components/icons/icons-tile.component.html'
         });
 
     });
