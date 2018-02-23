@@ -5,43 +5,43 @@ angular.module('app')
     .constant('ICON_INFO', {
 
         down_thick: {
-            uses: 'menu',
+            uses: 'menu open',
             notes: ''
         },
 
         down_thin: {
-            uses: 'menu',
+            uses: 'menu open',
             notes: ''
         },
 
         up_thick: {
-            uses: '',
+            uses: 'menu close',
             notes: ''
         },
 
         up_thin:{
-            uses: '',
+            uses: 'menu close',
             notes: ''
         },
 
         new_thick: {
-            uses: '',
+            uses: 'new, add',
             notes: ''
         },
 
         new_thin: {
-            uses: '',
+            uses: 'new, add',
             notes: ''
         },
 
         close_thick: {
-            uses: '',
-            notes: ''
+            uses: 'close, remove, clear',
+            notes: 'do not use for delete'
         },
 
         close_thin: {
-            uses: '',
-            notes: ''
+            uses: 'close, remove, clear',
+            notes: 'do not use for delete'
         },
 
         check_thick: {
@@ -50,178 +50,178 @@ angular.module('app')
         },
 
         check_thin: {
-            uses: '',
+            uses: 'selected, completed',
             notes: ''
         },
 
         search_thick: {
-            uses: '',
+            uses: 'search, find',
             notes: ''
         },
 
         search_thin: {
-            uses: '',
+            uses: 'search, find',
             notes: ''
         },
 
         prev_left_thick: {
-            uses: '',
+            uses: 'back, previous',
             notes: ''
         },
 
         prev_left_thin: {
-            uses: '',
+            uses: 'back, previous',
             notes: ''
         },
 
         next_right_thick: {
-            uses: '',
+            uses: 'next',
             notes: ''
         },
 
         next_right_thin: {
-            uses: '',
+            uses: 'next',
             notes: ''
         },
 
         flow_goto_next_thick: {
-            uses: '',
+            uses: 'sort a-z, down arrowflow: go to next',
             notes: ''
         },
 
         flow_goto_next_thin: {
-            uses: '',
+            uses: 'sort a-z, down arrow, flow: go to next',
             notes: ''
         },
 
         flow_goto_prev_thick: {
-            uses: '',
+            uses: 'sort z-a, up arrow, flow: go to previous',
             notes: ''
         },
 
         flow_goto_prev_thin: {
-            uses: '',
+            uses: 'sort z-a, up arrow, flow: go to previous',
             notes: ''
         },
 
         forward_right_thick: {
-            uses: '',
+            uses: 'forward, right arrow',
             notes: ''
         },
 
         forward_right_thin: {
-            uses: '',
+            uses: 'forward, right arrow',
             notes: ''
         },
 
         back_left_thick: {
-            uses: '',
+            uses: 'backward, left arrow',
             notes: ''
         },
 
         back_left_thin: {
-            uses: '',
+            uses: 'backward, left arrow',
             notes: ''
         },
 
         flow_return_thick: {
-            uses: '',
+            uses: 'return',
             notes: ''
         },
 
         flow_return_thin: {
-            uses: '',
+            uses: 'return',
             notes: ''
         },
 
         minus_thick: {
-            uses: '',
-            notes: ''
+            uses: 'remove',
+            notes: 'Use the X icon as the primary remove button. Use the minus icon only together with the add icon.'
         },
 
         reload_refresh_thick: {
-            uses: '',
+            uses: 'refresh, reload',
             notes: ''
         },
 
         reload_refresh_thin: {
-            uses: '',
+            uses: 'refresh, reload',
             note: ''
         },
 
-        circle_horz_fill: {
-            uses: '',
+        circle_horz_menu_fill: {
+            uses: 'context menu',
             notes: ''
         },
 
-        circle_horz_thin: {
-             uses: '',
+        circle_horz_menu_thin: {
+            uses: 'context menu',
             notes: ''
         },
 
         circle_vert_menu_fill: {
-            uses: '',
-            notes: ''
+            uses: 'context menu',
+            notes: 'Vertical, filled menu is the default icon to use as a context menu icon'
         },
 
         circle_vert_menu_thin: {
-            uses: '',
+            uses: 'context menu',
             notes: ''
         },
 
         favorite_outline_thin: {
-            uses: '',
+            uses: 'favorite',
             notes: ''
         },
 
         favorite_fill: {
-            uses: '',
+            uses: 'favorite, marked as favorite',
             notes: ''
         },
 
         status_ok_thick: {
-            uses: '',
-            notes: ''
+            uses: 'status: OK',
+            notes: 'use standard green color [$color-accent-5]'
         },
 
         stats_ok_thin: {
-            uses: '',
-            notes: ''
+            uses: 'status: OK',
+            notes: 'use standard green color [$color-accent-5]'
         },
 
         status_ok_fill: {
-            uses: '',
-            notes: ''
+            uses: 'status: OK',
+            notes: 'use standard green color [$color-accent-5]'
         },
 
         status_error_thick: {
-            uses: '',
-            notes: ''
+            uses: 'status: Error',
+            notes: 'use standard red color [$color-accent-4]'
         },
 
         status_error_thin: {
-            uses: '',
-            notes: ''
+            uses: 'status: Error',
+            notes: 'use standard red color [$color-accent-4]'
         },
 
         status_error_fill: {
-            uses: '',
-            notes: ''
+            uses: 'status: Error',
+            notes: 'use standard red color [$color-accent-4]'
         },
 
         status_warn_thick: {
-            uses: '',
-            notes: ''
+            uses: 'status: Warning',
+            notes: 'use standard yellow color [$color-accent-1]'
         },
 
         status_warn_thin: {
-            uses: '',
-            notes: ''
+            uses: 'status: Warning',
+            notes: 'use standard yellow color [$color-accent-1]'
         },
 
         status_warn_fill: {
-            uses: '',
-            notes: ''
+            uses: 'status: Warning',
+            notes: 'use standard yellow color [$color-accent-1]'
         },
 
         message_error_thick: {

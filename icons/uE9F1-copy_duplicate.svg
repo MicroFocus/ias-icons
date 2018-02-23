@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <title>1-icons_special</title>
+  <path d="M44.94,46.84H9a1.75,1.75,0,0,1-1.75-1.75V9A1.75,1.75,0,0,1,9,7.22H44.94A1.75,1.75,0,0,1,46.69,9V45.09A1.75,1.75,0,0,1,44.94,46.84Zm-34.16-3.5H43.19V10.72H10.78Z" fill="gray"/>
+  <g>
+    <path d="M31,64.61H27a1.5,1.5,0,0,1-1.5-1.5v-4h3v2.5H31Z" fill="gray"/>
+    <path d="M28.55,55.08h-3V48.33h3Zm0-13.25h-3V35h3Z" fill="gray"/>
+    <path d="M28.55,31h-3V27a1.5,1.5,0,0,1,1.5-1.5h4v3h-2.5Z" fill="gray"/>
+    <path d="M55,28.49H48.25v-3H55Zm-13.14,0H35v-3h6.81Z" fill="gray"/>
+    <path d="M64.46,31h-3v-2.5H59v-3h4a1.5,1.5,0,0,1,1.5,1.5Z" fill="gray"/>
+    <path d="M64.46,55.08h-3v-8h3Zm0-12h-3V35h3Z" fill="gray"/>
+    <path d="M63,64.61H59v-3h2.5v-2.5h3v4A1.5,1.5,0,0,1,63,64.61Z" fill="gray"/>
+    <path d="M55,64.61H47v-3h8Zm-12,0H35v-3h8Z" fill="gray"/>
+  </g>
+</svg>
