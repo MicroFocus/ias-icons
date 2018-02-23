@@ -30,7 +30,7 @@ gulp.task('docs', function() {
 	return gulp
 		.src('docs/**/*')
         .pipe(gulpConnect.reload())
-		.pipe(gulp.dest(outputDirectory + '/docs'));
+		.pipe(gulp.dest(outputDirectory));
 });
 
 gulp.task('icons', function(done) {
@@ -95,7 +95,6 @@ gulp.task('serve', function() {
         port: 8083,
         root: [
             'dist/',
-            'dist/docs'
         ]
     });
 });
@@ -108,7 +107,7 @@ gulp.task('vendor', function() {
         	'node_modules/angular-ui-router/release/angular-ui-router.js',
         	'node_modules/@microfocus/ng-ias/dist/ng-ias.js'
 		])
-		.pipe(gulp.dest(outputDirectory + '/docs/vendor'));
+		.pipe(gulp.dest(outputDirectory + '/vendor'));
 });
 
 gulp.task('watch', ['watch:icons', 'watch:docs']);

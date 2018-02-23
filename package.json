@@ -13,12 +13,13 @@
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "scripts": {
-    "prepublish": "gulp build"
+    "prepublish": "gulp clean && gulp icons"
   },
   "license": "MIT",
   "bugs": "https://github.com/microfocus/ias-icons/issues",
   "homepage": "https://github.com/microfocus/ias-icons#readme",
   "devDependencies": {
+    "@microfocus/ng-ias": "1.0.0-alpha",
     "angular": "1.6.4",
     "angular-ui-router": "1.0.3",
     "async": "2.1.4",
@@ -30,7 +31,6 @@
     "gulp-iconfont": "8.0.1",
     "gulp-rename": "1.2.2",
     "gulp-watch": "4.3.11",
-    "@microfocus/ng-ias": "1.0.0-alpha",
     "run-sequence": "2.0.0"
   }
 }
