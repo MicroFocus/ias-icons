@@ -1,7 +1,7 @@
 angular
     .module('app', [ 'ng-ias', 'ias.icons', 'ui.router' ])
     .config(function($stateProvider, $urlServiceProvider) {
-        $urlServiceProvider.rules.otherwise({state: 'app.icons.table'});
+        $urlServiceProvider.rules.otherwise({state: 'app.icons.tile'});
 
         $stateProvider.state('app', {
             url: '/app',
