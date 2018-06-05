@@ -1,5 +1,5 @@
 <ias-tile-grid>
-    <ias-tile class="ias-large" ng-repeat="icon in $ctrl.filteredData = ($ctrl.icons | filter:$ctrl.query)">
+    <ias-tile class="ias-large" ng-repeat="icon in $ctrl.filteredData = ($ctrl.icons | filter:$ctrl.query | orderBy:'glyph')">
         <ias-icon icon="{{icon.name }}"></ias-icon>
         <div class="ias-tile-body">
             <h3>{{icon.name}}</h3>
