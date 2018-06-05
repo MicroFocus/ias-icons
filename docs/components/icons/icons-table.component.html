@@ -1,4 +1,4 @@
-<table ias-sort="$ctrl.sort">
+<table class="ias-table" ias-sort="$ctrl.sort">
     <thead>
     <tr>
         <th>Icon</th>
@@ -10,7 +10,6 @@
     </tr>
     </thead>
     <tbody>
-    <!--<tr ng-repeat="icon in filteredData = icons | filter:query">-->
     <tr ng-repeat="icon in $ctrl.filteredData = ($ctrl.icons | orderBy:$ctrl.sort | filter:$ctrl.query)">
         <td>
             <ias-icon icon="{{icon.name}}"></ias-icon>

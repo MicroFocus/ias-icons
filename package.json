@@ -19,9 +19,10 @@
   "bugs": "https://github.com/microfocus/ias-icons/issues",
   "homepage": "https://github.com/microfocus/ias-icons#readme",
   "devDependencies": {
-    "@microfocus/ng-ias": "1.0.0-alpha",
+    "@microfocus/ng-ias": "1.0.0-alpha.2",
+    "@microfocus/ux-ias": "1.0.0-alpha.1",
+    "@uirouter/angularjs": "1.0.18",
     "angular": "1.6.4",
-    "angular-ui-router": "1.0.3",
     "async": "2.1.4",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",

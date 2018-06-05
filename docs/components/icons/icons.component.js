@@ -8,6 +8,7 @@ angular.module('app')
             this.icons =  ICONS;
             this.iconsInfo = ICON_INFO;
             this.query = $stateParams.query;
+            this.sort = 'glyph';
         }
 
 });

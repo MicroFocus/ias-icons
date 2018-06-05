@@ -94,7 +94,7 @@ gulp.task('serve', function() {
         livereload: true,
         port: 8083,
         root: [
-            'dist/',
+            'dist/'
         ]
     });
 });
@@ -102,11 +102,11 @@ gulp.task('serve', function() {
 gulp.task('vendor', function() {
 	return gulp
 		.src([
-			'node_modules/@microfocus/ng-ias/dist/ng-ias.css',
+			'node_modules/@microfocus/ux-ias/dist/ux-ias.css',
             'node_modules/angular/angular.js',
-        	'node_modules/angular-ui-router/release/angular-ui-router.js',
-        	'node_modules/@microfocus/ng-ias/dist/ng-ias.js'
-		])
+            'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
+            'node_modules/@microfocus/ng-ias/dist/ng-ias.js'
+        ])
 		.pipe(gulp.dest(outputDirectory + '/vendor'));
 });
 
