@@ -664,7 +664,7 @@ angular.module('app')
             notes: ''
         },
 
-  time_thick: {
+        time_thick: {
             uses: '',
             notes: ''
         },
@@ -920,7 +920,7 @@ angular.module('app')
         },
 
         upload_generic: {
-            uses: '',
+            uses: 'load, upload',
             notes: ''
         },
 
@@ -1132,8 +1132,174 @@ angular.module('app')
         strength5: {
             uses: '',
             notes: ''
-        }
-
-
-
+        },
+  
+        open_in_window: {
+            uses: '',
+            notes: ''
+        },
+        queue_list: {
+            uses: '',
+            notes: ''
+        },
+        queue_list_add: {
+            uses: '',
+            notes: ''
+        },
+        sync: {
+            uses: '',
+            notes: ''
+        },
+        publish: {
+            uses: '',
+            notes: ''
+        },
+        move: {
+            uses: '',
+            notes: ''
+        },
+        password_configure: {
+            uses: '',
+            notes: ''
+        },
+        password_role_based: {
+            uses: '',
+            notes: ''
+        },
+        search_advanced: {
+            uses: '',
+            notes: ''
+        },
+        share: {
+            uses: '',
+            notes: ''
+        },
+        copy_duplicate: {
+            uses: '',
+            notes: ''
+        },
+        show_all: {
+            uses: '',
+            notes: 'list control'
+        },
+        separation_of_duties: {
+            uses: '',
+            notes: ''
+        },
+        network: {
+            uses: '',
+            notes: ''
+        },
+        microphone: {
+            uses: '',
+            notes: ''
+        },
+        swisscom_mobile_id: {
+            uses: '',
+            notes: ''
+        },
+        bankid: {
+            uses: '',
+            notes: ''
+        },
+        security_questions: {
+            uses: '',
+            notes: 'set new password'
+        },
+        secure_identity: {
+            uses: 'secure identity, secure user',
+            notes: ''
+        },
+        pki_public_key: {
+            uses: '',
+            notes: ''
+        },
+        facial_recognition: {
+            uses: '',
+            notes: ''
+        },
+        bluetooth: {
+            uses: '',
+            notes: ''
+        },
+        usb: {
+            uses: '',
+            notes: ''
+        },
+        card_chip: {
+            uses: '',
+            notes: ''
+        },
+        password_ldap: {
+            uses: '',
+            notes: ''
+        },
+        password_emergency: {
+            uses: '',
+            notes: ''
+        },
+        database_search: {
+            uses: '',
+            notes: ''
+        },
+        status_new: {
+            uses: '',
+            notes: ''
+        },
+        status_edited: {
+            uses: '',
+            notes: ''
+        },
+        status_deleted: {
+            uses: '',
+            notes: ''
+        },
+        contract_all: {
+            uses: 'close all',
+            notes: 'list control'
+        },
+        expand_all: {
+            uses: 'open all',
+            notes: 'list control'
+        },
+        page_simple: {
+            uses: '',
+            notes: ''
+        },
+        page_complex: {
+            uses: '',
+            notes: ''
+        },
+        policy: {
+            uses: '',
+            notes: ''
+        },
+        policy_certificate: {
+            uses: 'certificate policy',
+            notes: ''
+        },
+        policy_rules: {
+            uses: 'policy rules, rights',
+            notes: ''
+        },
+        parameters: {
+            uses: 'parameters, preferences',
+            notes: ''
+        },
+        user_history: {
+            uses: '',
+            notes: ''
+        },
+        directory_tree: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        directory_org: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        directory_org_unit: {
+            uses: 'edirectory',
+            notes: ''
+        },
     });
