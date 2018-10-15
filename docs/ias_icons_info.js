@@ -845,12 +845,12 @@ angular.module('app')
         },
 
         group_thin: {
-            uses: '',
+            uses: 'edirectory',
             notes: ''
         },
 
         user_thin: {
-            uses: '',
+            uses: 'edirectory',
             notes: ''
         },
 
@@ -980,12 +980,12 @@ angular.module('app')
         },
 
         server_general_thick: {
-            uses: '',
+            uses: 'edirectory',
             notes: ''
         },
 
         server_general_thin: {
-            uses: '',
+            uses: 'edirectory',
             notes: ''
         },
 
@@ -1299,6 +1299,14 @@ angular.module('app')
             notes: ''
         },
         directory_org_unit: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        certificate_manage: {
+            uses: '',
+            notes: ''
+        },
+        rights: {
             uses: 'edirectory',
             notes: ''
         },
