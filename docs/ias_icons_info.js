@@ -1310,4 +1310,8 @@ angular.module('app')
             uses: 'edirectory',
             notes: ''
         },
+        printer: {
+            uses: 'edirectory',
+            notes: ''
+        },
     });
