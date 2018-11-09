@@ -4,7 +4,7 @@ node_js:
   - "6"
 before_script:
   - npm install -g gulp-cli
-before_deploy: gulp docs vendor
+before_deploy: gulp build
 branches:
   only:
     - master
