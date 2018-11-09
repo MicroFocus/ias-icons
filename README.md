@@ -11,8 +11,3 @@ throughout these applications.
 - [Changelog](./CHANGELOG.md)
 - [Developer Guide](./DEVELOPER.md)
 - [Guidelines for Contribution](./CONTRIBUTING.md)
-
-### Notes
-
-Added the package: natives by hand due to the issue: 'ReferenceError: internalBinding is not defined' seen during the travis-ci build.  See:https://github.com/gulpjs/gulp/issues/2246
-We should be able to remove this when we move to gulp 4.x.
