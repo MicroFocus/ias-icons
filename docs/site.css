@@ -5,6 +5,10 @@ body, input {
 .ias-header {
     max-width: initial;
 }
+.ias-app-bar {background: #0073e7;}
+.micro-logo {
+  height: 50px;
+}
 
 th {
     white-space: nowrap;
