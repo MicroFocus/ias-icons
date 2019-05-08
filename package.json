@@ -1,6 +1,6 @@
 {
   "name": "@microfocus/ias-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Icon font for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/microfocus/ias-icons#readme",
   "devDependencies": {
     "@microfocus/ng-ias": "1.0.0-alpha.2",
-    "@microfocus/ux-ias": "1.0.0-alpha.1",
+    "@microfocus/ux-ias": "1.1.0",
     "@uirouter/angularjs": "1.0.18",
     "angular": "1.6.4",
     "async": "2.1.4",
