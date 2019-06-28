@@ -3,10 +3,9 @@
   "version": "1.0.3",
   "description": "Icon font for Micro Focus Identity, Access, and Security products",
   "engines": {
-    "node": ">=6.2 <9",
+    "node": ">=6.2",
     "npm": ">=3.9"
   },
-  "engineStrict": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microfocus/ias-icons.git"
