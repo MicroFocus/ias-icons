@@ -1,12 +1,11 @@
 {
   "name": "@microfocus/ias-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Icon font for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
     "npm": ">=3.9"
   },
-  "engineStrict": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microfocus/ias-icons.git"
@@ -14,6 +13,9 @@
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "scripts": {
     "prepublishOnly": "gulp clean && gulp icons"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "bugs": "https://github.com/microfocus/ias-icons/issues",
