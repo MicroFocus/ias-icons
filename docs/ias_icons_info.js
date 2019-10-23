@@ -1314,4 +1314,264 @@ angular.module('app')
             uses: 'edirectory',
             notes: ''
         },
+        tag: {
+            uses: '',
+            notes: ''
+        },
+        numeric_code: {
+            uses: 'code',
+            notes: ''
+        },
+        search_reports: {
+            uses: '',
+            notes: 'report, search'
+        },
+        secure_web: {
+            uses: '',
+            notes: 'world, lock'
+        },
+        dir_NDSPKI_trusted_root_object: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_NDSPKI_trusted_root: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_NDSPKI_certificate_authority: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_NDSPKI_key_material: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_NDSPKI_SDkey_list: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_NDSPKI_SDkeyAccess_container: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_SASsecurity: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_SASservice: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_MASVsecurity_policy: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_SASlogin_method_container: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        edit_doc: {
+            uses: '',
+            notes: 'edit, document'
+        },
+        save_disk: {
+            uses: '',
+            notes: 'save, disk'
+        },
+        phone_keypad: {
+            uses: '',
+            notes: 'phone, key'
+        },
+        keypad: {
+            uses: '',
+            notes: 'key'
+        },
+        dir_external_entity: {
+            uses: 'edirectory',
+            notes: 'entity'
+        },
+        dir_object_bindery: {
+            uses: 'edirectory',
+            notes: 'object, bindery'
+        },
+        dir_queue_bindery: {
+            uses: 'edirectory',
+            notes: 'queue, bindery'
+        },
+        dir_group_message_routing: {
+            uses: 'edirectory',
+            notes: 'group, message, route'
+        },
+        dir_group_dynamic: {
+            uses: 'edirectory',
+            notes: 'group, dynamic'
+        },
+        dir_list: {
+            uses: 'edirectory',
+            notes: 'list'
+        },
+        dir_object: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_template: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_server_ncp: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_server_afp: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_server_http: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_server_messaging: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_server_print: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_replica: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_replica_encrypted: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_server_ldap: {
+            uses: 'edirectory',
+            notes: 'server'
+        },
+        dir_ndsPredicate_stats: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_schema: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_schema_attribute: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_schema_attribute_encrypted: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_org_person: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_person: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_profile_ldap: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_profile: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_mapping: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_volume: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_group_ldap: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_country: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_locality: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_app_process: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        code_1: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_SASlogin_policy: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_details: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dir_LDAP: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        security: {
+            uses: '',
+            notes: ''
+        },
+        security_lock: {
+            uses: '',
+            notes: ''
+        },
+        security_policy: {
+            uses: '',
+            notes: ''
+        },
+        phone_message: {
+            uses: '',
+            notes: 'phone'
+        },
+        edit_small: {
+            uses: '',
+            notes: 'edit, pencil'
+        },
+        permission_request: {
+            uses: '',
+            notes: 'phone, message'
+        },
+        dir_DN_query: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        dynamic_entity: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        data_item: {
+            uses: '',
+            notes: ''
+        },
+        data_item_mapping: {
+            uses: '',
+            notes: ''
+        },
+        dir_DN_display: {
+            uses: 'edirectory',
+            notes: ''
+        },
+        label_element: {
+            uses: '',
+            notes: ''
+        },
+        title_element: {
+            uses: '',
+            notes: ''
+        },
     });
