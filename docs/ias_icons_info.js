@@ -650,12 +650,12 @@ angular.module('app')
         },
 
         resource_assign: {
-            uses: 'resource, asset',
+            uses: 'resource, asset, user, currency',
             notes: ''
         },
 
         resource_thick: {
-            uses: 'resource, asset',
+            uses: 'resource, asset, currency',
             notes: ''
         },
 
@@ -845,37 +845,37 @@ angular.module('app')
         },
 
         group_thin: {
-            uses: 'edirectory',
+            uses: 'edirectory, user, group',
             notes: ''
         },
 
         user_thin: {
-            uses: 'edirectory',
+            uses: 'edirectory, user',
             notes: ''
         },
 
         profile_thin: {
-            uses: '',
+            uses: 'user, list',
             notes: ''
         },
 
         profile_2_thin: {
-            uses: '',
+            uses: 'user, page',
             notes: ''
         },
 
         auditor_thin: {
-            uses: '',
+            uses: 'user, check',
             notes: ''
         },
 
         admin_thin: {
-            uses: '',
+            uses: 'user, monitor, device, computer',
             notes: ''
         },
 
         admin_super_thin: {
-            uses: '',
+            uses: 'user, monitor, device, computer',
             notes: ''
         },
 
