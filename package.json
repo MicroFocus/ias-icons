@@ -28,7 +28,7 @@
         "@microfocus/ng-ias": "1.0.0-alpha.2",
         "@microfocus/ux-ias": "1.1.0",
         "@uirouter/angularjs": "1.0.18",
-        "angular": "1.6.4",
+        "angular": "1.7.9",
         "async": "2.1.4",
         "gulp": "3.9.1",
         "gulp-clean": "0.3.2",
