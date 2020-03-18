@@ -1574,4 +1574,220 @@ angular.module('app')
             uses: '',
             notes: ''
         },
+        server_access: {
+            uses: '',
+            notes: ''
+        },
+        server_identity: {
+            uses: 'computer, user',
+            notes: ''
+        },
+        server_radius: {
+            uses: 'phone',
+            notes: ''
+        },
+        server_services: {
+            uses: 'configure, cog',
+            notes: ''
+        },
+        server_wireless: {
+            uses: 'signal',
+            notes: ''
+        },
+        server_commexec: {
+            uses: 'communicate, execute',
+            notes: ''
+        },
+        password_sql: {
+            uses: 'password, database',
+            notes: ''
+        },
+        secure_mobile: {
+            uses: 'phone, cellular, lock',
+            notes: ''
+        },
+        secure_device: {
+            uses: 'monitor, computer, lock',
+            notes: ''
+        },
+        dir_DN_object: {
+            uses: 'cube',
+            notes: ''
+        },
+        dir_cRLDistributionPoint: {
+            uses: 'clear',
+            notes: ''
+        },
+        dir_effective_rights: {
+            uses: 'checkmark',
+            notes: ''
+        },
+        dir_encryption_Policy: {
+            uses: 'key, checkmark',
+            notes: ''
+        },
+        dir_NDSPKI_certificate: {
+            uses: 'key, paper',
+            notes: ''
+        },
+        dir_ndspki_container: {
+            uses: 'key',
+            notes: ''
+        },
+        dir_ndspki_CRLConfiguration: {
+            uses: 'key, list',
+            notes: ''
+        },
+        dir_notfMergeTemplate: {
+            uses: 'notify, page',
+            notes: ''
+        },
+        dir_notfTemplateCollection: {
+            uses: 'notify, page',
+            notes: ''
+        },
+        dir_nspmPasswordPolicy: {
+            uses: 'security',
+            notes: ''
+        },
+        dir_snpmPasswordPolicyContainer: {
+            uses: 'security',
+            notes: ''
+        },
+        dir_nspmPolicyAgent: {
+            uses: 'security',
+            notes: ''
+        },
+        dir_prSyncPolicy: {
+            uses: 'star, priority',
+            notes: ''
+        },
+        dir_rbsBook: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsBook2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsCollection: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsCollection2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsModule: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsModule2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsRole2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsScope: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsScope2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsTask: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_rbsTask2: {
+            uses: 'check',
+            notes: ''
+        },
+        dir_sasPostLoginMethod: {
+            uses: 'check, arrow, password, security',
+            notes: ''
+        },
+        dir_sasPostLoginMethodContainer: {
+            uses: 'arrow, password, security',
+            notes: ''
+        },
+        dir_snmpAdmin: {
+            uses: 'simple, network, management, protocol',
+            notes: ''
+        },
+        dir_snmpGroup: {
+            uses: 'simple, network, management, protocol',
+						notes: ''
+        },
+        dir_snmpMessageGroup: {
+            uses: 'simple, network, management, protocol',
+						notes: ''
+        },
+        dir_sssServerPolicies: {
+            uses: 'secret, store, lock, box',
+            notes: ''
+        },
+        dir_sssServerPolicyOverride: {
+            uses: 'secret, store, lock, box',
+            notes: ''
+        },
+        dir_trustees: {
+            uses: 'user, key',
+            notes: ''
+        },
+        dir_domain: {
+            uses: 'area',
+            notes: ''
+        },
+        dir_rbsTask: {
+            uses: 'check',
+            notes: ''
+        },
+        arrow_down: {
+            uses: '',
+            notes: ''
+        },
+        arrow_left: {
+            uses: '',
+            notes: ''
+        },
+        arrow_right: {
+            uses: '',
+            notes: ''
+        },
+        arrow_up: {
+            uses: '',
+            notes: ''
+        },
+        partition: {
+            uses: 'piechart',
+            notes: ''
+        },
+        merge: {
+            uses: 'arrow',
+            notes: ''
+        },
+        flex_OTP: {
+            uses: 'advance, authentication, method',
+            notes: ''
+        },
+        multi_paths: {
+            uses: 'arrow',
+            notes: ''
+        },
+        index: {
+            uses: 'list',
+            notes: ''
+        },
+        manager_user_1: {
+            uses: 'tie',
+            notes: ''
+        },
+        manager_user_2: {
+            uses: 'group',
+            notes: ''
+        },
     });
