@@ -15,7 +15,7 @@
         "clean": "gulp clean",
         "build:all": "gulp build",
         "build:icons": "gulp icons",
-        "update-gh-pages": "push-dir --dir=dist --branch=gh-pages",
+        "update-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup",
         "test:doc": "npx live-server --port=8085 --open=/ias-icons/ --mount=/ias-icons/:./dist"
     },
     "publishConfig": {
