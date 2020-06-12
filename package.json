@@ -1,6 +1,6 @@
 {
     "name": "@microfocus/ias-icons",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Icon font for Micro Focus Identity, Access, and Security products",
     "engines": {
         "node": ">=6.2",
