@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+}
+
+table.ias-table {
+    flex-grow: 1;
+
+    .icon-example {
+        font-size: 1.6rem;
+        line-height: 1.3rem;
+    }
+}

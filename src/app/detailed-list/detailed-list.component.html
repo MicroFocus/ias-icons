@@ -1,0 +1,18 @@
+<table class="ias-table">
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Example</th>
+            <th>Glyph</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let iconInfo of (iconInfoList$ | async)">
+            <td class="icon-example"><i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i></td>
+            <td class="icon-name">{{iconInfo.name}}</td>
+            <td class="icon-classname">&lt;i class=&quot;ias-icon {{iconInfo.className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</td>
+            <td class="icon-glyph">{{iconInfo.glyph}}</td>
+        </tr>
+    </tbody>
+</table>

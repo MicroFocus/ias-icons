@@ -1,0 +1,18 @@
+@import "ias-variables";
+
+.ias-tile {
+    display: flex;
+
+    background-color: $ias-panel-gray;
+    border: 1px solid transparent;
+    color: $ias-dark-gray;
+    height: 185px;
+    width: 182px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    &:hover {
+        background-color: $ias-light-gray;
+        border-color: $ias-blue-4;
+    }
+}

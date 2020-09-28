@@ -1,0 +1,11 @@
+@import "./ias-variables";
+
+.ias-form-control.form-control, select.ias-form-control.form-control {
+    border-radius: 3px;
+    border-color: $ias-border-gray;
+    font-size: 1rem;
+
+    &:focus {
+        border-color: $ias-blue-4;
+    }
+}

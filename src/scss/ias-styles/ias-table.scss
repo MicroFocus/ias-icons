@@ -1,0 +1,30 @@
+@import "ias-variables";
+
+table.ias-table {
+    tr {
+        min-height: 35px;
+        vertical-align: middle;
+    }
+
+    thead > tr > th {
+        color: $ias-medium-gray;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 5px 10px;
+        vertical-align: middle;
+    }
+
+    tbody > tr {
+        &:hover {
+            background-color: $ias-panel-gray;
+        }
+
+        > td {
+            border-top: 1px solid $ias-border-gray;
+            font-size: 15px;
+            padding: 5px 10px;
+            vertical-align: middle;
+        }
+    }
+}

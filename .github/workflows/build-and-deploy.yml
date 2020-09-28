@@ -1,0 +1,73 @@
+name: IAS Icons Build and Deploy
+
+# on:
+#   pull_request:
+#     branches:
+#       - master
+#     types: [closed]
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy-to-npm:
+    name: Build and deploy the icon font to NPM
+    runs-on: ubuntu-latest
+
+#     if: github.event.pull_request.merged == true
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Set up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          
+      - name: Install npm dependencies
+        run: npm install
+        
+      - name: Build ias-icon font
+        run: npm run build:icons
+        
+      - name: Increment the npm patch version
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          npm version patch -m "Incremented the version during an automated build"
+          git push
+       
+      - name: Publish the ias-icons package to npm
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: dist/generated-font/package.json
+
+  build-and-deploy-to-gh-pages:
+    name: Build and deploy the documentation to gh-pages
+    runs-on: ubuntu-latest
+
+#     if: github.event.pull_request.merged == true
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Set up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          
+      - name: Install npm dependencies
+        run: npm install
+        
+      - name: Build the documentation website
+        run: |
+          npm run build:icons
+          npm run build:docs
+        
+      - name: Publish to gh-pages
+        uses: JamesIves/github-pages-deploy-action@3.6.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist/docs

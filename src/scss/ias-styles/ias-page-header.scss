@@ -1,0 +1,99 @@
+@import "./ias-variables";
+
+$header-bar-height: 50px;
+$nav-bar-height: 38px;
+
+.ias-page-header {
+    min-width: 0; // This fixes problems with text truncation.  See: https://css-tricks.com/flexbox-truncated-text/
+
+    > .ias-header-bar {
+        background-color: $microfocus-primary;
+        color: white;
+        height: $header-bar-height;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+
+        > .ias-header-bar_title {
+            flex-grow: 1;
+            font-size: 20px;
+            margin-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        > .ias-header-bar_menu {
+            margin-right: 15px;
+            position: relative;
+
+            > a {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                > .ias-icon {
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+
+            > .dropdown-menu {
+                overflow: hidden;
+
+                // This is a fix for the ux-aspects style overriding the dropdown-menu-right style:
+                &.dropdown-menu-right {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    > .ias-nav-bar {
+        background-color: $ias-panel-gray;
+        color: $ias-dim-gray;
+        font-size: .95rem;
+        height: $nav-bar-height;
+        padding: 0 15px;
+
+        display: flex;
+        align-items: center;
+
+        > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                display: inline-block;
+
+                > a {
+                    border-width: 0 1px 3px;
+                    border-style: solid;
+                    border-color: transparent;
+                    color: inherit;
+                    height: $nav-bar-height;
+                    padding: 0 10px;
+
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: $ias-border-gray;
+                    }
+
+                    &.active {
+                        color: $ias-dark-gray;
+                        border-left-color: $ias-border-gray;
+                        border-right-color: $ias-border-gray;
+                        border-bottom-color: $ias-blue-4;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

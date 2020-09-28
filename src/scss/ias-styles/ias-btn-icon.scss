@@ -1,0 +1,30 @@
+@import "ias-variables";
+
+.ias-btn.ias-btn-icon {
+    border: 1px solid transparent;
+
+    &.btn-primary {
+        &.btn-link {
+            color: $ias-dark-gray;
+
+            &:hover {
+                &:disabled {
+                    background-color: transparent;
+                    border-color: transparent;
+                }
+
+                &:not(:disabled) {
+                    background-color: $ias-light-gray;
+                    border-color: $ias-border-gray;
+                    color: $ias-blue-2;
+                }
+            }
+        }
+
+        &:not(.btn-link) {
+            &:hover:not(:disabled) {
+                border-color: $ias-border-gray;
+            }
+        }
+    }
+}

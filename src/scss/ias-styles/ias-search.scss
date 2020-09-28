@@ -1,0 +1,24 @@
+.ias-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    > .ias-icon {
+        position: absolute;
+        left: 4px;
+        font-size: 1.6rem;
+        line-height: 1.3rem;
+    }
+
+    > input {
+        background-color: transparent;
+        flex-grow: 1;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    > .ias-btn {
+        position: absolute;
+        right: 2px;
+    }
+}

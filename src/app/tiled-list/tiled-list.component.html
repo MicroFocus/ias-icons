@@ -1,0 +1,7 @@
+<div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile">
+    <i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i>
+    <div class="ias-tile-content">
+        <div class="icon-name">{{iconInfo.name}}</div>
+        <div class="icon-code">"{{iconInfo.glyph}}"</div>
+    </div>
+</div>

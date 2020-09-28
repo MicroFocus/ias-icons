@@ -1,0 +1,35 @@
+@import "../../scss/ias-styles/ias-variables";
+
+:host {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ias-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ias-icon {
+        font-size: 100px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .ias-tile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 25px;
+
+        .icon-name {
+            font-size: 15px;
+        }
+
+        .icon-code {
+            color: $ias-medium-gray;
+            font-size: 12px;
+        }
+    }
+}

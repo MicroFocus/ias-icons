@@ -8,6 +8,27 @@ throughout these applications.
 ### Helpful Links
 
 - [Documentation Site](https://microfocus.github.io/ias-icons)
-- [Changelog](./CHANGELOG.md)
-- [Developer Guide](./DEVELOPER.md)
-- [Guidelines for Contribution](./CONTRIBUTING.md)
+
+### Usage
+
+Install the package using npm:
+
+```
+$ npm install @microfocus/ias-icons
+```
+
+If you are building a project with Angular, you can add the following  to your angular.json file:
+
+```
+"styles": [
+    "node_modules/@microfocus/ias-icons/dist/ias-icons/ias-icons.css",
+    "src/styles.scss"
+],
+```
+
+The icons can now be referenced by class name, as shown in the following example:
+
+```
+<i class="ias-icon ias-icon-down_thin"></i>
+```
+

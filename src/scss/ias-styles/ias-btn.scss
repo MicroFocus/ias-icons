@@ -1,0 +1,69 @@
+@import "ias-variables";
+
+.ias-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $ias-border-gray;
+    border-radius: 3px;
+    text-transform: none;
+
+    // Style the default and secondary buttons:
+    &.btn-default, &.button-secondary {
+        background-color: $ias-light-gray;
+        color: $ias-dark-gray;
+
+        &:disabled, &.disabled {
+            background-color: $ias-light-gray;
+            border-color: $ias-border-gray;
+        }
+
+        &:hover:not(:disabled) {
+            background-color: $ias-light-gray;
+            border-color: $ias-blue-4;
+            color: $ias-blue-2;
+        }
+    }
+
+    // Style the primary button:
+    &.btn-primary:not(.btn-link), &.button-primary:not(.btn-link) {
+        background-color: $ias-blue-2;
+        border-color: $ias-blue-2;
+        color: $ias-light-gray;
+
+        &:disabled, &.disabled {
+            background-color: $ias-blue-2;
+            border-color: $ias-blue-2;
+        }
+
+        &:hover:not(:disabled) {
+            background-color: $ias-light-gray;
+            border-color: $ias-blue-4;
+            color: $ias-blue-2;
+        }
+    }
+
+    > .ias-icon {
+        display: flex;
+        font-size: 1.6rem;
+        line-height: 1.3rem;
+    }
+
+    // Add a margin when you have multiple things within a button (such as text and an icon):
+    > * + * {
+        margin-left: 10px;
+    }
+
+    // Remove the outline that shows when the element has focus:
+    &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    // Style when disabled:
+    &[disabled] {
+        opacity: .5;
+        filter: alpha(opacity=50);
+    }
+}
