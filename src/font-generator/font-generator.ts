@@ -22,7 +22,11 @@ new Promise((resolve, reject) => {
             classPrefix: 'ias-icon-',
             baseSelector: '.ias-icon'
         },
+        fontHeight: 1000,
+        normalize: true,
+        round: 10e4,
         writeFiles: true,
+        html: true,
         codepoints
     }, (error) => {
         if (error) {
