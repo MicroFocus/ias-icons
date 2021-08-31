@@ -11,8 +11,6 @@ import { MenuComponent, MenuTriggerDirective } from '@ux-aspects/ux-aspects';
 export class TiledListComponent implements OnInit {
     @Input() iconInfoList$: Observable<IconInfo[]>;
 
-    @ViewChild(MenuTriggerDirective) menu: MenuTriggerDirective;
-
     iconName: null;
 
     constructor() {}
