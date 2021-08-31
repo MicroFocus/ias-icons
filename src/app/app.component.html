@@ -10,17 +10,22 @@
     <div class="action-bar">
         <div class="ias-search">
             <span class="ias-icon ias-icon-search_thick"></span>
-            <input class="ias-form-control form-control" type="text" placeholder="Search" [formControl]="searchFormControl">
-            <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon" (click)="onClearSearchClicked()">
+            <input class="ias-form-control form-control" type="text" placeholder="Search"
+                [formControl]="searchFormControl">
+            <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+                (click)="onClearSearchClicked()">
                 <i class="ias-icon ias-icon-close_thick" aria-hidden="true"></i>
             </button>
         </div>
         <div class="flex-spacer"></div>
-        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon" (click)="onTileViewClicked()">
-            <i class="ias-icon ias-icon-view_tile_thin" aria-hidden="true"></i>
+        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+            (click)="onTileViewClicked()">
+            <i class="ias-icon ias-icon-view_tile_thin" aria-hidden="true"
+                [ngClass]="{'ias-icon-color-blue': !showDetailedList}"></i>
         </button>
-        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon" (click)="onListViewClicked()">
-            <i class="ias-icon ias-icon-view_list_thin" aria-hidden="true"></i>
+        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+            (click)="onListViewClicked()">
+            <i class="ias-icon ias-icon-view_list_thin" aria-hidden="true" [ngClass]="{'ias-icon-color-blue': showDetailedList}"></i>
         </button>
     </div>
     <div class="icon-count">Number of icons: {{iconInfoList.value.length}}</div>

@@ -1,3 +1,5 @@
+@import "../scss/ias-styles/ias-variables";
+
 :host {
     display: flex;
     flex-direction: column;
@@ -27,4 +29,56 @@
     .icon-count {
         margin: 15px 0;
     }
+}
+
+::ng-deep.iam-menu {
+    background-color: $ias-dark-gray;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 3px;
+    color: $ias-light-gray;
+    padding: 5px 0;
+    margin: 2px 0 0;
+
+    > .ux-menu-item {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: $ias-darker-gray;
+            color: $ias-light-gray;
+        }
+
+        > .dropdown-menu-icon.ias-icon {
+            display: flex;
+            font-size: 1.6rem;
+            color: inherit;
+            line-height: 1em;
+            vertical-align: middle;
+            height: 1em;
+            width: 1em;
+        }
+
+        > .dropdown-menu-hint {
+            color: $ias-gray;
+        }
+    }
+
+    > ux-menu-divider {
+        border-bottom-color: $ias-medium-gray;
+    }
+
+    > h4 {
+        color: #bdbec0;
+        margin: 10px 15px;
+        cursor: default;
+    }
+
+    &.iam-complex-menu {
+        margin-left: 2px;
+    }
+}
+
+::ng-deep.ias-icon-color-blue {
+    color: $ias-blue-4;
 }
