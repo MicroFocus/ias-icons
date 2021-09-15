@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
+import { ColorService, NotificationService } from '@ux-aspects/ux-aspects';
 
 @Component({
     selector: 'app-detailed-list',
@@ -12,7 +13,13 @@ export class DetailedListComponent implements OnInit {
 
     iconName: null;
 
-    constructor() {}
+    duration: number = 2;
+    description: string = 'Copied to clipboard!';
+
+    constructor(
+        public notificationService: NotificationService,
+        public colorService: ColorService
+    ) {}
 
     ngOnInit(): void {}
 
@@ -21,7 +28,6 @@ export class DetailedListComponent implements OnInit {
     }
 
     copyIconName(): void {
-        console.log('Copied: ' + this.iconName);
         document.addEventListener('copy', (e: ClipboardEvent) => {
             e.clipboardData.setData('text/plain', this.iconName);
             e.preventDefault();
