@@ -20,9 +20,7 @@
 </table>
 
 <ux-menu #menu menuClass="iam-menu">
-    <button type="button" uxMenuItem (activate)="copyIconName()" (click)="notificationService.show(notification,
-            { duration: duration, backgroundColor: this.backgroundColor},
-            { description: description })">
+    <button type="button" uxMenuItem (activate)="copyIconName(notification)">
         <i class="dropdown-menu-icon ias-icon ias-icon-copy_duplicate"></i>
         <span class="dropdown-menu-text">Copy Class Name</span>
     </button>

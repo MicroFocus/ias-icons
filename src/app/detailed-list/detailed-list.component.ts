@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
 import { NotificationService } from '@ux-aspects/ux-aspects';
@@ -25,13 +25,17 @@ export class DetailedListComponent implements OnInit {
         this.iconName = name;
     }
 
-    copyIconName(): void {
-        document.addEventListener('copy', (e: ClipboardEvent) => {
-            e.clipboardData.setData('text/plain', this.iconName);
-            e.preventDefault();
-            document.removeEventListener('copy', null);
-        });
-        document.execCommand('copy');
+    copyIconName(template: TemplateRef<any>): void {
+        navigator.clipboard.writeText(this.iconName);
+        this.showNotification(template);
+    }
+
+    showNotification(template: TemplateRef<any>) {
+        this.notificationService.show(
+            template,
+            { duration: this.duration, backgroundColor: this.backgroundColor },
+            { description: this.description }
+        );
     }
 
     downloadIconSVG(): void {
