@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
-import { ColorService, NotificationService } from '@ux-aspects/ux-aspects';
+import { NotificationService } from '@ux-aspects/ux-aspects';
 
 @Component({
     selector: 'app-tiled-list',
@@ -14,12 +14,10 @@ export class TiledListComponent implements OnInit {
     iconName: null;
 
     duration: number = 2;
+    backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
 
-    constructor(
-        public notificationService: NotificationService,
-        public colorService: ColorService
-    ) {}
+    constructor(public notificationService: NotificationService) {}
 
     ngOnInit(): void {}
 

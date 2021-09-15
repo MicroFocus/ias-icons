@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MenuNavigationModule,
         MenuModule,
         NotificationModule,
+        // Included to make ux-aspects happy
         ColorServiceModule.forRoot(colorSets.microFocus),
         AccessibilityModule,
         BrowserAnimationsModule,

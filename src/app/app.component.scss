@@ -83,10 +83,6 @@
     color: $ias-blue-4;
 }
 
-::ng-deep ux-notification-list .notification {
-    background-color: $color-accent-5 !important;
-}
-
 ::ng-deep .copy-notification {
     display: inline-flex;
     margin: 0px 0px 0px 10px;
