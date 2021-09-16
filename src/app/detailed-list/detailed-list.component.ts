@@ -13,7 +13,7 @@ export class DetailedListComponent implements OnInit {
 
     iconName: null;
 
-    duration: number = 2;
+    duration: number = 6;
     backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
 
