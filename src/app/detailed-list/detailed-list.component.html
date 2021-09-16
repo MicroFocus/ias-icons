@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let iconInfo of (iconInfoList$ | async)" (click)="click(iconInfo.name)" [uxMenuTriggerFor]="menu">
+        <tr *ngFor="let iconInfo of (iconInfoList$ | async)" (click)="click(iconInfo.className)" [uxMenuTriggerFor]="menu">
             <td class="icon-example"><i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i></td>
             <td class="icon-name">{{iconInfo.name}}</td>
             <td class="icon-classname">&lt;i class=&quot;ias-icon {{iconInfo.className}}&quot;
@@ -31,11 +31,16 @@
     </button>
 </ux-menu>
 
-<ng-template #notification let-data="data">
+<ng-template #notification let-notificationRef let-data="data">
     <div class="copy-notification">
         <span class="ias-icon ias-icon-check_thick"></span>
         <span class="notification-description">
             {{ data.description }}
         </span>
+
+        <button class="dismiss-notification" tabindex="0" aria-label="Dismiss Notification"
+            (click)="notificationService.dismiss(notificationRef)">
+            <span class="ias-icon ias-icon-close_thick"></span>
+        </button>
     </div>
 </ng-template>

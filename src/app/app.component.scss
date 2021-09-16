@@ -79,17 +79,43 @@
     }
 }
 
-::ng-deep.ias-icon-color-blue {
+::ng-deep .ias-icon-color-blue {
     color: $ias-blue-4;
 }
 
-::ng-deep .copy-notification {
-    display: inline-flex;
-    margin: 0px 0px 0px 10px;
-    > span {
-        font-size: 25px;
-    }
-    > .notification-description {
-        margin: 0px 0px 0px 10px;
+::ng-deep ux-notification-list {
+    width: 350px;
+
+    & .notification {
+        width: 345px;
+        padding: 10px 0;
+
+        > .copy-notification {
+            display: inline-flex;
+            align-items: center;
+            margin: 0px 10px 0px 10px;
+            > .ias-icon {
+                display: flex;
+                font-size: 35px;
+            }
+
+            > .notification-description {
+                font-size: 25px;
+                margin: 0px 0px 0px 10px;
+            }
+
+            > .dismiss-notification {
+                color: #fff;
+                font-size: 25px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                margin-left: 30px;
+
+                > .ias-icon {
+                    display: flex;
+                }
+            }
+        }
     }
 }
