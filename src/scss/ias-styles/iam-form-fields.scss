@@ -1,0 +1,260 @@
+@import "./iam-variables";
+
+// Mixin for standalone labels, and those used in checkboxes and radio buttons
+@mixin iam-label() {
+    color: $iam-medium-gray;
+    font-size: 13px;
+    line-height: 22px;
+    vertical-align: middle;
+    padding-right: 5px;
+    user-select: none;
+}
+
+// Mixin for code common to checkboxes and radio buttons (things that have a "checked" state)
+@mixin checkable-type($input-type) {
+    cursor: pointer;
+    display: flex;
+    line-height: 24px;
+    margin: 0 0 5px 0;
+    position: relative;
+    user-select: none;
+
+    > .ias-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $iam-medium-gray;
+        border-radius: 3px;
+        color: transparent;
+        font-size: 16px;
+        height: 24px;
+        width: 24px;
+        flex-shrink: 0;
+
+        &:before {
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        > input[type="#{$input-type}"] {
+            &:not(:disabled) {
+                & ~ .ias-icon {
+                    border-color: $iam-blue-4;
+                }
+            }
+        }
+    }
+
+    > input[type="#{$input-type}"] {
+        opacity: 0;
+        position: absolute;
+        height: 0;
+        width: 0;
+
+        & + * {
+            margin-right: 7px;
+        }
+
+        &:disabled {
+            cursor: default;
+
+            &:checked ~ .ias-icon {
+                color: $iam-medium-gray;
+            }
+
+            & ~ .ias-icon,
+            & ~ span:not(.ias-icon) {
+                cursor: default;
+                opacity: $disabled-opacity;
+            }
+        }
+
+        &:not(:disabled) {
+            &:checked ~ .ias-icon {
+                color: $iam-blue-3;
+            }
+        }
+    }
+}
+
+label.iam-label {
+    @include iam-label();
+
+    &.disabled {
+        cursor: default;
+        opacity: $disabled-opacity;
+    }
+}
+
+input.iam-input {
+    border-radius: 3px;
+    border-color: $iam-border-gray;
+    font-size: 1rem;
+
+    &:focus {
+        border-color: $iam-blue-4;
+    }
+}
+
+input.form-control {
+    border-radius: 3px;
+    border-color: #dae1e1;
+    box-shadow: none;
+    &:read-only {
+        opacity: 0.4;
+        border-color: #e5e6e7;
+    }
+}
+
+.form-group {
+    &.has-error {
+        label.iam-label {
+            color: #ff454f;
+        }
+
+        input.form-control {
+            border-color: #ff454f;
+        }
+    }
+}
+
+textarea.iam-input {
+    border-radius: 3px;
+    border-color: $iam-border-gray;
+    font-size: 1rem;
+
+    &:focus {
+        border-color: $iam-blue-4;
+    }
+}
+
+textarea.form-control {
+    border-radius: 3px;
+    border-color: #dae1e1;
+    &:read-only {
+        opacity: 0.4;
+        border-color: #e5e6e7;
+    }
+}
+
+select.iam-select {
+    border-radius: 3px;
+    border-color: $iam-border-gray;
+    font-size: 1rem;
+
+    &:focus {
+        border-color: $iam-blue-4;
+    }
+}
+
+label.iam-checkbox {
+    @include iam-label();
+    @include checkable-type("checkbox");
+}
+
+label.iam-radio-button {
+    @include iam-label();
+    @include checkable-type("radio");
+
+    > input[type="radio"] ~ .ias-icon {
+        // Border for a radio button should be a circle
+        border-radius: 50%;
+    }
+}
+
+.iam-search {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+
+    > .ias-icon {
+        position: absolute;
+        left: 4px;
+        font-size: 1.6rem;
+    }
+
+    > input {
+        flex-grow: 1;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    > .iam-btn {
+        position: absolute;
+        right: 2px;
+    }
+}
+
+$check_icon: "\E908";
+$check_line_height: 24px;
+
+// TODO: Make .iam-checkbox
+ux-checkbox > .ux-checkbox {
+    align-items: center;
+    line-height: $check_line_height;
+
+    > .ux-checkbox-container {
+        background-color: transparent;
+        border: 1px solid $iam-medium-gray;
+        border-radius: 3px;
+        color: transparent;
+        font-family: "ias-icons";
+        font-weight: 700;
+
+        &:before {
+            content: $check_icon;
+        }
+    }
+
+    &.ux-checkbox-disabled {
+        opacity: $disabled-opacity;
+
+        &.ux-checkbox-checked {
+            > .ux-checkbox-container {
+                background-color: transparent;
+                color: $iam-medium-gray;
+            }
+        }
+
+        &:hover > .ux-checkbox-container,
+        > .ux-checkbox-container {
+            border: 1px solid $iam-medium-gray;
+        }
+    }
+
+    &:not(.ux-checkbox-disabled) {
+        &.ux-checkbox-checked > .ux-checkbox-container {
+            background-color: transparent;
+            border-color: $iam-medium-gray;
+            color: $iam-blue-3;
+        }
+
+        &.ux-checkbox-focused > .ux-checkbox-container,
+        &:hover > .ux-checkbox-container,
+        ux-checkbox-container:focus {
+            border: 1px solid $iam-blue-4;
+            outline: none;
+        }
+    }
+
+    > .ux-checkbox-label {
+        color: grey;
+        font-size: 13px;
+        line-height: 22px;
+        vertical-align: middle;
+        padding-right: 5px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: 400;
+    }
+}
+
+ux-combobox.iam-combobox, ux-dropdown.iam-dropdown {
+    > .ux-select-container > .form-control {
+        font-size: 1rem;
+    }
+}

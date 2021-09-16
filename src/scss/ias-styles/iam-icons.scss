@@ -1,0 +1,47 @@
+@import "./iam-variables";
+
+.ias-icon,
+.svg-icon {
+    font-size: 25px;
+    color: inherit;
+    display: inline-flex;
+    line-height: 1em;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+
+    &.ias-medium {
+        font-size: 50px;
+        height: 1em;
+        line-height: 1em;
+        width: 1em;
+    }
+
+    &.ias-large {
+        font-size: 75px;
+        height: 1em;
+        line-height: 1em;
+        width: 1em;
+    }
+
+    > .ias-icon-image {
+        height: inherit;
+    }
+
+    // TODO: Temporaray styles? Or should we keep them?
+    &.ias-icon-color-red {
+        color: $color-accent-4;
+    }
+    &.ias-icon-color-green {
+        color: $color-accent-5;
+    }
+    &.ias-icon-color-blue {
+        color: $iam-blue-4;
+    }
+    &.ias-icon-color-primary-blue {
+        color: $iam-blue-2;
+    }
+    &.ias-icon-color-orange {
+        color: $color-accent-3;
+    }
+}

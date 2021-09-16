@@ -54,10 +54,11 @@ export class TiledListComponent implements OnInit {
         console.log('Clicked Download Icon SVG');
     }
 
-    showDialog(template: TemplateRef<any>): void {
+    showDialog(template: TemplateRef<any>, iconInfo): void {
         this.modalRef = this.modalService.show(template, {
             animated: false,
             class: 'iam-modal-dialog',
         });
+        console.log(iconInfo)
     }
 }

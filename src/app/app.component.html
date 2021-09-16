@@ -8,22 +8,22 @@
 </div>
 <div class="ias-page-content">
     <div class="action-bar">
-        <div class="ias-search">
+        <div class="iam-search">
             <span class="ias-icon ias-icon-search_thick"></span>
-            <input class="ias-form-control form-control" type="text" placeholder="Search"
+            <input class="form-control iam-input" type="text" placeholder="Search"
                 [formControl]="searchFormControl">
-            <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+            <button type="button" class="btn btn-link btn-icon btn-primary iam-btn"
                 (click)="onClearSearchClicked()">
                 <i class="ias-icon ias-icon-close_thick" aria-hidden="true"></i>
             </button>
         </div>
         <div class="flex-spacer"></div>
-        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+        <button type="button" class="btn btn-link btn-icon btn-primary iam-btn"
             (click)="onTileViewClicked()">
             <i class="ias-icon ias-icon-view_tile_thin" aria-hidden="true"
                 [ngClass]="{'ias-icon-color-blue': !showDetailedList}"></i>
         </button>
-        <button type="button" class="btn btn-link btn-icon btn-primary ias-btn ias-btn-icon"
+        <button type="button" class="btn btn-link btn-icon btn-primary iam-btn"
             (click)="onListViewClicked()">
             <i class="ias-icon ias-icon-view_list_thin" aria-hidden="true"
                 [ngClass]="{'ias-icon-color-blue': showDetailedList}"></i>

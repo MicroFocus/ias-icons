@@ -1,6 +1,5 @@
 <ux-notification-list direction="above" position="top-right"></ux-notification-list>
-<div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile" (click)="click(iconInfo.className)"
-    [uxMenuTriggerFor]="menu">
+<div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile" (click)="showDialog(modal, iconInfo)">
     <i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i>
     <div class="ias-tile-content">
         <div class="icon-name">{{iconInfo.name}}</div>
@@ -31,5 +30,23 @@
             (click)="notificationService.dismiss(notificationRef)">
             <span class="ias-icon ias-icon-close_thick"></span>
         </button>
+    </div>
+</ng-template>
+
+<ng-template #modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Example Modal Dialog</h4>
+        <div class="flex-spacer"></div>
+        <button type="button" class="btn iam-btn btn-link btn-icon btn-primary" (click)="modalRef.hide()">
+            <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        Sed libero sem, sollicitudin nec est vitae, suscipit posuere mi. Curabitur placerat nulla id tempus ornare.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis lectus vitae sem congue elementum.
+        Nullam sit amet scelerisque magna.
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn iam-btn btn-default" (click)="modalRef.hide()">Close</button>
     </div>
 </ng-template>

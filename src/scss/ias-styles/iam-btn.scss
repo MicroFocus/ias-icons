@@ -1,0 +1,390 @@
+@import "iam-variables";
+@import "iam-form-fields";
+
+.btn.iam-btn {
+    /**
+     * Styling for text buttons, such as:
+     *
+     * <button type="button" class="btn iam-btn btn-default">Text Button</button>
+     */
+    &:not(.btn-icon) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 3px;
+        font-family: $iam-font-family;
+        font-size: .95rem;
+        text-transform: none;
+
+        // Style the default and secondary buttons:
+        &.btn-default, &.button-secondary {
+            background-color: $iam-light-gray;
+            border: 1px solid $iam-border-gray;
+            color: $iam-dark-gray;
+
+            &:disabled, &.disabled {
+                background-color: $iam-light-gray;
+                border: 1px solid $iam-border-gray;
+                color: $iam-dark-gray;
+            }
+
+            &:hover:not(:disabled) {
+                background-color: $iam-light-gray;
+                border-color: $iam-blue-4;
+                color: $iam-blue-2;
+            }
+        }
+
+        // Style the primary button:
+        &.btn-primary, &.button-primary {
+            background-color: $iam-blue-2;
+            border-color: $iam-blue-2;
+            color: $iam-light-gray;
+
+            &:disabled, &.disabled {
+                background-color: $iam-blue-2;
+                border-color: $iam-blue-2;
+                color: $iam-light-gray;
+            }
+
+            &:hover:not(:disabled) {
+                background-color: $iam-light-gray;
+                border-color: $iam-blue-4;
+                color: $iam-blue-2;
+            }
+        }
+
+        // Style the warning button
+        &.btn-delete, &.button-delete {
+            background-color: $iam-light-gray;
+            border: 1px solid $iam-border-gray;
+            color: $iam-dark-gray;
+
+            &:disabled, &.disabled {
+                background-color: $iam-light-gray;
+                border: 1px solid $iam-border-gray;
+                color: $iam-dark-gray;
+            }
+
+            &:hover:not(:disabled) {
+                background-color: $iam-light-gray;
+                border-color: $color-accent-4;
+                color: $color-accent-4;
+            }
+        }
+
+        // Add a margin when you have multiple things within a button (such as text and an icon):
+        > * + * {
+            margin-left: 5px;
+        }
+
+        // Remove the outline that shows when the element has focus:
+        &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        // Style when disabled:
+        &[disabled] {
+            opacity: .5;
+            filter: alpha(opacity=50);
+        }
+
+        /**
+         * Styling for text buttons containing icons, such as:
+         *
+         * <button type="button" class="btn iam-btn btn-icon-with-text btn-default">
+         *     <span>Menu Toggle</span> <span class="ias-icon ias-icon-down_thick" aria-hidden="true"></span>
+         * </button>
+         */
+        // TODO: Not needed?
+        // &.btn-icon-with-text {
+        //     > .ias-icon {
+        //         display: flex;
+        //         font-size: 1.6rem;
+        //         line-height: 1.3rem;
+        //     }
+        // }
+
+        // Styling for date picker button
+        &.btn-date-picker {
+            border-top-right-radius: 1px;
+            border-bottom-right-radius: 1px;
+        }
+    }
+
+    /**
+     * Styling for icon buttons, such as:
+     *
+     * <button type="button" class="btn iam-btn btn-link btn-icon btn-primary">
+     *     <span class="ias-icon ias-icon-new_thick" aria-hidden="true"></span>
+     * </button>
+     */
+    &.btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-family: $iam-font-family;
+        font-size: .95rem;
+        text-transform: none;
+
+        &.btn-primary.btn-link:not(:hover) {
+            color: $iam-dark-gray;
+        }
+
+        // Style the primary button:
+        &.btn-primary:not(.btn-link) {
+            background-color: $iam-blue-2;
+            border-color: $iam-blue-2;
+            color: $iam-light-gray;
+
+            &:disabled, &.disabled {
+                background-color: $iam-blue-2;
+                border-color: $iam-blue-2;
+                color: $iam-light-gray;
+            }
+
+            &:hover:not(:disabled) {
+                background-color: $iam-light-gray;
+                border-color: $iam-blue-4;
+                color: $iam-blue-2;
+            }
+        }
+
+        &.btn-delete {
+            color: $iam-dark-gray;
+            &:hover {
+                color: $color-accent-4;
+            }
+        }
+
+        &:hover {
+            background-color: $iam-light-gray;
+            border: 1px solid $iam-border-gray;
+            color: $iam-blue-2;
+        }
+
+        &:hover:not(:disabled) {
+            border-color: $iam-border-gray;
+        }
+
+        // > .ias-icon {
+        //     display: flex;
+        //     font-size: 1.6rem;
+        //     line-height: 1.3rem;
+        // }
+
+        // Add a margin when you have multiple things within a button (such as text and an icon):
+        > * + * {
+            margin-left: 10px;
+        }
+
+        // Remove the outline that shows when the element has focus:
+        &:focus, &.focus, &:active:focus, &:active.focus, &.active:focus, &.active.focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        // Style when disabled:
+        &[disabled] {
+            opacity: .5;
+            filter: alpha(opacity=50);
+        }
+    }
+
+    &.hover-action-btn {
+        display: inline-flex;
+        border: none;
+        &:hover {
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
+
+ux-radio-button.iam-radio-btn {
+    > .ux-radio-button {
+        align-items: flex-start;
+
+        > .ux-radio-button-container {
+            background-color: transparent;
+            border: 1px solid $iam-medium-gray;
+            color: transparent;
+            font-family: 'ias-icons';
+            font-weight: 700;
+
+            &:before {
+                content: $check_icon;
+            }
+        }
+
+        &.ux-radio-button-disabled {
+            opacity: $disabled-opacity;
+
+            &.ux-radio-button-checked {
+                > .ux-radio-button-container {
+                    background-color: transparent;
+                    color: $iam-medium-gray;
+                }
+            }
+
+            &:hover > .ux-radio-button-container, > .ux-radio-button-container {
+                border: 1px solid $iam-medium-gray;
+            }
+        }
+
+        &:not(.ux-radio-button-disabled) {
+            &.ux-radio-button-checked > .ux-radio-button-container {
+                background-color: transparent;
+                border-color: $iam-medium-gray;
+                color: $iam-blue-3;
+            }
+
+            &.ux-radio-button-focused > .ux-radio-button-container, &:hover > .ux-radio-button-container, ux-radio-button-container:focus {
+                border: 1px solid $iam-blue-4;
+                outline: none;
+            }
+        }
+
+        .ux-radio-button-label {
+            @include iam-label();
+            line-height: $check_line_height;
+        }
+    }
+}
+
+.btn-group.iam-btn-group {
+    display: flex;
+
+    > .btn:last-child:not(:first-child), .dropdown-toggle:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    > .button-toggle-primary {
+        box-shadow: none;
+
+        &:active, &.active {
+            background-color: $iam-blue-2;
+            border-color: $iam-blue-2;
+            color: $iam-light-gray;
+        }
+
+        &:disabled, &.disabled {
+            background-color: $iam-blue-2;
+            border-color: $iam-blue-2;
+            color: $iam-light-gray;
+        }
+
+        &:hover:not(:disabled) {
+            background-color: $iam-light-gray;
+            border-color: $iam-blue-4;
+            color: $iam-blue-2;
+        }
+    }
+}
+
+ux-pagination.iam-pagination {
+    .pagination > li {
+        &.page-item:not(.disabled) > a {
+            background-color: $iam-light-gray;
+            border-color: $iam-border-gray;
+            color: $iam-dark-gray;
+
+            &:hover {
+            background-color: $iam-light-gray;
+            border-color: $iam-blue-4;
+            color: $iam-blue-2;
+            }
+        }
+
+        &.page-item.disabled > a {
+            background-color: $iam-light-gray;
+            border-color: $iam-border-gray;
+            color: $iam-dark-gray;
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+
+        &.active, &.page-item.active {
+            a, a:focus {
+            background-color: $iam-blue-2;
+            border-color: $iam-blue-2;
+            box-shadow: none;
+            color: $iam-white;
+
+                &:hover, &:active {
+                    background-color: $iam-blue-2;
+                    border-color: $iam-blue-2;
+                    color: $iam-white;
+                }
+            }
+        }
+
+        &.pagination-prev > a {
+            border-top-left-radius: 3px !important;
+            border-bottom-left-radius: 3px !important;
+        }
+
+        &.pagination-next > a {
+            border-top-right-radius: 3px !important;
+            border-bottom-right-radius: 3px !important;
+        }
+    }
+}
+ux-floating-action-buttons {
+    .floating-action-button-list.bottom > * {
+        margin: 4px 0;
+    }
+
+    ux-floating-action-button {
+        .floating-action-button.button-primary, .floating-action-button.button-secondary {
+            box-shadow: none;
+            background-color: transparent;
+            border-color: transparent;
+            color: #434c50;
+        }
+
+        .btn {
+            border-radius: 3px;
+            text-transform: none;
+            font-size: .95rem;
+        }
+
+        .btn.button-primary:hover:not(:disabled), .btn.button-secondary:hover:not(:disabled) {
+            background-color: #f6f9f8;
+            border-color: #dae1e1;
+            color: #007cd0;
+        }
+    }
+}
+
+.iam-header-action-buttons {
+    margin: 2rem 0 1rem;
+    position: relative;
+
+    > h2 {
+        display: inline-flex;
+        vertical-align: middle;
+        margin: 0px;
+    }
+
+    .iam-action-buttons {
+        display: inline-flex;
+        white-space: nowrap;
+        vertical-align: middle;
+        margin-left: 20px;
+
+        > .btn.iam-btn.btn-icon {
+            margin-right: 8px;
+        }
+    }
+}
