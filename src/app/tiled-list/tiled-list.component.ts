@@ -1,7 +1,14 @@
-import { Component, Input, OnInit, TemplateRef } from '@angular/core';
+import {
+    Component,
+    Input,
+    OnInit,
+    TemplateRef,
+    EventEmitter,
+} from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
 import { NotificationService } from '@ux-aspects/ux-aspects';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
     selector: 'app-tiled-list',
@@ -13,11 +20,16 @@ export class TiledListComponent implements OnInit {
 
     iconName: null;
 
-    duration: number = 6;
+    duration: number = 0;
     backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
 
-    constructor(public notificationService: NotificationService) {}
+    modalRef: BsModalRef;
+
+    constructor(
+        public notificationService: NotificationService,
+        private modalService: BsModalService
+    ) {}
 
     ngOnInit(): void {}
 
@@ -40,5 +52,12 @@ export class TiledListComponent implements OnInit {
 
     downloadIconSVG(): void {
         console.log('Clicked Download Icon SVG');
+    }
+
+    showDialog(template: TemplateRef<any>): void {
+        this.modalRef = this.modalService.show(template, {
+            animated: false,
+            class: 'iam-modal-dialog',
+        });
     }
 }

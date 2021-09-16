@@ -43,6 +43,9 @@
     > .ux-menu-item {
         display: flex;
         align-items: center;
+        &:not(.disabled) {
+            color: $ias-light-gray;
+        }
 
         &:hover {
             background-color: $ias-darker-gray;
@@ -52,7 +55,6 @@
         > .dropdown-menu-icon.ias-icon {
             display: flex;
             font-size: 1.6rem;
-            color: inherit;
             line-height: 1em;
             vertical-align: middle;
             height: 1em;
@@ -111,6 +113,7 @@
                 background-color: transparent;
                 border: none;
                 margin-left: 30px;
+                outline: none;
 
                 > .ias-icon {
                     display: flex;

@@ -14,6 +14,7 @@ import {
     colorSets,
 } from '@ux-aspects/ux-aspects';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
     declarations: [AppComponent, DetailedListComponent, TiledListComponent],
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         ColorServiceModule.forRoot(colorSets.microFocus),
         AccessibilityModule,
         BrowserAnimationsModule,
+        ModalModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent],
