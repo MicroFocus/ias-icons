@@ -36,7 +36,8 @@ new Promise((resolve, reject) => {
         }
     });
 }).then(() => {
-    const manifest: IconInfo[] = generateIconInfoList(codepoints);
+    const iconInfo = require('../../icons/icon-info.json');
+    const manifest: IconInfo[] = generateIconInfoList(codepoints, iconInfo);
     fs.writeFileSync('dist/generated-font/dist/ias-icons.json', JSON.stringify(manifest, null, 4));
     fs.writeFileSync('dist/generated-font/package.json', JSON.stringify(generatePackageJson(), null, 4));
     fs.copyFileSync('README.md', 'dist/generated-font/README.md');

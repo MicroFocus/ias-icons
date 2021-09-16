@@ -26,12 +26,17 @@ export function deriveCodepointsFromFilenames(svgFiles: string[]): any {
     return codepoints;
 }
 
-export function generateIconInfoList(codepoints: any): IconInfo[] {
+export function generateIconInfoList(codepoints: any, iconInfo: any): IconInfo[] {
     return Object.keys(codepoints).map((key: string) => {
+        const uses = iconInfo[key]?.uses ?? '';
+        const notes = iconInfo[key]?.notes ?? '';
+
         return {
             name: key,
             glyph: '\\' + codepoints[key].toString(16).toUpperCase(),
-            className: 'ias-icon-' + key
+            className: 'ias-icon-' + key,
+            uses,
+            notes
         };
     });
 }
