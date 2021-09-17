@@ -15,6 +15,7 @@ import {
 } from '@ux-aspects/ux-aspects';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { HighlightService } from './app.utils';
 
 @NgModule({
     declarations: [AppComponent, DetailedListComponent, TiledListComponent],
@@ -32,7 +33,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
         BrowserAnimationsModule,
         ModalModule.forRoot()
     ],
-    providers: [],
+    providers: [HighlightService],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

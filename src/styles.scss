@@ -1,5 +1,7 @@
 @import "../dist/generated-font/dist/ias-icons.css";
 @import "./scss/ias-styles/ias-all";
+// @import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism";
 
 body {
     display: flex;
