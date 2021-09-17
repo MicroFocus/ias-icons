@@ -20,7 +20,7 @@ export class TiledListComponent implements OnInit {
 
     iconName: null;
 
-    duration: number = 0;
+    duration: number = 6;
     backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
 
