@@ -1,0 +1,94 @@
+@import "iam-variables";
+
+body {
+    color: $iam-dark-gray;
+    font-family: $iam-font-family;
+}
+
+/**
+ * Format the headers according to the IAM standards:
+ */
+h1, h2, h3, h4, h5 {
+    color: inherit;
+    font-family: $iam-font-family;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3em;
+
+    // We don't need a top margin when the header is the first thing on the page
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &.disabled {
+        opacity: $disabled-opacity;
+    }
+}
+
+.disable-headers {
+    h1, h2, h3, h4, h5 {
+        opacity: $disabled-opacity;
+    }
+}
+
+h1, h2     {color: $iam-darker-gray;}
+h3, h4, h5 {color: $iam-dark-gray;}
+h4         {text-transform: uppercase;}
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem;
+}
+
+h4 {
+    font-size: .95rem;
+    margin: 15px 0 5px;
+}
+
+h5 {
+    font-size: .95rem;
+    margin: 5px 0 5px;
+}
+
+/**
+ * The following are places where ux-aspects explicitly sets the font-family to 'Source Sans Pro'. So this is an
+ * attempt to corral those:
+ */
+h1, h2, h3, h4, h5, h6,
+h4.panel-title,
+h4 small,
+h5 small,
+strong,
+.nav-tabs > li > a,
+.dropdown-menu li > a.font-bold,
+.table > thead > tr > th,
+.pagination > li.page-item > a,
+.font-regular,
+.font-light,
+.font-semibold,
+.font-bold,
+.marquee-modal-window .modal-dialog .modal-content .side-panel .marquee-info-panel,
+.marquee-modal-window .modal-dialog .modal-content .side-panel .marquee-wizard-info-panel,
+.btn,
+.marquee-wizard-steps .marquee-wizard-step .step-label .step-title .title,
+.card-view .card .card-text-emphasis,
+.alert-link,
+.ux-badge,
+.filter-selected,
+.breadcrumb,
+.tooltip,
+.popover {
+    font-family: $iam-font-family;
+}

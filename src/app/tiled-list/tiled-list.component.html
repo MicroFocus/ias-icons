@@ -1,5 +1,6 @@
 <ux-notification-list direction="above" position="top-right"></ux-notification-list>
-<div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile" (click)="showDialog(modal, iconInfo)">
+<div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile"
+    (click)="showDialog(modal, iconInfo.className, iconInfo.name, iconInfo.glyph)">
     <i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i>
     <div class="ias-tile-content">
         <div class="icon-name">{{iconInfo.name}}</div>
@@ -7,7 +8,7 @@
     </div>
 </div>
 
-<ux-menu #menu menuClass="iam-menu">
+<!-- <ux-menu #menu menuClass="iam-menu">
     <button type="button" uxMenuItem (activate)="copyIconName(notification)">
         <span class="dropdown-menu-icon ias-icon ias-icon-copy_duplicate" aria-hidden="true"></span>
         <span class="dropdown-menu-text">Copy Class Name</span>
@@ -17,7 +18,7 @@
         <i class="dropdown-menu-icon ias-icon ias-icon-download_thick"></i>
         <span class="dropdown-menu-text">Download SVG File</span>
     </button>
-</ux-menu>
+</ux-menu> -->
 
 <ng-template #notification let-notificationRef let-data="data">
     <div class="copy-notification">
@@ -35,18 +36,24 @@
 
 <ng-template #modal>
     <div class="modal-header">
-        <h4 class="modal-title">Example Modal Dialog</h4>
+        <!-- <h4 class="modal-title">{{iconName}}</h4> -->
+        {{iconName}}
         <div class="flex-spacer"></div>
         <button type="button" class="btn iam-btn btn-link btn-icon btn-primary" (click)="modalRef.hide()">
             <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
         </button>
     </div>
     <div class="modal-body">
-        Sed libero sem, sollicitudin nec est vitae, suscipit posuere mi. Curabitur placerat nulla id tempus ornare.
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis lectus vitae sem congue elementum.
-        Nullam sit amet scelerisque magna.
+        Example:
+        <pre
+            class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot;aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
+        <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
+    content: &quot;{{iconGlyph}}&quot;&#59;
+&#125;</code></pre>
+
     </div>
     <div class="modal-footer">
+        <button type="button" class="btn iam-btn btn-default" (click)="copyIconName(notification)">Copy Class Name</button>
         <button type="button" class="btn iam-btn btn-default" (click)="modalRef.hide()">Close</button>
     </div>
 </ng-template>

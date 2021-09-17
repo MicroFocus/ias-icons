@@ -3,12 +3,14 @@ import {
     Input,
     OnInit,
     TemplateRef,
-    EventEmitter,
+    ElementRef,
+    ViewChild,
 } from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
 import { NotificationService } from '@ux-aspects/ux-aspects';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { HighlightService } from '../app.utils';
 
 @Component({
     selector: 'app-tiled-list',
@@ -19,6 +21,8 @@ export class TiledListComponent implements OnInit {
     @Input() iconInfoList$: Observable<IconInfo[]>;
 
     iconName: null;
+    className: null;
+    iconGlyph: null;
 
     duration: number = 6;
     backgroundColor = '#37c26a';
@@ -28,8 +32,13 @@ export class TiledListComponent implements OnInit {
 
     constructor(
         public notificationService: NotificationService,
-        private modalService: BsModalService
+        private modalService: BsModalService,
+        private highlightService: HighlightService
     ) {}
+
+    ngAfterViewChecked() {
+        this.highlightService.highlightAll();
+    }
 
     ngOnInit(): void {}
 
@@ -40,6 +49,7 @@ export class TiledListComponent implements OnInit {
     copyIconName(template: TemplateRef<any>): void {
         navigator.clipboard.writeText(this.iconName);
         this.showNotification(template);
+        this.modalRef.hide();
     }
 
     showNotification(template: TemplateRef<any>) {
@@ -54,11 +64,13 @@ export class TiledListComponent implements OnInit {
         console.log('Clicked Download Icon SVG');
     }
 
-    showDialog(template: TemplateRef<any>, iconInfo): void {
+    showDialog(template: TemplateRef<any>, className, name, glyph): void {
         this.modalRef = this.modalService.show(template, {
             animated: false,
             class: 'iam-modal-dialog',
         });
-        console.log(iconInfo)
+        this.iconName = name;
+        this.className = className;
+        this.iconGlyph = glyph;
     }
 }

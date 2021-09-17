@@ -86,11 +86,12 @@
 }
 
 ::ng-deep ux-notification-list {
-    width: 350px;
+    width: 340px;
 
     & .notification {
-        width: 345px;
+        width: 340px;
         padding: 10px 0;
+        display: flex;
 
         > .copy-notification {
             display: inline-flex;
@@ -102,7 +103,7 @@
             }
 
             > .notification-description {
-                font-size: 25px;
+                font-size: 20px;
                 margin: 0px 0px 0px 10px;
             }
 
@@ -112,7 +113,7 @@
                 cursor: pointer;
                 background-color: transparent;
                 border: none;
-                margin-left: 30px;
+                margin-left: 50px;
                 outline: none;
 
                 > .ias-icon {
