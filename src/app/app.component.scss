@@ -125,6 +125,10 @@
 }
 
 ::ng-deep .modal-body {
+    .modal-body-subtitle {
+        font-size: large;
+    }
+
     & > .icon-usage {
         margin-bottom: 10px;
     }

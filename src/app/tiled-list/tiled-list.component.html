@@ -34,7 +34,7 @@
     <div class="modal-body">
         <div class="icon-usage">
             <div>
-                <span>Usage:</span>
+                <span class="modal-body-subtitle">Usage:</span>
             </div>
             <div>
                 <span>{{iconUses}}</span>
@@ -43,15 +43,13 @@
             </div>
         </div>
 
-        <div>
-            <span>HTML Example:</span>
-            <pre
-                class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
-            <span>CSS Example:</span>
-            <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
+        <span class="modal-body-subtitle">HTML Example:</span>
+        <pre
+            class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
+        <span class="modal-body-subtitle">CSS Example:</span>
+        <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
     content: &quot;{{iconGlyph}}&quot;&#59;
 &#125;</code></pre>
-        </div>
     </div>
 
     <div class="modal-footer">
