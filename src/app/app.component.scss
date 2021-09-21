@@ -123,3 +123,9 @@
         }
     }
 }
+
+::ng-deep .modal-body {
+    & > .icon-usage {
+        margin-bottom: 10px;
+    }
+}

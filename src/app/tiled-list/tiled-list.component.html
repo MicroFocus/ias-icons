@@ -1,6 +1,6 @@
 <ux-notification-list direction="above" position="top-right"></ux-notification-list>
 <div *ngFor="let iconInfo of (iconInfoList$ | async)" class="ias-tile"
-    (click)="showDialog(modal, iconInfo.className, iconInfo.name, iconInfo.glyph)">
+    (click)="showDialog(modal, iconInfo.className, iconInfo.name, iconInfo.glyph, iconInfo.uses, iconInfo.notes)">
     <i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i>
     <div class="ias-tile-content">
         <div class="icon-name">{{iconInfo.name}}</div>
@@ -32,12 +32,26 @@
         </button>
     </div>
     <div class="modal-body">
-        Example:
-        <pre
-            class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
-        <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
+        <div class="icon-usage">
+            <div>
+                <span>Usage:</span>
+            </div>
+            <div>
+                <span>{{iconUses}}</span>
+                <div class="flex-spacer"></div>
+                <span>{{iconNotes}}</span>
+            </div>
+        </div>
+
+        <div>
+            <span>HTML Example:</span>
+            <pre
+                class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
+            <span>CSS Example:</span>
+            <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
     content: &quot;{{iconGlyph}}&quot;&#59;
 &#125;</code></pre>
+        </div>
     </div>
 
     <div class="modal-footer">

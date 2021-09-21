@@ -1,11 +1,4 @@
-import {
-    Component,
-    Input,
-    OnInit,
-    TemplateRef,
-    ElementRef,
-    ViewChild,
-} from '@angular/core';
+import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 import { IconInfo } from '../../common/types/icon-info.type';
 import { Observable } from 'rxjs';
 import { NotificationService } from '@ux-aspects/ux-aspects';
@@ -20,25 +13,23 @@ import { HighlightService } from '../app.utils';
 export class TiledListComponent implements OnInit {
     @Input() iconInfoList$: Observable<IconInfo[]>;
 
+    modalRef: BsModalRef;
+
     iconName: null;
     className: null;
     iconGlyph: null;
+    iconUses: null;
+    iconNotes: null;
 
     duration: number = 6;
     backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
-
-    modalRef: BsModalRef;
 
     constructor(
         public notificationService: NotificationService,
         private modalService: BsModalService,
         private highlightService: HighlightService
     ) {}
-
-    ngAfterViewChecked() {
-        this.highlightService.highlightAll();
-    }
 
     ngOnInit(): void {}
 
@@ -65,13 +56,28 @@ export class TiledListComponent implements OnInit {
         this.modalRef.hide();
     }
 
-    showDialog(template: TemplateRef<any>, className, name, glyph): void {
+    showDialog(
+        template: TemplateRef<any>,
+        className,
+        name,
+        glyph,
+        uses,
+        notes
+    ): void {
         this.modalRef = this.modalService.show(template, {
             animated: false,
             class: 'iam-modal-dialog',
         });
+
         this.iconName = name;
         this.className = className;
         this.iconGlyph = glyph;
+        this.iconUses = uses;
+        this.iconNotes = notes;
+        
+        // TODO: Hack-y way to do this. Figure out how to do it differently
+        setTimeout(() => {
+            this.highlightService.highlightAll();
+        }, 200);
     }
 }
