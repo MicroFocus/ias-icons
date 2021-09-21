@@ -9,7 +9,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let iconInfo of (iconInfoList$ | async)" (click)="click(iconInfo.className)" [uxMenuTriggerFor]="menu">
+        <tr *ngFor="let iconInfo of (iconInfoList$ | async)"
+            (click)="showDialog(modal, iconInfo.className, iconInfo.name, iconInfo.glyph, iconInfo.uses, iconInfo.notes)">
             <td class="icon-example"><i class="ias-icon {{iconInfo.className}}" aria-hidden="true"></i></td>
             <td class="icon-name">{{iconInfo.name}}</td>
             <td class="icon-classname">&lt;i class=&quot;ias-icon {{iconInfo.className}}&quot;
@@ -18,18 +19,6 @@
         </tr>
     </tbody>
 </table>
-
-<ux-menu #menu menuClass="iam-menu">
-    <button type="button" uxMenuItem (activate)="copyIconName(notification)">
-        <i class="dropdown-menu-icon ias-icon ias-icon-copy_duplicate"></i>
-        <span class="dropdown-menu-text">Copy Class Name</span>
-    </button>
-
-    <button type="button" uxMenuItem (activate)="downloadIconSVG()" disabled>
-        <i class="dropdown-menu-icon ias-icon ias-icon-download_thick"></i>
-        <span class="dropdown-menu-text">Download SVG File</span>
-    </button>
-</ux-menu>
 
 <ng-template #notification let-notificationRef let-data="data">
     <div class="copy-notification">
@@ -42,5 +31,43 @@
             (click)="notificationService.dismiss(notificationRef)">
             <span class="ias-icon ias-icon-close_thick"></span>
         </button>
+    </div>
+</ng-template>
+
+<ng-template #modal>
+    <div class="modal-header">
+        <i class="ias-icon" aria-hidden="true" [ngClass]="className"></i>
+        <span class="modal-icon-name">{{iconName}}</span>
+        <div class="flex-spacer"></div>
+        <button type="button" class="btn iam-btn btn-link btn-icon btn-primary btn-close" (click)="modalRef.hide()">
+            <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="icon-usage">
+            <div>
+                <span class="modal-body-subtitle">Usage:</span>
+            </div>
+            <div>
+                <span>{{iconUses}}</span>
+                <div class="flex-spacer"></div>
+                <span>{{iconNotes}}</span>
+            </div>
+        </div>
+
+        <span class="modal-body-subtitle">HTML Example:</span>
+        <pre
+            class="language-markup"><code class="language-markup">&lt;i class=&quot;ias-icon {{className}}&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></pre>
+        <span class="modal-body-subtitle">CSS Example:</span>
+        <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
+    content: &quot;{{iconGlyph}}&quot;&#59;
+&#125;</code></pre>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn iam-btn btn-default" (click)="copyIconName(notification)">Copy Class
+            Name</button>
+        <button type="button" class="btn iam-btn btn-default" (click)="downloadIconSVG()" disabled>Download SVG
+            File</button>
     </div>
 </ng-template>

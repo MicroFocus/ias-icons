@@ -78,6 +78,6 @@ export class TiledListComponent implements OnInit {
         // TODO: Hack-y way to do this. Figure out how to do it differently
         setTimeout(() => {
             this.highlightService.highlightAll();
-        }, 0);
+        }, 100);
     }
 }
