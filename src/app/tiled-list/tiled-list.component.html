@@ -8,18 +8,6 @@
     </div>
 </div>
 
-<!-- <ux-menu #menu menuClass="iam-menu">
-    <button type="button" uxMenuItem (activate)="copyIconName(notification)">
-        <span class="dropdown-menu-icon ias-icon ias-icon-copy_duplicate" aria-hidden="true"></span>
-        <span class="dropdown-menu-text">Copy Class Name</span>
-    </button>
-
-    <button type="button" uxMenuItem (activate)="downloadIconSVG()" disabled>
-        <i class="dropdown-menu-icon ias-icon ias-icon-download_thick"></i>
-        <span class="dropdown-menu-text">Download SVG File</span>
-    </button>
-</ux-menu> -->
-
 <ng-template #notification let-notificationRef let-data="data">
     <div class="copy-notification">
         <span class="ias-icon ias-icon-check_thick"></span>
@@ -36,10 +24,10 @@
 
 <ng-template #modal>
     <div class="modal-header">
-        <!-- <h4 class="modal-title">{{iconName}}</h4> -->
-        {{iconName}}
+        <i class="ias-icon" aria-hidden="true" [ngClass]="className"></i>
+        <span class="modal-icon-name">{{iconName}}</span>
         <div class="flex-spacer"></div>
-        <button type="button" class="btn iam-btn btn-link btn-icon btn-primary" (click)="modalRef.hide()">
+        <button type="button" class="btn iam-btn btn-link btn-icon btn-primary btn-close" (click)="modalRef.hide()">
             <span class="ias-icon ias-icon-close_thick" aria-hidden="true"></span>
         </button>
     </div>
@@ -50,10 +38,12 @@
         <pre class="language-css"><code class="language-css">.{{className}}:before &#123;
     content: &quot;{{iconGlyph}}&quot;&#59;
 &#125;</code></pre>
-
     </div>
+
     <div class="modal-footer">
-        <button type="button" class="btn iam-btn btn-default" (click)="copyIconName(notification)">Copy Class Name</button>
-        <button type="button" class="btn iam-btn btn-default" (click)="modalRef.hide()">Close</button>
+        <button type="button" class="btn iam-btn btn-default" (click)="copyIconName(notification)">Copy Class
+            Name</button>
+        <button type="button" class="btn iam-btn btn-default" (click)="downloadIconSVG()" disabled>Download SVG
+            File</button>
     </div>
 </ng-template>
