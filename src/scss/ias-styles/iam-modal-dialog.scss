@@ -11,6 +11,23 @@
 
             border-bottom: 0 none;
 
+            > .ias-icon {
+                font-size: 120px;
+                height: 120px;
+                width: 120px;
+            }
+
+            > .modal-icon-name {
+                font-size: larger;
+                margin-left: 30px;
+            }
+
+            > .btn-close {
+                position: absolute;
+                right: 35px;
+                top: 35px;
+            }
+
             > h4 {
                 margin: 0;
             }
@@ -41,11 +58,10 @@
             }
         }
 
-
-
         .modal-footer {
             border-top: 0 none;
             display: flex;
+            justify-content: flex-start;
 
             .btn {
                 margin-right: 5px;
