@@ -31,7 +31,7 @@ import { HighlightService } from './app.utils';
         ColorServiceModule.forRoot(colorSets.microFocus),
         AccessibilityModule,
         BrowserAnimationsModule,
-        ModalModule.forRoot()
+        ModalModule.forRoot(),
     ],
     providers: [HighlightService],
     bootstrap: [AppComponent],
