@@ -1511,10 +1511,6 @@
         "uses": "area",
         "notes": ""
     },
-    "dir_rbsTask": {
-        "uses": "check",
-        "notes": ""
-    },
     "arrow_down": {
         "uses": "",
         "notes": ""
