@@ -62,6 +62,7 @@ export class TiledListComponent implements OnInit {
 
     downloadIconSVG(): void {
         console.log('Clicked Download Icon SVG');
+        this.modalRef.hide();
     }
 
     showDialog(template: TemplateRef<any>, className, name, glyph): void {
