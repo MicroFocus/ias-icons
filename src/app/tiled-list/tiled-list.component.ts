@@ -74,7 +74,7 @@ export class TiledListComponent implements OnInit {
         this.iconGlyph = glyph;
         this.iconUses = uses;
         this.iconNotes = notes;
-        
+
         // TODO: Hack-y way to do this. Figure out how to do it differently
         setTimeout(() => {
             this.highlightService.highlightAll();
