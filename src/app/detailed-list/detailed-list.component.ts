@@ -33,12 +33,8 @@ export class DetailedListComponent implements OnInit {
 
     ngOnInit(): void {}
 
-    click(name) {
-        this.iconName = name;
-    }
-
-    copyIconName(template: TemplateRef<any>): void {
-        navigator.clipboard.writeText(this.iconName);
+    copyClassName(template: TemplateRef<any>): void {
+        navigator.clipboard.writeText(this.className);
         this.showNotification(template);
         this.modalRef.hide();
     }

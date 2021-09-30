@@ -131,5 +131,12 @@
 
     & > .icon-usage {
         margin-bottom: 10px;
+
+        & > .icon-uses {
+            background: #f5f2f0;
+            padding: 1em;
+            margin: 0.5em 0;
+            overflow: auto;
+        }
     }
 }
