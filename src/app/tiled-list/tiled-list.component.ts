@@ -20,7 +20,6 @@ export class TiledListComponent implements OnInit {
     iconGlyph: string = null;
     iconUses: string = null;
     iconNotes: string = null;
-
     iconSVGFileName: string = null;
     fileUrl: string = null;
 
