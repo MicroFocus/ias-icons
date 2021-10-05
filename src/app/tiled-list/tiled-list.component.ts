@@ -22,7 +22,6 @@ export class TiledListComponent implements OnInit {
     iconNotes: string = null;
     iconSVGFileName: string = null;
     fileUrl: string = null;
-
     duration: number = 6;
     backgroundColor = '#37c26a';
     description: string = 'Copied to clipboard!';
