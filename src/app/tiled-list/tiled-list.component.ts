@@ -15,11 +15,14 @@ export class TiledListComponent implements OnInit {
 
     modalRef: BsModalRef;
 
-    iconName: null;
-    className: null;
-    iconGlyph: null;
-    iconUses: null;
-    iconNotes: null;
+    iconName: string = null;
+    className: string = null;
+    iconGlyph: string = null;
+    iconUses: string = null;
+    iconNotes: string = null;
+
+    iconSVGFileName: string = null;
+    fileUrl: string = null;
 
     duration: number = 6;
     backgroundColor = '#37c26a';
@@ -48,7 +51,10 @@ export class TiledListComponent implements OnInit {
     }
 
     downloadIconSVG(): void {
-        console.log('Clicked Download Icon SVG');
+        this.fileUrl =
+            'https://github.com/MicroFocus/ias-icons/blob/master/icons/' +
+            this.iconSVGFileName;
+        window.open(this.fileUrl);
         this.modalRef.hide();
     }
 
@@ -70,6 +76,10 @@ export class TiledListComponent implements OnInit {
         this.iconGlyph = glyph;
         this.iconUses = uses;
         this.iconNotes = notes;
+
+        var iconGlyph = this.iconGlyph.slice(1);
+
+        this.iconSVGFileName = 'u' + iconGlyph + '-' + this.iconName + '.svg';
 
         // TODO: Hack-y way to do this. Figure out how to do it differently
         setTimeout(() => {
