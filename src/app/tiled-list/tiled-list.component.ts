@@ -76,7 +76,6 @@ export class TiledListComponent implements OnInit {
         this.iconNotes = notes;
 
         var iconGlyph = this.iconGlyph.slice(1);
-
         this.iconSVGFileName = 'u' + iconGlyph + '-' + this.iconName + '.svg';
 
         // TODO: Hack-y way to do this. Figure out how to do it differently
