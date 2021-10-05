@@ -68,7 +68,6 @@ export class TiledListComponent implements OnInit {
             animated: false,
             class: 'iam-modal-dialog',
         });
-
         this.iconName = name;
         this.className = className;
         this.iconGlyph = glyph;
