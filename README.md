@@ -31,4 +31,7 @@ The icons can now be referenced by class name, as shown in the following example
 ```
 <i class="ias-icon ias-icon-down_thin"></i>
 ```
+All svg files are copyrighted to Lynn Christensen and Microfocus.
+
+Copyright 2008-2021 Lynn Christensen and Microfocus. All rights reserved.
 
