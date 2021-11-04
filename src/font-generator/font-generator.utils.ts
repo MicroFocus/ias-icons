@@ -11,6 +11,7 @@ export function removeHexNumber(svgFile: string): string {
 }
 
 export function deriveCodepointsFromFilenames(svgFiles: string[]): any {
+    let errorsExist = false;
     const codepoints = {};
 
     if (svgFiles?.length > 0) {
@@ -18,9 +19,19 @@ export function deriveCodepointsFromFilenames(svgFiles: string[]): any {
             const basename = path.basename(svgFile, '.svg');
             const codepointAndName = basename.match(ICON_NAME_WITH_CODEPOINT);
 
-            // Set the icon name key to the codepoint hex value:
-            codepoints[codepointAndName[2]] = parseInt(codepointAndName[1], 16);
+            if (codepointAndName) {
+                // Set the icon name key to the codepoint hex value:
+                codepoints[codepointAndName[2]] = parseInt(codepointAndName[1], 16);
+            } else {
+                console.error('Error: File name does not match the expected format (uXXXX-name): ' + basename);
+                errorsExist = true;
+            }
         });
+    }
+
+    if (errorsExist) {
+        console.error('\nUnable to continue due to errors\n');
+        process.exit(1);
     }
 
     return codepoints;
