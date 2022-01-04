@@ -67,9 +67,16 @@ export class AppComponent implements OnInit, OnDestroy {
             .pipe(
                 map(([icons, search]) => {
                     if (search) {
-                        return icons.filter((icon: IconInfo) => {
+                        let combined_filtered_array = []
+                        let filter_by_name= icons.filter((icon: IconInfo) => {
                             return icon.name.indexOf(search) > -1;
                         });
+                        let filter_by_uses= icons.filter((icon: IconInfo) => {
+                            return icon.uses.indexOf(search) > -1;
+                        });
+                        combined_filtered_array.push(...filter_by_name)
+                        combined_filtered_array.push(...filter_by_uses)
+                        return combined_filtered_array 
                     }
 
                     return icons;
