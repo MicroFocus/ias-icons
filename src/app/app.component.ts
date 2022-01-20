@@ -72,10 +72,13 @@ export class AppComponent implements OnInit, OnDestroy {
                             return icon.name.indexOf(search) > -1;
                         });
                         let filter_by_uses= icons.filter((icon: IconInfo) => {
+                            
                             return icon.uses.indexOf(search) > -1;
                         });
                         combined_filtered_array.push(...filter_by_name)
                         combined_filtered_array.push(...filter_by_uses)
+                        combined_filtered_array = [...new Set(combined_filtered_array)]
+                        
                         return combined_filtered_array 
                     }
 
