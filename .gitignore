@@ -45,3 +45,14 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/src/app/app.component.css
+/src/app/tiled-list/tiled-list.component.css
+/src/scss/ias-styles/iam-btn.css
+/src/scss/ias-styles/iam-font.css
+/src/scss/ias-styles/iam-form-fields.css
+/src/scss/ias-styles/iam-modal-dialog.css
+/src/scss/ias-styles/iam-variables.css
+/src/scss/ias-styles/ias-all.css
+/src/scss/ias-styles/iam-icons.css
+/src/scss/ias-styles/ias-search.css
+/src/styles.css
