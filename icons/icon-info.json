@@ -216,7 +216,11 @@
         "notes": ""
     },
     "sys_mac": {
-        "uses": "",
+        "uses": "system, macintosh, apple, monitor, computer",
+        "notes": ""
+    },
+    "sys_suse": {
+        "uses": "system, suse, linux, monitor, computer",
         "notes": ""
     },
     "status_retracted_thin": {
@@ -547,6 +551,22 @@
         "uses": "",
         "notes": ""
     },
+    "email_approve": {
+        "uses": "email, letter, check mark",
+        "notes": ""
+    },
+    "email_user": {
+        "uses": "email, person, user, letter",
+        "notes": ""
+    },
+    "email_group": {
+        "uses": "email, person, group, letter",
+        "notes": ""
+    },
+    "email_password": {
+        "uses": "email, password, letter",
+        "notes": ""
+    },
     "fingerprint_thin": {
         "uses": "",
         "notes": ""
@@ -679,6 +699,10 @@
         "uses": "edirectory, user",
         "notes": ""
     },
+    "user_locked": {
+        "uses": "user, locked, secure",
+        "notes": ""
+    },
     "profile_thin": {
         "uses": "user, list",
         "notes": ""
@@ -792,15 +816,15 @@
         "notes": ""
     },
     "sys_linux": {
-        "uses": "",
+        "uses": "system, linux, monitor, computer",
         "notes": ""
     },
     "sys_unix": {
-        "uses": "",
+        "uses": "system, unix, monitor, computer",
         "notes": ""
     },
     "sys_windows": {
-        "uses": "",
+        "uses": "system, windows, monitor, computer",
         "notes": ""
     },
     "server_virtual_thin": {
@@ -812,7 +836,7 @@
         "notes": ""
     },
     "cloud": {
-        "uses": "",
+        "uses": "network, internet, cloud",
         "notes": ""
     },
     "database": {
@@ -984,7 +1008,7 @@
         "notes": ""
     },
     "facial_recognition": {
-        "uses": "",
+        "uses": "user, target",
         "notes": ""
     },
     "bluetooth": {
@@ -1192,32 +1216,32 @@
         "notes": "server"
     },
     "dir_server_afp": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory, server",
+        "notes": ""
     },
     "dir_server_http": {
-        "uses": "edirectory",
+        "uses": "edirectory, server",
         "notes": "server"
     },
     "dir_server_messaging": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory, server, message",
+        "notes": ""
     },
     "dir_server_print": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory, server, printer",
+        "notes": ""
     },
     "dir_replica": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory. server",
+        "notes": ""
     },
     "dir_replica_encrypted": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory, server",
+        "notes": ""
     },
     "dir_server_ldap": {
-        "uses": "edirectory",
-        "notes": "server"
+        "uses": "edirectory, server",
+        "notes": ""
     },
     "dir_ndsPredicate_stats": {
         "uses": "edirectory",
@@ -1276,7 +1300,15 @@
         "notes": ""
     },
     "code_1": {
-        "uses": "edirectory",
+        "uses": "code, dots",
+        "notes": ""
+    },
+    "code_2": {
+        "uses": "code, slash",
+        "notes": ""
+    },
+    "native_code": {
+        "uses": "code, slash, box",
         "notes": ""
     },
     "dir_SASlogin_policy": {
@@ -1348,7 +1380,11 @@
         "notes": ""
     },
     "server_identity": {
-        "uses": "computer, user",
+        "uses": "server, user, ID",
+        "notes": ""
+    },
+    "server_identity2": {
+        "uses": "server, users, groups, ID, all",
         "notes": ""
     },
     "server_radius": {
@@ -1367,12 +1403,64 @@
         "uses": "communicate, execute",
         "notes": ""
     },
-    "password_sql": {
-        "uses": "password, database",
+    "server_app": {
+        "uses": "server, application, pencil",
         "notes": ""
     },
-    "secure_mobile": {
-        "uses": "phone, cellular, lock",
+    "server_cloud": {
+        "uses": "server, cloud, internet, network",
+        "notes": ""
+    },
+    "server_file": {
+        "uses": "server, file, list",
+        "notes": ""
+    },
+    "server_ftp": {
+        "uses": "server, file, list, ftp",
+        "notes": ""
+    },
+    "server_linux": {
+        "uses": "server, linux, penquin",
+        "notes": ""
+    },
+    "server_message": {
+        "uses": "server, message, messaging, texting, sms",
+        "notes": ""
+    },
+    "server_monitor": {
+        "uses": "server, monitor, computer",
+        "notes": ""
+    },
+    "server_policy": {
+        "uses": "server, checkmark",
+        "notes": ""
+    },
+    "server_sql": {
+        "uses": "server, sql",
+        "notes": ""
+    },
+    "server_suse": {
+        "uses": "server, suse, linux",
+        "notes": ""
+    },
+    "server_unix": {
+        "uses": "server, unix",
+        "notes": ""
+    },
+    "server_windows": {
+        "uses": "server, windows",
+        "notes": ""
+    },
+    "messages": {
+        "uses": "message, messaging, texting, sms",
+        "notes": ""
+    },
+    "branch": {
+        "uses": "code, coding, repository, split",
+        "notes": ""
+    },
+    "reassign": {
+        "uses": "users, group, arrow, assignment",
         "notes": ""
     },
     "secure_device": {
@@ -1548,11 +1636,279 @@
         "notes": ""
     },
     "manager_user_1": {
-        "uses": "tie",
+        "uses": "tie, user, person, manager",
         "notes": ""
     },
     "manager_user_2": {
-        "uses": "group",
+        "uses": "group, person, user, manager",
+        "notes": ""
+    },
+    "manager_user_3": {
+        "uses": "org chart, person, user, manager",
+        "notes": ""
+    },
+    "app_oauth": {
+        "uses": "application, pencil, oauth, security",
+        "notes": ""
+    },
+    "app_saml": {
+        "uses": "application, pencil, saml, security",
+        "notes": ""
+    },
+    "app_simple": {
+        "uses": "application, pencil",
+        "notes": ""
+    },
+    "idm_driver": {
+        "uses": "identity manager, IDM, ying, yang, driver",
+        "notes": ""
+    },
+    "idm_driverset": {
+        "uses": "identity manager, IDM, ying, yang, driver, driverset",
+        "notes": ""
+    },
+    "driver_inspect": {
+        "uses": "identity manager, IDM, ying, yang, driver, inspect, view",
+        "notes": ""
+    },
+    "driver_health_config": {
+        "uses": "identity manager, IDM, driver, configure, check mark, stoplight",
+        "notes": ""
+    },
+    "driver_cache_inspect": {
+        "uses": "identity manager, IDM, driver, inspect, graph, stoplight",
+        "notes": ""
+    },
+    "driver_copy_filter": {
+        "uses": "identity manager, IDM, driver, duplicate",
+        "notes": ""
+    },
+    "idm_overview": {
+        "uses": "identity manager, IDM, ying, yang, driver, driverset, overview",
+        "notes": ""
+    },
+    "dashboard_1": {
+        "uses": "person, user, manager, dash, apps",
+        "notes": ""
+    },
+    "dashboard_2": {
+        "uses": "person, user, manager, dash, apps, graph, chart",
+        "notes": ""
+    },
+    "status_stopped": {
+        "uses": "status, stop, square, circle",
+        "notes": ""
+    },
+    "status_start": {
+        "uses": "status, start, circle, on",
+        "notes": ""
+    },
+    "status_start_2": {
+        "uses": "status, start, circle, on, play",
+        "notes": ""
+    },
+    "status_stop": {
+        "uses": "status, stop, circle, off",
+        "notes": ""
+    },
+    "status_stop": {
+        "uses": "status, stop, circle, off, reverse, filled",
+        "notes": ""
+    },
+    "circle": {
+        "uses": "status, circle",
+        "notes": ""
+    },
+    "circle_fill": {
+        "uses": "status, circle, reverse, filled",
+        "notes": ""
+    },
+    "file_delete": {
+        "uses": "file, deleted, X, remove, file state",
+        "notes": ""
+    },
+    "file_lock": {
+        "uses": "file, locked, file state",
+        "notes": ""
+    },
+    "file_ok": {
+        "uses": "file, ok, check mark, file state",
+        "notes": ""
+    },
+    "file_upload": {
+        "uses": "file, uploaded, up arrow, file state",
+        "notes": ""
+    },
+    "file_compare": {
+        "uses": "file, compare, left, right, arrow, file state",
+        "notes": ""
+    },
+    "trace_monitor": {
+        "uses": "computer, monitor, graph, chart, trace",
+        "notes": ""
+    },
+    "access": {
+        "uses": "access, application, arrow, square",
+        "notes": ""
+    },
+    "shop": {
+        "uses": "shopping, cart, buy, purchase",
+        "notes": ""
+    },
+    "reciprocal": {
+        "uses": "arrows, balance",
+        "notes": ""
+    },
+    "library": {
+        "uses": "books",
+        "notes": ""
+    },
+    "add_row": {
+        "uses": "new, row, column, plus, grid, table",
+        "notes": ""
+    },
+    "add_column": {
+        "uses": "new, row, column, plus, grid, table",
+        "notes": ""
+    },
+    "secure_login": {
+        "uses": "password, lock, secure, sign in, login",
+        "notes": ""
+    },
+    "insert_1": {
+        "uses": "arrow, load, put",
+        "notes": ""
+    },
+    "insert_2": {
+        "uses": "arrow, load, put",
+        "notes": ""
+    },
+    "link": {
+        "uses": "chain, link",
+        "notes": ""
+    },
+    "link_small": {
+        "uses": "chain, link",
+        "notes": ""
+    },
+    "enhanced_bg_auth": {
+        "uses": "eba, certificate, background, authorization",
+        "notes": ""
+    },
+    "condition": {
+        "uses": "decision, diamond, question mark",
+        "notes": ""
+    },
+    "class": {
+        "uses": "class, attribute",
+        "notes": ""
+    },
+    "class_add": {
+        "uses": "class, attribute, new",
+        "notes": ""
+    },
+    "attribute": {
+        "uses": "class, attribute",
+        "notes": ""
+    },
+    "attribute_add": {
+        "uses": "class, attribute, new",
+        "notes": ""
+    },
+    "NEMID": {
+        "uses": "nemid, ID, system, Denmark, key",
+        "notes": ""
+    },
+    "NEMID_Denmark": {
+        "uses": "nemid, ID, system, Denmark, flag",
+        "notes": ""
+    },
+    "HANIS_SouthAfrica": {
+        "uses": "hanis, ID, system, South Africa, flag",
+        "notes": ""
+    },
+    "HANIS_fingerprint": {
+        "uses": "hanis, ID, system, South Africa, fingerprint, flag",
+        "notes": ""
+    },
+    "HANIS_face": {
+        "uses": "hanis, ID, system, South Africa, face, facial, recognition, flag, user, target",
+        "notes": ""
+    },
+    "HANIS_ID_passport": {
+        "uses": "hanis, ID, system, South Africa, passport, flag, user",
+        "notes": ""
+    },
+    "out_of_band": {
+        "uses": "reroute, checkmark, arrow, flow",
+        "notes": ""
+    },
+    "tenant": {
+        "uses": "tenant, user, house, onboarding",
+        "notes": ""
+    },
+    "onboard-tenant": {
+        "uses": "tenant, user, house, arrow, add, new, onboarding",
+        "notes": ""
+    },
+    "tenant-enterprise": {
+        "uses": "tenant, user, house, buildings, onboarding",
+        "notes": ""
+    },
+    "onboard-enterprise": {
+        "uses": "tenant, user, house, buildings, onboarding",
+        "notes": ""
+    },
+    "tenant-cloud": {
+        "uses": "tenant, user, house, cloud, onboarding, arrow, add, new",
+        "notes": ""
+    },
+    "onboard-cloud": {
+        "uses": "tenant, user, house, cloud, onboarding",
+        "notes": ""
+    },
+    "add-enterprise": {
+        "uses": "tenant, onboarding, add, enterprise",
+        "notes": ""
+    },
+    "add-cloud": {
+        "uses": "tenant, onboarding, add, cloud",
+        "notes": ""
+    },
+    "process": {
+        "uses": "run, process, code",
+        "notes": ""
+    },
+    "mapping": {
+        "uses": "attribute, mapping, arrows, left, right",
+        "notes": ""
+    },
+    "zoom_in": {
+        "uses": "control, enlarge, magnify",
+        "notes": ""
+    },
+    "zoom_out": {
+        "uses": "control, widen, smaller,",
+        "notes": ""
+    },
+    "zoom_recenter": {
+        "uses": "control, re-center, reset",
+        "notes": ""
+    },
+    "java_1": {
+        "uses": "code, language, cup, logo",
+        "notes": ""
+    },
+    "java_2": {
+        "uses": "code, language, letters",
+        "notes": ""
+    },
+    "remote_loader": {
+        "uses": "database, db, arrow",
+        "notes": ""
+    },
+    "hide_private": {
+        "uses": "hide, show, private, hidden",
         "notes": ""
     }
 }
