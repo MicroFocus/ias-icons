@@ -29,7 +29,7 @@ If you are building a project with Angular, you can add the following  to your a
 If you want to manually integrate the ias-icons, download this tar file that includes all the files you'll need:
 
 ```
-"https://registry.npmjs.org/@microfocus/ias-icons/-/ias-icons-1.1.6.tgz"
+https://registry.npmjs.org/@microfocus/ias-icons/-/ias-icons-1.1.6.tgz
 ```
 
 The icons can be referenced by class name, as shown in the following example:
