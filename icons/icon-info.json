@@ -764,7 +764,7 @@
         "notes": ""
     },
     "role": {
-        "uses": "",
+        "uses": "role, user",
         "notes": ""
     },
     "role_manage": {
