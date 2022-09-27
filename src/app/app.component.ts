@@ -19,7 +19,8 @@ import {
 import { IconType } from '@ux-aspects/ux-aspects';
 import { LowerCasePipe } from '@angular/common';
 
-const FULL_ICON_LIST = require('../../package/dist/ias-icons.json');
+// const FULL_ICON_LIST = require('../../package/dist/ias-icons.json');
+//const FULL_ICON_LIST = require('../../dist/generated-font/dist/ias-icons.json');
 
 @Component({
     selector: 'app-root',
