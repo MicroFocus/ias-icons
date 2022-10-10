@@ -244,15 +244,15 @@
         "notes": ""
     },
     "comment_sys_thin": {
-        "uses": "",
+        "uses": "comment, message, text, system",
         "notes": ""
     },
     "comment_user_thin": {
-        "uses": "",
+        "uses": "comment, message, text, user",
         "notes": ""
     },
     "comment_thick": {
-        "uses": "",
+        "uses": "comment, message, text",
         "notes": ""
     },
     "start_thick": {
