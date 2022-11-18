@@ -1,14 +1,8 @@
 {
   "name": "@microfocus/ias-icons",
-<<<<<<< HEAD
   "version": "1.1.11",
   "description": "Icon font for CyberRes Identity and Access products",
   "author": "Lynn Christensen <lynn.christensen@microfocus.com> and James Albright <james.albright>@microfocus.com>",
-=======
-  "version": "1.1.13",
-  "description": "Icon font for Micro Focus Identity, Access, and Security products",
-  "author": "James Albright <james.albright>@microfocus.com> (https://github.com/jalbr74)",
->>>>>>> 9f443e9909289741729e3f274460bebf0d393308
   "license": "MIT",
   "bugs": "https://github.com/microfocus/ias-icons/issues",
   "homepage": "https://github.com/microfocus/ias-icons#readme",
