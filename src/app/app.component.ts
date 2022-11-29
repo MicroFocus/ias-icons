@@ -18,9 +18,11 @@ import {
 } from 'rxjs/operators';
 import { IconType } from '@ux-aspects/ux-aspects';
 import { LowerCasePipe } from '@angular/common';
+import { SearchFiltersService } from 'src/app/app.filters'
+import { appendFile } from 'fs';
 
 // const FULL_ICON_LIST = require('../../package/dist/ias-icons.json');
-//const FULL_ICON_LIST = require('../../dist/generated-font/dist/ias-icons.json');
+const FULL_ICON_LIST = require('../../dist/generated-font/dist/ias-icons.json');
 
 @Component({
     selector: 'app-root',
@@ -36,6 +38,12 @@ export class AppComponent implements OnInit, OnDestroy {
     iconInfoListSubscription: Subscription;
 
     showDetailedList: boolean;
+
+    showDropdownFilter: boolean;
+
+    constructor(
+        public searchFilterService: SearchFiltersService
+    ) {}
 
     ngOnInit(): void {
         this.iconInfoListSubscription = this.subscribeToIconInfoListChanges();
@@ -53,38 +61,33 @@ export class AppComponent implements OnInit, OnDestroy {
         this.showDetailedList = true;
     }
 
+    onFilterDropdownClick(): void {
+        this.showDropdownFilter = true;
+    }
+
     private subscribeToIconInfoListChanges(): Subscription {
         return combineLatest([
             of(FULL_ICON_LIST).pipe(
                 map((icons: IconInfo[]) => {
                     return icons.sort((a: IconInfo, b: IconInfo) =>
                         a.glyph.localeCompare(b.glyph)
-                    ) .map((icon) => {
-                        let iconCopy: IconInfo = icon;
-                        iconCopy.name = iconCopy.name.toLocaleLowerCase();
-                        return iconCopy;
-                        // Might have to do a deep copy here instead of normal copy (still might be referencing the original icon and changing at the source not the copy)
-                    });
+                    ) 
                 })
             ),
             this.searchFormControl.valueChanges.pipe(
                 debounceTime(200),
                 startWith(''),
-                map((search: string) => {
-                    return search.toLowerCase();
-                })
             ),
         ])
             .pipe(
-                map(([icons, search]) => {
+                map(([icons, search]) => { // Do filter comparison in here
                     if (search) {
                         let combined_filtered_array = []
                         let filter_by_name= icons.filter((icon: IconInfo) => {
-                            return icon.name.indexOf(search) > -1;
-                            // TODO: make icon name and search value lowercase then check if name appears in search
+                            // return icon.name.indexOf(search) > -1; 
+                            return icon.name.toLocaleLowerCase().includes(search.toLowerCase()); // equals was returning strings as not equal, so using .includes compares them properly
                         });
                         let filter_by_uses= icons.filter((icon: IconInfo) => {
-                            // TODO: make icon name and search value lowercase then check if name appears in search | lowercase
                             return icon.uses.indexOf(search) > -1;
                         });
                         combined_filtered_array.push(...filter_by_name)
@@ -92,6 +95,7 @@ export class AppComponent implements OnInit, OnDestroy {
                         combined_filtered_array = [...new Set(combined_filtered_array)]
                         
                         return combined_filtered_array 
+                        // Returning the icon if it can find the search within the arrary
                     }
 
                     return icons;
@@ -104,3 +108,4 @@ export class AppComponent implements OnInit, OnDestroy {
         this.searchFormControl.setValue('');
     }
 }
+
