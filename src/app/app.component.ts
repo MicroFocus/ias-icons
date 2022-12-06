@@ -17,8 +17,8 @@ import {
     withLatestFrom,
 } from 'rxjs/operators';
 
-import { SearchFiltersService } from 'src/app/app.filters'
-import { appendFile } from 'fs';
+//import { SearchFiltersService } from 'src/app/app.filters'
+//import { appendFile } from 'fs';
 
 const FULL_ICON_LIST = require('../../dist/generated-font/dist/ias-icons.json');
 
@@ -37,11 +37,11 @@ export class AppComponent implements OnInit, OnDestroy {
 
     showDetailedList: boolean;
 
-    showDropdownFilter: boolean;
+//    showDropdownFilter: boolean;
 
-    constructor(
-        public searchFilterService: SearchFiltersService
-    ) {}
+//    constructor(
+//        public searchFilterService: SearchFiltersService
+//    ) {}
 
     ngOnInit(): void {
         this.iconInfoListSubscription = this.subscribeToIconInfoListChanges();
@@ -59,9 +59,9 @@ export class AppComponent implements OnInit, OnDestroy {
         this.showDetailedList = true;
     }
 
-    onFilterDropdownClick(): void {
-        this.showDropdownFilter = true;
-    }
+//    onFilterDropdownClick(): void {
+//      this.showDropdownFilter = true;
+//    }
 
     private subscribeToIconInfoListChanges(): Subscription {
         return combineLatest([
@@ -82,8 +82,8 @@ export class AppComponent implements OnInit, OnDestroy {
                     if (search) {
                         let combined_filtered_array = []
                         let filter_by_name= icons.filter((icon: IconInfo) => {
-                            // return icon.name.indexOf(search) > -1;
-                            return icon.name.toLocaleLowerCase().includes(search.toLowerCase()); // equals was returning strings as not equal, so using .includes compares them properly
+                            return icon.name.indexOf(search) > -1;
+                            //return icon.name.toLocaleLowerCase().includes(search.toLowerCase()); // equals was returning strings as not equal, so using .includes compares them properly
                         });
                         let filter_by_uses= icons.filter((icon: IconInfo) => {
                             
