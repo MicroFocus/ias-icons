@@ -764,11 +764,11 @@
         "notes": ""
     },
     "role": {
-        "uses": "role, user",
-        "notes": ""
+        "uses": "role, user, checkmark, generic, user, person",
+        "notes": "Generic Role"
     },
     "role_manage": {
-        "uses": "",
+        "uses": "role, manage, cog, gear, user, person",
         "notes": ""
     },
     "all_users": {
@@ -956,7 +956,7 @@
         "notes": ""
     },
     "password_role_based": {
-        "uses": "",
+        "uses": "password, role, user, person",
         "notes": ""
     },
     "search_advanced": {
@@ -1307,6 +1307,10 @@
         "uses": "code, slash",
         "notes": ""
     },
+    "code_js": {
+        "uses": "code, javascript",
+        "notes": ""
+    },
     "native_code": {
         "uses": "code, slash, box",
         "notes": ""
@@ -1544,15 +1548,15 @@
         "notes": ""
     },
     "dir_rbsRole2": {
-        "uses": "check",
+        "uses": "role, checkmark, user, person",
         "notes": ""
     },
     "dir_rbsScope": {
-        "uses": "check",
+        "uses": "scope, check",
         "notes": ""
     },
     "dir_rbsScope2": {
-        "uses": "check",
+        "uses": "scope, check",
         "notes": ""
     },
     "dir_rbsTask": {
@@ -1909,6 +1913,58 @@
     },
     "hide_private": {
         "uses": "hide, show, private, hidden",
+        "notes": ""
+    },
+    "CyberRes_ArcSight": {
+        "uses": "cyberres, arcsight, branding",
+        "notes": ""
+    },
+    "CyberRes_Fortify": {
+        "uses": "cyberres, fortify, branding",
+        "notes": ""
+    },
+    "CyberRes_NetIQ": {
+        "uses": "cyberres, netiq, branding",
+        "notes": ""
+    },
+    "CyberRes_Voltage": {
+        "uses": "cyberres, voltage, branding",
+        "notes": ""
+    },
+    "user_deleted": {
+        "uses": "user, person, delete, status",
+        "notes": ""
+    },
+    "role_admin": {
+        "uses": "role, admin, server, monitor, user, person",
+        "notes": ""
+    },
+    "role_business": {
+        "uses": "role, business, graph, user, person",
+        "notes": ""
+    },
+    "role_management": {
+        "uses": "role, manage, tie, user, person",
+        "notes": ""
+    },
+    "role_security": {
+        "uses": "role, secure, shield, lock, user, person",
+        "notes": ""
+    },
+    "role_support": {
+        "uses": "role, support, pencil, user, person",
+        "notes": ""
+    },
+    "role_tech": {
+        "uses": "role, technical, circuit board, user, person",
+        "notes": ""
+    },
+    "role_cloud": {
+        "uses": "role, cloud, user, person",
+        "notes": ""
+    },
+    "role_service": {
+        "uses": "role, service, wrench, cog, gear, user, person",
         "notes": ""
     }
 }
