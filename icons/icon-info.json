@@ -683,6 +683,10 @@
         "uses": "",
         "notes": ""
     },
+    "upload": {
+        "uses": "upload",
+        "notes": ""
+    },
     "edit_thick": {
         "uses": "",
         "notes": ""
