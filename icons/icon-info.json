@@ -756,7 +756,7 @@
         "notes": ""
     },
     "upload_cloud": {
-        "uses": "",
+        "uses": "cloud, upload, arrow",
         "notes": ""
     },
     "upload_generic": {
@@ -1655,6 +1655,14 @@
         "uses": "org chart, person, user, manager",
         "notes": ""
     },
+    "app_appmark": {
+        "uses": "application, pencil, security, appmark",
+        "notes": ""
+    },
+    "app_basic_sso": {
+        "uses": "application, pencil, basic, sso, security",
+        "notes": ""
+    },
     "app_oauth": {
         "uses": "application, pencil, oauth, security",
         "notes": ""
@@ -1759,9 +1767,13 @@
         "uses": "access, application, arrow, square",
         "notes": ""
     },
+    "shop2": {
+        "uses": "shopping, cart, buy, purchase",
+        "notes": "Use as a shopping cart"
+    },
     "shop": {
         "uses": "shopping, cart, buy, purchase",
-        "notes": ""
+        "notes": "This version has more space for a number inside the icon"
     },
     "reciprocal": {
         "uses": "arrows, balance",
@@ -1867,19 +1879,23 @@
         "uses": "tenant, user, house, buildings, onboarding",
         "notes": ""
     },
-    "tenant-cloud": {
+    "tenant_cloud": {
         "uses": "tenant, user, house, cloud, onboarding, arrow, add, new",
         "notes": ""
     },
-    "onboard-cloud": {
+    "onboard_cloud": {
         "uses": "tenant, user, house, cloud, onboarding",
+        "notes": ""
+    },
+    "secure_cloud": {
+        "uses": "secure, lock, cloud",
         "notes": ""
     },
     "add-enterprise": {
         "uses": "tenant, onboarding, add, enterprise",
         "notes": ""
     },
-    "add-cloud": {
+    "add_cloud": {
         "uses": "tenant, onboarding, add, cloud",
         "notes": ""
     },
