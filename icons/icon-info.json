@@ -1986,5 +1986,13 @@
     "role_service": {
         "uses": "role, service, wrench, cog, gear, user, person",
         "notes": ""
+    },
+    "stage": {
+        "uses": "staging, stage, add, packages",
+        "notes": ""
+    },
+    "launch": {
+        "uses": "launch, deploy, run, rocket",
+        "notes": ""
     }
 }
