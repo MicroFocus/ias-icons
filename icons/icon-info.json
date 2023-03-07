@@ -1212,7 +1212,7 @@
         "notes": ""
     },
     "dir_template": {
-        "uses": "edirectory",
+        "uses": "edirectory, page, fold, template",
         "notes": ""
     },
     "dir_server_ncp": {
@@ -1991,8 +1991,32 @@
         "uses": "staging, stage, add, packages",
         "notes": ""
     },
-    "launch": {
-        "uses": "launch, deploy, run, rocket",
+    "form": {
+        "uses": "form, input, page",
+        "notes": ""
+    },
+    "form_edit": {
+        "uses": "form, input, page, edit, pencil",
+        "notes": ""
+    },
+    "form_custom": {
+        "uses": "form, input, page, edit, configure, custom, cog",
+        "notes": ""
+    },
+    "template": {
+        "uses": "page, fold",
+        "notes": ""
+    },
+    "template_configure": {
+        "uses": "page, configure, edit, cog, fold",
+        "notes": ""
+    },
+    "template_edit": {
+        "uses": "page, configure, edit, pencil, fold",
+        "notes": ""
+    },
+    "template_approved": {
+        "uses": "page, approve, check, mark, fold",
         "notes": ""
     }
 }
