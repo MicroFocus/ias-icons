@@ -46,5 +46,5 @@ The icons can be referenced by class name, as shown in the following example:
 ```
 All svg files are copyrighted to Lynn Christensen and Microfocus.
 
-Copyright 2008-2022 Lynn Christensen and Microfocus. All rights reserved.
+Copyright 2008-2023 Lynn Christensen and Microfocus. All rights reserved.
 
