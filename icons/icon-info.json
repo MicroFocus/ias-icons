@@ -383,6 +383,18 @@
         "uses": "",
         "notes": ""
     },
+    "export": {
+        "uses": "arrow, up, out",
+        "notes": ""
+    },
+    "import": {
+        "uses": "arrow, down, in",
+        "notes": ""
+    },
+    "import_from_driver": {
+        "uses": "arrow, down, IDM, idm, ying, yang",
+        "notes": ""
+    },
     "bookmark_thick": {
         "uses": "",
         "notes": ""
@@ -1676,31 +1688,31 @@
         "notes": ""
     },
     "idm_driver": {
-        "uses": "identity manager, IDM, ying, yang, driver",
+        "uses": "identity manager, IDM, idm, ying, yang, driver",
         "notes": ""
     },
     "idm_driverset": {
-        "uses": "identity manager, IDM, ying, yang, driver, driverset",
+        "uses": "identity manager, IDM, idm, ying, yang, driver, driverset",
         "notes": ""
     },
     "driver_inspect": {
-        "uses": "identity manager, IDM, ying, yang, driver, inspect, view",
+        "uses": "identity manager, IDM, idm, ying, yang, driver, inspect, view",
         "notes": ""
     },
     "driver_health_config": {
-        "uses": "identity manager, IDM, driver, configure, check mark, stoplight",
+        "uses": "identity manager, IDM, idm, driver, configure, check mark, stoplight",
         "notes": ""
     },
     "driver_cache_inspect": {
-        "uses": "identity manager, IDM, driver, inspect, graph, stoplight",
+        "uses": "identity manager, IDM, idm, driver, inspect, graph, stoplight",
         "notes": ""
     },
     "driver_copy_filter": {
-        "uses": "identity manager, IDM, driver, duplicate",
+        "uses": "identity manager, IDM, idm, driver, duplicate",
         "notes": ""
     },
     "idm_overview": {
-        "uses": "identity manager, IDM, ying, yang, driver, driverset, overview",
+        "uses": "identity manager, IDM, idm, ying, yang, driver, driverset, overview",
         "notes": ""
     },
     "dashboard_1": {
