@@ -996,23 +996,23 @@
         "notes": ""
     },
     "network": {
-        "uses": "",
+        "uses": "computer",
         "notes": ""
     },
     "microphone": {
-        "uses": "",
+        "uses": "advanced auth, method",
         "notes": ""
     },
     "swisscom_mobile_id": {
-        "uses": "",
+        "uses": "advanced auth, method",
         "notes": ""
     },
     "bankid": {
-        "uses": "",
+        "uses": "advanced auth, method",
         "notes": ""
     },
     "security_questions": {
-        "uses": "",
+        "uses": "advanced auth, method",
         "notes": "set new password"
     },
     "secure_identity": {
@@ -1024,11 +1024,15 @@
         "notes": ""
     },
     "facial_recognition": {
-        "uses": "user, target",
+        "uses": "user, target, advanced auth, method",
         "notes": ""
     },
     "bluetooth": {
-        "uses": "",
+        "uses": "advanced auth, method",
+        "notes": ""
+    },
+    "bluetooth_esec": {
+        "uses": "enhanced, security, method",
         "notes": ""
     },
     "usb": {
