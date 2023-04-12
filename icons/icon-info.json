@@ -552,7 +552,11 @@
         "notes": ""
     },
     "world_thin": {
-        "uses": "",
+        "uses": "globe, global, settings, configure, language",
+        "notes": ""
+    },
+    "wglobal_configure": {
+        "uses": "globe, global, settings, configure, language",
         "notes": ""
     },
     "email_thick": {
@@ -831,6 +835,14 @@
         "uses": "",
         "notes": ""
     },
+    "server_cluster": {
+        "uses": "server, cluster, grouping, many",
+        "notes": ""
+    },
+    "server_idp_cluster": {
+        "uses": "server, cluster, grouping, many, identity, idp",
+        "notes": ""
+    },
     "sys_linux": {
         "uses": "system, linux, monitor, computer",
         "notes": ""
@@ -848,7 +860,7 @@
         "notes": ""
     },
     "app_thick": {
-        "uses": "",
+        "uses": "application",
         "notes": ""
     },
     "cloud": {
@@ -856,11 +868,19 @@
         "notes": ""
     },
     "database": {
-        "uses": "",
+        "uses": "data, database, storage",
+        "notes": ""
+    },
+    "repository": {
+        "uses": "data, database, storage, repo",
         "notes": ""
     },
     "app_thin": {
-        "uses": "",
+        "uses": "application",
+        "notes": ""
+    },
+    "app_api": {
+        "uses": "application, programming, interface",
         "notes": ""
     },
     "password_thick": {
@@ -1316,7 +1336,7 @@
         "notes": ""
     },
     "dir_app_process": {
-        "uses": "edirectory",
+        "uses": "edirectory, application",
         "notes": ""
     },
     "code_1": {
@@ -1357,6 +1377,10 @@
     },
     "security_policy": {
         "uses": "",
+        "notes": ""
+    },
+    "safe": {
+        "uses": "safe, security, combination, lock",
         "notes": ""
     },
     "phone_message": {
@@ -1475,6 +1499,14 @@
         "uses": "server, windows",
         "notes": ""
     },
+    "server_assign": {
+        "uses": "server, assignment, checkmark, check",
+        "notes": ""
+    },
+    "server_broker": {
+        "uses": "server, brokering",
+        "notes": ""
+    },
     "messages": {
         "uses": "message, messaging, texting, sms",
         "notes": ""
@@ -1485,6 +1517,10 @@
     },
     "reassign": {
         "uses": "users, group, arrow, assignment",
+        "notes": ""
+    },
+    "assign": {
+        "uses": "checkmark, check, assignment, status",
         "notes": ""
     },
     "secure_device": {
@@ -1849,6 +1885,14 @@
     },
     "attribute_add": {
         "uses": "class, attribute, new",
+        "notes": ""
+    },
+    "attribute_custom": {
+        "uses": "class, attribute, custom",
+        "notes": ""
+    },
+    "attribute_virtual": {
+        "uses": "class, attribute, virtual",
         "notes": ""
     },
     "NEMID": {
