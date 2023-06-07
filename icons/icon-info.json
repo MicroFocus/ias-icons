@@ -521,7 +521,7 @@
     },
     "phone_thick": {
         "uses": "",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method, Voice OTP"
     },
     "phone_mobile_thick": {
         "uses": "",
@@ -555,7 +555,7 @@
         "uses": "globe, global, settings, configure, language",
         "notes": ""
     },
-    "wglobal_configure": {
+    "global_configure": {
         "uses": "globe, global, settings, configure, language",
         "notes": ""
     },
@@ -583,9 +583,13 @@
         "uses": "email, password, letter",
         "notes": ""
     },
+    "email_address": {
+        "uses": "email, letter, attribute, mail",
+        "notes": ""
+    },
     "fingerprint_thin": {
         "uses": "",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "card_thin": {
         "uses": "",
@@ -617,7 +621,7 @@
     },
     "password_thin": {
         "uses": "",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "connector_thin": {
         "uses": "",
@@ -1016,59 +1020,115 @@
         "notes": ""
     },
     "network": {
-        "uses": "computer",
-        "notes": ""
+        "uses": "computer, node",
+        "notes": "AA, Advanced Authorization method, RADIUS client"
     },
     "microphone": {
         "uses": "advanced auth, method",
         "notes": ""
     },
     "swisscom_mobile_id": {
-        "uses": "advanced auth, method",
-        "notes": ""
+        "uses": "",
+        "notes": "AA, Advanced Authorization method"
     },
     "bankid": {
         "uses": "advanced auth, method",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "security_questions": {
         "uses": "advanced auth, method",
-        "notes": "set new password"
+        "notes": "set new password, AA, Advanced Authorization method"
     },
     "secure_identity": {
         "uses": "secure identity, secure user",
         "notes": ""
     },
-    "pki_public_key": {
-        "uses": "",
+    "secure_auth": {
+        "uses": "secure authentication, password, lock",
         "notes": ""
+    },
+    "secure_auth_social": {
+        "uses": "secure authentication social, password, lock, facebook, twitter, google, linkedin, instagram",
+        "notes": ""
+    },
+    "secure_auth_risk": {
+        "uses": "secure authentication, risk, dial, meter, numbers",
+        "notes": ""
+    },
+    "secure_auth_persist": {
+        "uses": "secure authentication, password, lock",
+        "notes": ""
+    },
+    "secure_auth_NMAS": {
+        "uses": "secure authentication, password, lock, Novell, Modular, Authenctication, Service",
+        "notes": ""
+    },
+    "secure_auth_key": {
+        "uses": "secure authentication, public, key",
+        "notes": ""
+    },
+    "pki_public_key": {
+        "uses": "user, public, key",
+        "notes": "AA, Advanced Authorization method"
     },
     "facial_recognition": {
         "uses": "user, target, advanced auth, method",
-        "notes": ""
+        "notes": "Advanced Authorization method"
     },
     "bluetooth": {
         "uses": "advanced auth, method",
-        "notes": ""
+        "notes": "Advanced Authorization method"
     },
     "bluetooth_esec": {
         "uses": "enhanced, security, method",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "usb": {
-        "uses": "",
-        "notes": ""
+        "uses": "FIDO, FIDO2, U2F",
+        "notes": "AA, Advanced Authorization method"
     },
     "card_chip": {
-        "uses": "",
-        "notes": ""
+        "uses": "microchip card",
+        "notes": "AA, Advanced Authorization method"
     },
     "password_ldap": {
         "uses": "",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "password_emergency": {
         "uses": "",
+        "notes": "AA, Advanced Authorization method"
+    },
+    "password_OTP": {
+        "uses": "password, one-time, single use",
+        "notes": ""
+    },
+    "password_OTP_voice": {
+        "uses": "password, one-time, single use, voice",
+        "notes": "AA, Advanced Authorization method"
+    },
+    "password_TOTP": {
+        "uses": "password, time, time-based, one-time, single use",
+        "notes": ""
+    },
+    "password_HOTP": {
+        "uses": "HMAC, password, one-time, single use",
+        "notes": ""
+    },
+    "password_protected": {
+        "uses": "password, secure",
+        "notes": ""
+    },
+    "password_fetch": {
+        "uses": "password, arrow, get",
+        "notes": ""
+    },
+    "password_alias_user": {
+        "uses": "password, user, alias",
+        "notes": ""
+    },
+    "user_alias": {
+        "uses": "user, alias",
         "notes": ""
     },
     "database_search": {
@@ -1101,6 +1161,10 @@
     },
     "page_complex": {
         "uses": "",
+        "notes": ""
+    },
+    "details": {
+        "uses": "page, text, view",
         "notes": ""
     },
     "policy": {
@@ -1160,8 +1224,8 @@
         "notes": "report, search"
     },
     "secure_web": {
-        "uses": "",
-        "notes": "world, lock"
+        "uses": "world, lock",
+        "notes": "AA, Advanced Authorization method, Secure Web Auth"
     },
     "dir_NDSPKI_trusted_root_object": {
         "uses": "edirectory",
@@ -1217,8 +1281,17 @@
     },
     "keypad": {
         "uses": "",
-        "notes": "key"
+        "notes": ""
     },
+    "keypad_1": {
+        "uses": "numbers",
+        "notes": ""
+    },
+    "x509": {
+        "uses": "x509, public, key",
+        "notes": ""
+    },
+
     "dir_external_entity": {
         "uses": "edirectory",
         "notes": "entity"
@@ -1384,8 +1457,8 @@
         "notes": ""
     },
     "phone_message": {
-        "uses": "",
-        "notes": "phone"
+        "uses": "sms, text",
+        "notes": "AA, Advanced Authorization method, SMS OTP"
     },
     "edit_small": {
         "uses": "",
@@ -1437,6 +1510,10 @@
     },
     "server_radius": {
         "uses": "phone",
+        "notes": ""
+    },
+    "radius_protected": {
+        "uses": "server, secure, phone, dial, checkmark",
         "notes": ""
     },
     "server_services": {
@@ -1526,6 +1603,10 @@
     "secure_device": {
         "uses": "monitor, computer, lock",
         "notes": ""
+    },
+    "secure": {
+        "uses": "shield, security, checkmark",
+        "notes": "General Secure/Security icon"
     },
     "dir_DN_object": {
         "uses": "cube",
@@ -1684,8 +1765,8 @@
         "notes": ""
     },
     "flex_OTP": {
-        "uses": "advance, authentication, method",
-        "notes": ""
+        "uses": "one-time, password, many, various",
+        "notes": "AA, Advanced Authorization method"
     },
     "multi_paths": {
         "uses": "arrow",
@@ -1897,45 +1978,45 @@
     },
     "NEMID": {
         "uses": "nemid, ID, system, Denmark, key",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method, Denmark National ID"
     },
     "NEMID_Denmark": {
         "uses": "nemid, ID, system, Denmark, flag",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method, Denmark National ID"
     },
     "HANIS_SouthAfrica": {
         "uses": "hanis, ID, system, South Africa, flag",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "HANIS_fingerprint": {
         "uses": "hanis, ID, system, South Africa, fingerprint, flag",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "HANIS_face": {
         "uses": "hanis, ID, system, South Africa, face, facial, recognition, flag, user, target",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "HANIS_ID_passport": {
         "uses": "hanis, ID, system, South Africa, passport, flag, user",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "out_of_band": {
         "uses": "reroute, checkmark, arrow, flow",
-        "notes": ""
+        "notes": "AA, Advanced Authorization method"
     },
     "tenant": {
         "uses": "tenant, user, house, onboarding",
         "notes": ""
     },
-    "onboard-tenant": {
+    "onboard_tenant": {
         "uses": "tenant, user, house, arrow, add, new, onboarding",
         "notes": ""
     },
-    "tenant-enterprise": {
+    "tenant_enterprise": {
         "uses": "tenant, user, house, buildings, onboarding",
         "notes": ""
     },
-    "onboard-enterprise": {
+    "onboard_enterprise": {
         "uses": "tenant, user, house, buildings, onboarding",
         "notes": ""
     },
@@ -1951,7 +2032,7 @@
         "uses": "secure, lock, cloud",
         "notes": ""
     },
-    "add-enterprise": {
+    "add_enterprise": {
         "uses": "tenant, onboarding, add, enterprise",
         "notes": ""
     },
@@ -2078,5 +2159,17 @@
     "template_approved": {
         "uses": "page, approve, check, mark, fold",
         "notes": ""
+    },
+    "launch": {
+        "uses": "rocket, ship, start",
+        "notes": ""
+    },
+    "bluetooth_esec": {
+        "uses": "email, password, letter",
+        "notes": ""
+    },
+    "service": {
+        "uses": "cog, wrench",
+        "notes": "General service icon"
     }
 }
