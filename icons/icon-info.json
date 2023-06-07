@@ -1466,7 +1466,11 @@
     },
     "permission_request": {
         "uses": "",
-        "notes": "phone, message"
+        "notes": "lock"
+    },
+    "permission": {
+        "uses": "",
+        "notes": "key, checkmark"
     },
     "dir_DN_query": {
         "uses": "edirectory",
@@ -1790,23 +1794,39 @@
     },
     "app_appmark": {
         "uses": "application, pencil, security, appmark",
-        "notes": ""
+        "notes": "Federated Single Sign-on"
     },
     "app_basic_sso": {
         "uses": "application, pencil, basic, sso, security",
-        "notes": ""
+        "notes": "Federated Single Sign-on"
     },
     "app_oauth": {
         "uses": "application, pencil, oauth, security",
-        "notes": ""
+        "notes": "Federated Single Sign-on"
+    },
+    "app_oauth_idp": {
+        "uses": "application, pencil, oauth, security, identity, provider",
+        "notes": "Federated Single Sign-on"
+    },
+    "app_oauth_sp": {
+        "uses": "application, pencil, oauth, security, service, provider",
+        "notes": "Federated Single Sign-on"
     },
     "app_saml": {
         "uses": "application, pencil, saml, security",
-        "notes": ""
+        "notes": "Security Assertion Markup Language, Federated Single Sign-on"
+    },
+    "app_saml_idp": {
+        "uses": "application, pencil, saml, security, identity, provider",
+        "notes": "Security Assertion Markup Language, Federated Single Sign-on"
+    },
+    "app_saml_sp": {
+        "uses": "application, pencil, saml, security, service, provider",
+        "notes": "Security Assertion Markup Language, Federated Single Sign-on"
     },
     "app_simple": {
         "uses": "application, pencil",
-        "notes": ""
+        "notes": "Federated Single Sign-on"
     },
     "idm_driver": {
         "uses": "identity manager, IDM, idm, ying, yang, driver",
@@ -1841,7 +1861,7 @@
         "notes": ""
     },
     "dashboard_2": {
-        "uses": "person, user, manager, dash, apps, graph, chart",
+        "uses": "dash, apps, graph, chart",
         "notes": ""
     },
     "status_stopped": {
@@ -2164,9 +2184,9 @@
         "uses": "rocket, ship, start",
         "notes": ""
     },
-    "bluetooth_esec": {
-        "uses": "email, password, letter",
-        "notes": ""
+    "key": {
+        "uses": "",
+        "notes": "General key icon"
     },
     "service": {
         "uses": "cog, wrench",
