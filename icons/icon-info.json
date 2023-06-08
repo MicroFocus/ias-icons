@@ -556,7 +556,7 @@
         "notes": ""
     },
     "global_configure": {
-        "uses": "globe, global, settings, configure, language",
+        "uses": "globe, global, settings, configure, language, world, cog",
         "notes": ""
     },
     "email_thick": {
@@ -1224,7 +1224,7 @@
         "notes": "report, search"
     },
     "secure_web": {
-        "uses": "world, lock",
+        "uses": "world, lock, globe, global, world",
         "notes": "AA, Advanced Authorization method, Secure Web Auth"
     },
     "dir_NDSPKI_trusted_root_object": {
