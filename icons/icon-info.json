@@ -117,19 +117,19 @@
     },
     "circle_horz_menu_fill": {
         "uses": "context menu",
-        "notes": ""
+        "notes": "horizontal menu"
     },
     "circle_horz_menu_thin": {
         "uses": "context menu",
-        "notes": ""
+        "notes": "horizontal menu"
     },
     "circle_vert_menu_fill": {
         "uses": "context menu",
-        "notes": "Vertical, filled menu is the default icon to use as a context menu icon"
+        "notes": "vertical menu"
     },
     "circle_vert_menu_thin": {
         "uses": "context menu",
-        "notes": ""
+        "notes": "vertical menu"
     },
     "favorite_outline_thin": {
         "uses": "favorite",
@@ -420,12 +420,12 @@
         "notes": ""
     },
     "image_thick": {
-        "uses": "",
-        "notes": ""
+        "uses": "image, photo, picture",
+        "notes": "use when icon ≤ 35px"
     },
     "image_thin": {
-        "uses": "",
-        "notes": ""
+        "uses": "image, photo, picture",
+        "notes": "use when icon ≥ 35px"
     },
     "logging_thin": {
         "uses": "",
@@ -676,11 +676,11 @@
         "notes": ""
     },
     "cancel_thick": {
-        "uses": "",
+        "uses": "cancel, disable, unavailable",
         "notes": ""
     },
     "cancel_thin": {
-        "uses": "",
+        "uses": "cancel, disable, unavailable",
         "notes": ""
     },
     "help_thick": {
@@ -796,7 +796,7 @@
         "notes": ""
     },
     "all_users": {
-        "uses": "",
+        "uses": "all users, identities, identity system",
         "notes": ""
     },
     "relationship": {
@@ -808,19 +808,19 @@
         "notes": ""
     },
     "tools": {
-        "uses": "",
+        "uses": "wrench, pencil, screwdriver",
         "notes": ""
     },
     "comment_user_thick": {
-        "uses": "",
+        "uses": "comment, message, text, user",
         "notes": ""
     },
     "filter_adv": {
-        "uses": "",
+        "uses": "edit, filter, pencil, write",
         "notes": ""
     },
     "comment_sys_thick": {
-        "uses": "",
+        "uses": "message, sms, text, system, cog, configure",
         "notes": ""
     },
     "provision_request_def": {
@@ -2187,6 +2187,10 @@
     "key": {
         "uses": "",
         "notes": "General key icon"
+    },
+    "QR_code": {
+        "uses": "code, optical image, barcode",
+        "notes": ""
     },
     "service": {
         "uses": "cog, wrench",
