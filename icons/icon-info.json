@@ -2192,6 +2192,22 @@
         "uses": "code, optical image, barcode",
         "notes": ""
     },
+    "book_1": {
+        "uses": "book, readme, doc, page, text",
+        "notes": "use for readme file"
+    },
+    "book_2": {
+        "uses": "book, blank, doc, page",
+        "notes": "general use"
+    },
+    "share_2": {
+        "uses": "share, link",
+        "notes": ""
+    },
+    "debug": {
+        "uses": "code, bug, debug, mode",
+        "notes": ""
+    },
     "service": {
         "uses": "cog, wrench",
         "notes": "General service icon"
