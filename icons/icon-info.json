@@ -2208,6 +2208,26 @@
         "uses": "code, bug, debug, mode",
         "notes": ""
     },
+    "applications": {
+        "uses": "apps, pencil",
+        "notes": ""
+    },
+    "studio": {
+        "uses": "apps, cog, configure, factory",
+        "notes": ""
+    },
+    "license": {
+        "uses": "page, text, certificate, bond",
+        "notes": ""
+    },
+    "mobile_access": {
+        "uses": "phone, device, arrow",
+        "notes": ""
+    },
+    "business_customer": {
+        "uses": "city, buildings, users",
+        "notes": ""
+    },
     "service": {
         "uses": "cog, wrench",
         "notes": "General service icon"
