@@ -552,11 +552,11 @@
         "notes": ""
     },
     "world_thin": {
-        "uses": "globe, global, settings, configure, language",
+        "uses": "web, globe, world, global, settings, configure, language",
         "notes": ""
     },
     "global_configure": {
-        "uses": "globe, global, settings, configure, language, world, cog",
+        "uses": "web, globe, world, global, settings, configure, language, cog",
         "notes": ""
     },
     "email_thick": {
@@ -1224,7 +1224,7 @@
         "notes": "report, search"
     },
     "secure_web": {
-        "uses": "world, lock, globe, global, world",
+        "uses": "web, globe, world, lock, global",
         "notes": "AA, Advanced Authorization method, Secure Web Auth"
     },
     "dir_NDSPKI_trusted_root_object": {
@@ -1365,11 +1365,11 @@
         "notes": ""
     },
     "dir_schema_attribute": {
-        "uses": "edirectory",
+        "uses": "edirectory, diamond",
         "notes": ""
     },
     "dir_schema_attribute_encrypted": {
-        "uses": "edirectory",
+        "uses": "edirectory, secure, lock, diamond",
         "notes": ""
     },
     "dir_org_person": {
@@ -1973,27 +1973,27 @@
         "notes": ""
     },
     "class": {
-        "uses": "class, attribute",
+        "uses": "class, attribute, diamond, link",
         "notes": ""
     },
     "class_add": {
-        "uses": "class, attribute, new",
+        "uses": "class, attribute, diamond, link, new",
         "notes": ""
     },
     "attribute": {
-        "uses": "class, attribute",
+        "uses": "class, attribute, diamond",
         "notes": ""
     },
     "attribute_add": {
-        "uses": "class, attribute, new",
+        "uses": "class, attribute, diamond, new",
         "notes": ""
     },
     "attribute_custom": {
-        "uses": "class, attribute, custom",
+        "uses": "class, attribute, custom, diamond",
         "notes": ""
     },
     "attribute_virtual": {
-        "uses": "class, attribute, virtual",
+        "uses": "class, attribute, virtual, diamond",
         "notes": ""
     },
     "NEMID": {
@@ -2226,6 +2226,18 @@
     },
     "business_customer": {
         "uses": "city, buildings, users",
+        "notes": ""
+    },
+    "web_service_fed": {
+        "uses": "web, globe, world, app, federated, trust, secure",
+        "notes": ""
+    },
+    "web_service_trust": {
+        "uses": "web, globe, world, app, federated, trust, secure",
+        "notes": ""
+    },
+    "web_service_protect": {
+        "uses": "web, globe, world, app, federated, trust, secure",
         "notes": ""
     },
     "service": {
