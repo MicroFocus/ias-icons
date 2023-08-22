@@ -847,6 +847,10 @@
         "uses": "server, cluster, grouping, many, identity, idp",
         "notes": ""
     },
+    "server_analyics": {
+        "uses": "server, graph, analysis, chart",
+        "notes": ""
+    },
     "sys_linux": {
         "uses": "system, linux, monitor, computer",
         "notes": ""
@@ -1524,6 +1528,10 @@
         "uses": "configure, cog",
         "notes": ""
     },
+    "server_secure": {
+        "uses": "server, security, shield, checkmark",
+        "notes": ""
+    },
     "server_wireless": {
         "uses": "signal",
         "notes": ""
@@ -2052,6 +2060,10 @@
         "uses": "secure, lock, cloud",
         "notes": ""
     },
+    "secure_cloud_2": {
+        "uses": "secure, shield, checkmark, cloud",
+        "notes": ""
+    },
     "add_enterprise": {
         "uses": "tenant, onboarding, add, enterprise",
         "notes": ""
@@ -2238,6 +2250,54 @@
     },
     "web_service_protect": {
         "uses": "web, globe, world, app, federated, trust, secure",
+        "notes": ""
+    },
+    "console_access": {
+        "uses": "console, monitor, arrow, access",
+        "notes": ""
+    },
+    "console_apps": {
+        "uses": "console, monitor, applications, pencil",
+        "notes": ""
+    },
+    "console_auth": {
+        "uses": "console, monitor, fingerprint, authentication",
+        "notes": ""
+    },
+    "console_config": {
+        "uses": "console, monitor, configure, cog, settings",
+        "notes": ""
+    },
+    "console_global": {
+        "uses": "console, monitor, world, earth, globe",
+        "notes": ""
+    },
+    "console_identity": {
+        "uses": "console, monitor, identity, user, text",
+        "notes": ""
+    },
+    "console_network": {
+        "uses": "console, monitor, lan, computer",
+        "notes": ""
+    },
+    "console_password": {
+        "uses": "console, monitor, password, login, sign in",
+        "notes": ""
+    },
+    "console_security": {
+        "uses": "console, monitor, secure, shield",
+        "notes": ""
+    },
+    "secure_session": {
+        "uses": "browser, window, cookies, secure, certificate, shield",
+        "notes": ""
+    },
+    "upgrade": {
+        "uses": "arrow, up, update",
+        "notes": ""
+    },
+    "upgrade_process": {
+        "uses": "arrow, up, update, assistant",
         "notes": ""
     },
     "service": {
