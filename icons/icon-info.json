@@ -2233,7 +2233,7 @@
         "notes": ""
     },
     "mobile_access": {
-        "uses": "phone, device, arrow",
+        "uses": "phone, device, arrow, access",
         "notes": ""
     },
     "business_customer": {
@@ -2242,6 +2242,14 @@
     },
     "web_service_fed": {
         "uses": "web, globe, world, app, federated, trust, secure",
+        "notes": ""
+    },
+    "app_wsfed_sp": {
+        "uses": "web, globe, world, app, federated, trust, secure, service, provider",
+        "notes": ""
+    },
+    "app_wsfed_idp": {
+        "uses": "web, globe, world, app, federated, trust, secure, identity, provider",
         "notes": ""
     },
     "web_service_trust": {
@@ -2288,6 +2296,14 @@
         "uses": "console, monitor, secure, shield",
         "notes": ""
     },
+    "console_audit": {
+        "uses": "console, monitor, audit",
+        "notes": ""
+    },
+    "console_workflow": {
+        "uses": "console, monitor, flow",
+        "notes": ""
+    },
     "secure_session": {
         "uses": "browser, window, cookies, secure, certificate, shield",
         "notes": ""
@@ -2300,8 +2316,52 @@
         "uses": "arrow, up, update, assistant",
         "notes": ""
     },
-    "service": {
-        "uses": "cog, wrench",
-        "notes": "General service icon"
+    "detail_user": {
+        "uses": "user, details, text, card",
+        "notes": ""
+    },
+    "detail_workflow": {
+        "uses": "flow, details, text, card",
+        "notes": ""
+    },
+    "detail_time": {
+        "uses": "clock, details, text, card",
+        "notes": ""
+    },
+    "detail_role": {
+        "uses": "role, person, user, details, text, card",
+        "notes": ""
+    },
+    "detail_resource": {
+        "uses": "resource, money, details, text, card",
+        "notes": ""
+    },
+    "detail_network": {
+        "uses": "network, computer, node, details, text, card",
+        "notes": ""
+    },
+    "detail_group": {
+        "uses": "user, group, details, text, card",
+        "notes": ""
+    },
+    "audit_object": {
+        "uses": "checkmark, audit, object, cube",
+        "notes": ""
+    },
+    "audit_group": {
+        "uses": "group, user, audit, checkmark",
+        "notes": ""
+    },
+    "history_browser": {
+        "uses": "history, time, browser",
+        "notes": ""
+    },
+    "dashboards": {
+        "uses": "dash, squares, content",
+        "notes": ""
+    },
+    "dashboards": {
+        "uses": "dash, squares, content",
+        "notes": ""
     }
 }
