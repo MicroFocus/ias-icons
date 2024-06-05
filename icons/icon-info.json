@@ -428,7 +428,7 @@
         "notes": "use when icon ≥ 35px"
     },
     "logging_thin": {
-        "uses": "",
+        "uses": "text, log",
         "notes": ""
     },
     "storage_thin": {
@@ -2309,7 +2309,7 @@
         "notes": ""
     },
     "upgrade": {
-        "uses": "arrow, up, update",
+        "uses": "arrow, up, update, action",
         "notes": ""
     },
     "upgrade_process": {
@@ -2360,8 +2360,48 @@
         "uses": "dash, squares, content",
         "notes": ""
     },
-    "dashboards": {
-        "uses": "dash, squares, content",
+    "admin_IDP": {
+        "uses": "user, identity, administration, monitor",
+        "notes": ""
+    },
+    "app_portal": {
+        "uses": "user, identity, applications, access",
+        "notes": ""
+    },
+    "auth_form_basic_secure": {
+        "uses": "user, identity, authentication, form, shield, secure, sign-in, login",
+        "notes": ""
+    },
+    "auth_form_basic": {
+        "uses": "user, identity, authentication, form, simple, sign-in, login",
+        "notes": ""
+    },
+    "auth_form_secure": {
+        "uses": "user, identity, authentication, form, shield, secure, sign-in, login",
+        "notes": ""
+    },
+    "auth_form": {
+        "uses": "user, identity, administration, monitor, sign-in, login",
+        "notes": ""
+    },
+    "details_2": {
+        "uses": "page, text, view",
+        "notes": ""
+    },
+    "identity_goverance": {
+        "uses": "user, identity, secure, security, shield",
+        "notes": ""
+    },
+    "logging_configure": {
+        "uses": "text, log, configuration, cog",
+        "notes": ""
+    },
+    "NMAS_biometrics": {
+        "uses": "modular, authentication, service, fingerprint",
+        "notes": ""
+    },
+    "verified": {
+        "uses": "verified, attestation, approved, seal, checkmark",
         "notes": ""
     }
 }
