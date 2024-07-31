@@ -1096,7 +1096,7 @@
         "notes": "AA, Advanced Authorization method"
     },
     "password_ldap": {
-        "uses": "",
+        "uses": "lightweight, directory, access, protocol",
         "notes": "AA, Advanced Authorization method"
     },
     "password_emergency": {
@@ -1357,7 +1357,7 @@
         "notes": ""
     },
     "dir_server_ldap": {
-        "uses": "edirectory, server",
+        "uses": "edirectory, server, lightweight, directory, access, protocol",
         "notes": ""
     },
     "dir_ndsPredicate_stats": {
@@ -1385,7 +1385,7 @@
         "notes": ""
     },
     "dir_profile_ldap": {
-        "uses": "edirectory",
+        "uses": "edirectory, lightweight, directory, access, protocol",
         "notes": ""
     },
     "dir_profile": {
@@ -1401,7 +1401,7 @@
         "notes": ""
     },
     "dir_group_ldap": {
-        "uses": "edirectory",
+        "uses": "edirectory, lightweight, directory, access, protocol",
         "notes": ""
     },
     "dir_country": {
@@ -1441,7 +1441,7 @@
         "notes": ""
     },
     "dir_LDAP": {
-        "uses": "edirectory",
+        "uses": "edirectory, lightweight, directory, access, protocol",
         "notes": ""
     },
     "security": {
@@ -2403,5 +2403,57 @@
     "verified": {
         "uses": "verified, attestation, approved, seal, checkmark",
         "notes": ""
+    },
+    "console_object": {
+        "uses": "console, monitor, cube, object",
+        "notes": ""
+    },
+    "driver_statistics": {
+        "uses": "idm, driver, identity, stats, graph, chart",
+        "notes": ""
+    },
+    "driver_service": {
+        "uses": "idm, driver, identity, service, cog, wrench",
+        "notes": ""
+    },
+    "driver_activation": {
+        "uses": "dim, driver, identity, activate, check",
+        "notes": ""
+    },
+    "logging_inspect": {
+        "uses": "logging, inspect, explorer, view, numbers, list",
+        "notes": ""
+    },
+    "console": {
+        "uses": "console, monitor, list, general",
+        "notes": ""
+    },
+    "workflow": {
+        "uses": "workflow, decision tree, dimond",
+        "notes": ""
+    },
+    "profile_workflow": {
+        "uses": "workflow, decision tree, diamond, detail, list",
+        "notes": ""
+    },
+    "server_workflow": {
+        "uses": "server, workflow, decision tree, diamond",
+        "notes": ""
+    },
+    "ldap_small": {
+        "uses": "lightweight, directory, access, protocol",
+        "notes": ""
+    },
+    "ldap": {
+        "uses": "lightweight, directory, access, protocol",
+        "notes": ""
+    },
+    "identity_lifecycle": {
+        "uses": "identity, idm, user, lifecycle, list, detail",
+        "notes": "Identity Lifecycle Manager"
+    },
+    "identity_governance": {
+        "uses": "identity, idm, user",
+        "notes": "Identity Governance Administration"
     }
 }
