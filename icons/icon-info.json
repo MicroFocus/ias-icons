@@ -1912,12 +1912,52 @@
         "uses": "file, ok, check mark, file state",
         "notes": ""
     },
+    "file_warn": {
+        "uses": "file, warn, message, file state",
+        "notes": ""
+    },
+    "file_unknown": {
+        "uses": "file, unknown, file state",
+        "notes": ""
+    },
+    "file_secure": {
+        "uses": "file, secure, safe, security, file state",
+        "notes": ""
+    },
     "file_upload": {
-        "uses": "file, uploaded, up arrow, file state",
+        "uses": "file, uploaded, up arrow, file action",
         "notes": ""
     },
     "file_compare": {
-        "uses": "file, compare, left, right, arrow, file state",
+        "uses": "file, compare, left, right, arrow, file action",
+        "notes": ""
+    },
+    "file_download": {
+        "uses": "file, download, arrow, down, file action",
+        "notes": ""
+    },
+    "file_import": {
+        "uses": "file, import, arrow, down, file action",
+        "notes": ""
+    },
+    "file_rights": {
+        "uses": "file, rights, checkmark, grant, file action",
+        "notes": ""
+    },
+    "file_add": {
+        "uses": "file, add, new, plus, grant, file action",
+        "notes": ""
+    },
+    "file_edit": {
+        "uses": "file, edit, modify, change, file action",
+        "notes": ""
+    },
+    "file_search": {
+        "uses": "file, search, find, file action",
+        "notes": ""
+    },
+    "file_config": {
+        "uses": "file, configure, cog, file action",
         "notes": ""
     },
     "trace_monitor": {
@@ -2455,5 +2495,37 @@
     "identity_governance": {
         "uses": "identity, idm, user",
         "notes": "Identity Governance Administration"
+    },
+    "operator_equals": {
+        "uses": "operation, action, math, equals, equal to",
+        "notes": "policy rule operator"
+    },
+    "operator_equals_not": {
+        "uses": "operation, action, math, does not equal, equal to",
+        "notes": "policy rule operator"
+    },
+    "operator_contains": {
+        "uses": "operation, action, math, contains, az",
+        "notes": "policy rule operator"
+    },
+    "operator_contains_not": {
+        "uses": "operation, action, math, does not contain, az",
+        "notes": "policy rule operator"
+    },
+    "operator_starts_with": {
+        "uses": "operation, action, math, starts with, az",
+        "notes": "policy rule operator"
+    },
+    "operator_starts_with_not": {
+        "uses": "operation, action, math, does not start with, az",
+        "notes": "policy rule operator"
+    },
+    "operator_ends_with": {
+        "uses": "operation, action, math, ends with, az",
+        "notes": "policy rule operator"
+    },
+    "operator_ends_with_not": {
+        "uses": "operation, action, math, does not end with, az",
+        "notes": "policy rule operator"
     }
 }
