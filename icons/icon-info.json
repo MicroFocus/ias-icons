@@ -143,7 +143,7 @@
         "uses": "status: OK",
         "notes": "use standard green color [$color-accent-5]"
     },
-    "stats_ok_thin": {
+    "status_ok_thin": {
         "uses": "status: OK",
         "notes": "use standard green color [$color-accent-5]"
     },
@@ -172,8 +172,12 @@
         "notes": "use standard yellow color [$color-accent-1]"
     },
     "status_warn_fill": {
+        "uses": "use _fill_2 icon",
+        "notes": "deprecated"
+    },
+    "status_warn_fill_2": {
         "uses": "status: Warning",
-        "notes": "use standard yellow color [$color-accent-1]"
+        "notes": "use standard yellow color [$color-accent-1], fixes _fill icon"
     },
     "message_error_thick": {
         "uses": "",
@@ -1159,6 +1163,14 @@
         "uses": "open all",
         "notes": "list control"
     },
+    "contract_simple": {
+        "uses": "close all, arrow, size, minimize",
+        "notes": "list or page control"
+    },
+    "expand_simple": {
+        "uses": "open all, arrow, expand, size, larger",
+        "notes": "list or page control"
+    },
     "page_simple": {
         "uses": "",
         "notes": ""
@@ -1964,6 +1976,10 @@
         "uses": "computer, monitor, graph, chart, trace",
         "notes": ""
     },
+    "trace": {
+        "uses": "search, look, find, trace, analyse",
+        "notes": ""
+    },
     "access": {
         "uses": "access, application, arrow, square",
         "notes": ""
@@ -2344,6 +2360,14 @@
         "uses": "console, monitor, flow",
         "notes": ""
     },
+    "console_trace": {
+        "uses": "console, monitor, trace",
+        "notes": ""
+    },
+    "brand_console": {
+        "uses": "console, monitor, branding, color, palette",
+        "notes": ""
+    },
     "secure_session": {
         "uses": "browser, window, cookies, secure, certificate, shield",
         "notes": ""
@@ -2466,6 +2490,34 @@
     },
     "console": {
         "uses": "console, monitor, list, general",
+        "notes": ""
+    },
+    "arrow_left_simple": {
+        "uses": "arrow, move, left, simple",
+        "notes": ""
+    },
+    "arrow_right_simple": {
+        "uses": "arrow, move, right, simple",
+        "notes": ""
+    },
+    "arrow_up_simple": {
+        "uses": "arrow, move, up, simple",
+        "notes": ""
+    },
+    "arrow_down_simple": {
+        "uses": "arrow, move, down, simple",
+        "notes": ""
+    },
+    "canvas": {
+        "uses": "canvas, designing, painting, full, view, frame",
+        "notes": ""
+    },
+    "frame_1": {
+        "uses": "canvas, designing, painting, full, view, frame",
+        "notes": ""
+    },
+    "frame_2": {
+        "uses": "canvas, designing, painting, full, view, frame",
         "notes": ""
     },
     "workflow": {

@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-      }
-    </style>
-  </defs>
-  <g id="SVG_icons" data-name="SVG icons">
-    <path d="M53.26,25.32l-15.42-15.38c-.78-.78-2.04-.78-2.82,0l-15.42,15.38c-.78.78-.78,2.05,0,2.83.78.78,2.05.78,2.83,0l12.01-11.98v45.32c0,1.1.9,2,2,2s2-.9,2-2V16.17l12.01,11.98c.39.39.9.58,1.41.58s1.03-.2,1.42-.59c.78-.78.78-2.05,0-2.83Z"/>
-  </g>
-  <g id="Rectangles">
-    <rect class="cls-1" x=".36" y=".36" width="71.28" height="71.28"/>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 72 72">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <g id="SVG_icons">
+    <path d="M53.3,25.3l-15.4-15.4c-.8-.8-2-.8-2.8,0l-15.4,15.4c-.8.8-.8,2,0,2.8s2,.8,2.8,0l12-12v45.3c0,1.1.9,2,2,2s2-.9,2-2V16.2l12,12c.4.4.9.6,1.4.6s1-.2,1.4-.6c.8-.8.8-2,0-2.8h0Z"/>
   </g>
 </svg>
