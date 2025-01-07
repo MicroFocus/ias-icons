@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="SVG_icons" data-name="SVG icons">
+    <path d="M61.49,11.22H11.17c-.83,0-1.5.67-1.5,1.5v42.94c0,.83.67,1.5,1.5,1.5h50.32c.83,0,1.5-.67,1.5-1.5V12.72c0-.83-.67-1.5-1.5-1.5ZM59.99,14.22v9.15H12.67v-9.15h47.32ZM12.67,54.16v-28.7h47.32v28.7H12.67Z"/>
+  </g>
+  <g id="Rectangles">
+    <rect class="cls-1" x=".36" y=".36" width="71.28" height="71.28"/>
+  </g>
+</svg>

@@ -696,12 +696,20 @@
         "notes": ""
     },
     "reset_thick": {
-        "uses": "",
-        "notes": ""
+        "uses": "arrow, reset",
+        "notes": "undo, redo"
     },
     "reset_thin": {
         "uses": "",
         "notes": ""
+    },
+    "undo": {
+        "uses": "arrow, undo",
+        "notes": "reset, undo, redo"
+    },
+    "redo": {
+        "uses": "arrow, redo",
+        "notes": "reset, undo, redo"
     },
     "download_thick": {
         "uses": "",
@@ -976,7 +984,35 @@
         "notes": ""
     },
     "open_in_window": {
-        "uses": "",
+        "uses": "window, open, popout",
+        "notes": ""
+    },
+    "panel_top": {
+        "uses": "window, open, panel, popout",
+        "notes": ""
+    },
+    "panel_bottom": {
+        "uses": "window, open, panel, popout",
+        "notes": ""
+    },
+    "panel_left": {
+        "uses": "window, open, panel, popout",
+        "notes": ""
+    },
+    "panel_right": {
+        "uses": "window, open, panel, popout",
+        "notes": ""
+    },
+    "window_new": {
+        "uses": "window, open, new",
+        "notes": ""
+    },
+    "window_expand": {
+        "uses": "window, open, arrow",
+        "notes": ""
+    },
+    "window_minimize": {
+        "uses": "window, small, arrow",
         "notes": ""
     },
     "queue_list": {
