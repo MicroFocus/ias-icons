@@ -2616,6 +2616,14 @@
         "uses": "operation, action, math, does not end with, az",
         "notes": "policy rule operator"
     },
+    "ball": {
+        "uses": "noun, verb, object, baseball",
+        "notes": "operator type"
+    },
+    "ball_2": {
+        "uses": "noun, verb, object, play, kids, toy",
+        "notes": "operator type"
+    },
     "noun": {
         "uses": "type, noun, verb, object, cube",
         "notes": "operator type"
