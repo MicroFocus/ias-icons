@@ -1669,151 +1669,151 @@
         "notes": "General Secure/Security icon"
     },
     "dir_DN_object": {
-        "uses": "cube",
+        "uses": "cube, directory",
         "notes": ""
     },
     "dir_cRLDistributionPoint": {
-        "uses": "clear",
+        "uses": "clear, directory",
         "notes": ""
     },
     "dir_effective_rights": {
-        "uses": "checkmark",
+        "uses": "checkmark, directory",
         "notes": ""
     },
     "dir_encryption_Policy": {
-        "uses": "key, checkmark",
+        "uses": "key, checkmark, directory",
         "notes": ""
     },
     "dir_NDSPKI_certificate": {
-        "uses": "key, paper",
+        "uses": "key, paper, directory",
         "notes": ""
     },
     "dir_ndspki_container": {
-        "uses": "key",
+        "uses": "key, directory",
         "notes": ""
     },
     "dir_ndspki_CRLConfiguration": {
-        "uses": "key, list",
+        "uses": "key, list, directory",
         "notes": ""
     },
     "dir_notfMergeTemplate": {
-        "uses": "notify, page",
+        "uses": "notify, page, directory",
         "notes": ""
     },
     "dir_notfTemplateCollection": {
-        "uses": "notify, page",
+        "uses": "notify, page, directory",
         "notes": ""
     },
     "dir_nspmPasswordPolicy": {
-        "uses": "security",
+        "uses": "security, directory",
         "notes": ""
     },
     "dir_snpmPasswordPolicyContainer": {
-        "uses": "security",
+        "uses": "security, directory",
         "notes": ""
     },
     "dir_nspmPolicyAgent": {
-        "uses": "security",
+        "uses": "security, directory",
         "notes": ""
     },
     "dir_prSyncPolicy": {
-        "uses": "star, priority",
+        "uses": "star, priority, directory",
         "notes": ""
     },
     "dir_rbsBook": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsBook2": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsCollection": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsCollection2": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsModule": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsModule2": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsRole2": {
-        "uses": "role, checkmark, user, person",
+        "uses": "role, checkmark, user, person, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsScope": {
-        "uses": "scope, check",
+        "uses": "scope, check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsScope2": {
-        "uses": "scope, check",
+        "uses": "scope, check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsTask": {
-        "uses": "check",
+        "uses": "check, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsTask2": {
-        "uses": "check",
+        "uses": "check, directory",
         "notes": ""
     },
     "dir_sasPostLoginMethod": {
-        "uses": "check, arrow, password, security",
+        "uses": "check, arrow, password, security, directory",
         "notes": ""
     },
     "dir_sasPostLoginMethodContainer": {
-        "uses": "arrow, password, security",
+        "uses": "arrow, password, security, directory",
         "notes": ""
     },
     "dir_snmpAdmin": {
-        "uses": "simple, network, management, protocol",
+        "uses": "simple, network, management, protocol, directory",
         "notes": ""
     },
     "dir_snmpGroup": {
-        "uses": "simple, network, management, protocol",
+        "uses": "simple, network, management, protocol, directory",
         "notes": ""
     },
     "dir_snmpMessageGroup": {
-        "uses": "simple, network, management, protocol",
+        "uses": "simple, network, management, protocol, directory",
         "notes": ""
     },
     "dir_sssServerPolicies": {
-        "uses": "secret, store, lock, box",
+        "uses": "secret, store, lock, box, directory",
         "notes": ""
     },
     "dir_sssServerPolicyOverride": {
-        "uses": "secret, store, lock, box",
+        "uses": "secret, store, lock, box, directory",
         "notes": ""
     },
     "dir_trustees": {
-        "uses": "user, key",
+        "uses": "user, key, directory",
         "notes": ""
     },
     "dir_domain": {
-        "uses": "area",
+        "uses": "area, directory",
         "notes": ""
     },
     "arrow_down": {
-        "uses": "",
+        "uses": "arrow, down",
         "notes": ""
     },
     "arrow_left": {
-        "uses": "",
+        "uses": "arrow, left",
         "notes": ""
     },
     "arrow_right": {
-        "uses": "",
+        "uses": "arrow, right",
         "notes": ""
     },
     "arrow_up": {
-        "uses": "",
+        "uses": "arrow, up",
         "notes": ""
     },
     "partition": {
@@ -1821,7 +1821,7 @@
         "notes": ""
     },
     "merge": {
-        "uses": "arrow",
+        "uses": "arrows, together, up",
         "notes": ""
     },
     "flex_OTP": {
@@ -1829,7 +1829,7 @@
         "notes": "AA, Advanced Authorization method"
     },
     "multi_paths": {
-        "uses": "arrow",
+        "uses": "arrows, path, many",
         "notes": ""
     },
     "index": {
@@ -1936,7 +1936,7 @@
         "uses": "status, stop, circle, off",
         "notes": ""
     },
-    "status_stop": {
+    "status_stop_fill": {
         "uses": "status, stop, circle, off, reverse, filled",
         "notes": ""
     },
@@ -2615,5 +2615,13 @@
     "operator_ends_with_not": {
         "uses": "operation, action, math, does not end with, az",
         "notes": "policy rule operator"
+    },
+    "noun": {
+        "uses": "type, noun, verb, object, cube",
+        "notes": "operator type"
+    },
+    "verb": {
+        "uses": "type, noun, verb, action, run, kick",
+        "notes": "operator type"
     }
 }
