@@ -1480,6 +1480,14 @@
         "uses": "code, slash, box",
         "notes": ""
     },
+    "script_code": {
+        "uses": "script, code, splash",
+        "notes": ""
+    },
+    "script_text": {
+        "uses": "script, code, text",
+        "notes": ""
+    },
     "dir_SASlogin_policy": {
         "uses": "edirectory",
         "notes": ""
@@ -2261,6 +2269,10 @@
         "uses": "form, input, page",
         "notes": ""
     },
+    "form_simple": {
+        "uses": "form, input, page, simple",
+        "notes": ""
+    },
     "form_edit": {
         "uses": "form, input, page, edit, pencil",
         "notes": ""
@@ -2399,6 +2411,14 @@
     },
     "console_trace": {
         "uses": "console, monitor, trace",
+        "notes": ""
+    },
+    "console_policy": {
+        "uses": "console, monitor, policy, builder",
+        "notes": ""
+    },
+    "console_policy_sim": {
+        "uses": "console, monitor, policy, builder, simulation",
         "notes": ""
     },
     "brand_console": {
@@ -2632,5 +2652,37 @@
     "verb": {
         "uses": "type, noun, verb, action, run, kick",
         "notes": "operator type"
+    },
+    "sort_a_z": {
+        "uses": "sort, arrow, alpha, numeric",
+        "notes": ""
+    },
+    "sort_z_a": {
+        "uses": "sort, arrow, alpha, numeric",
+        "notes": ""
+    },
+    "sort_0_9": {
+        "uses": "sort, arrow, alpha, numeric",
+        "notes": ""
+    },
+    "sort_9_0": {
+        "uses": "sort, arrow, alpha, numeric",
+        "notes": ""
+    },
+    "policy_rule": {
+        "uses": "policy, rule, checkmark",
+        "notes": ""
+    },
+    "certificate": {
+        "uses": "certificate, text, certify",
+        "notes": ""
+    },
+    "server_certificate": {
+        "uses": "certificate, text, certify, server",
+        "notes": ""
+    },
+    "user_certificate": {
+        "uses": "certificate, text, certify, user",
+        "notes": ""
     }
 }
