@@ -1670,150 +1670,151 @@
     },
     "dir_DN_object": {
         "uses": "cube, directory",
+        "uses": "cube, directory",
         "notes": ""
     },
     "dir_cRLDistributionPoint": {
-        "uses": "clear, directory",
+        "uses": "clear, directory, directory",
         "notes": ""
     },
     "dir_effective_rights": {
-        "uses": "checkmark, directory",
+        "uses": "checkmark, directory, directory",
         "notes": ""
     },
     "dir_encryption_Policy": {
-        "uses": "key, checkmark, directory",
+        "uses": "key, checkmark, directory, directory",
         "notes": ""
     },
     "dir_NDSPKI_certificate": {
-        "uses": "key, paper, directory",
+        "uses": "key, paper, directory, directory",
         "notes": ""
     },
     "dir_ndspki_container": {
-        "uses": "key, directory",
+        "uses": "key, directory, directory",
         "notes": ""
     },
     "dir_ndspki_CRLConfiguration": {
-        "uses": "key, list, directory",
+        "uses": "key, list, directory, directory",
         "notes": ""
     },
     "dir_notfMergeTemplate": {
-        "uses": "notify, page, directory",
+        "uses": "notify, page, directory, directory",
         "notes": ""
     },
     "dir_notfTemplateCollection": {
-        "uses": "notify, page, directory",
+        "uses": "notify, page, directory, directory",
         "notes": ""
     },
     "dir_nspmPasswordPolicy": {
-        "uses": "security, directory",
+        "uses": "security, directory, directory",
         "notes": ""
     },
     "dir_snpmPasswordPolicyContainer": {
-        "uses": "security, directory",
+        "uses": "security, directory, directory",
         "notes": ""
     },
     "dir_nspmPolicyAgent": {
-        "uses": "security, directory",
+        "uses": "security, directory, directory",
         "notes": ""
     },
     "dir_prSyncPolicy": {
-        "uses": "star, priority, directory",
+        "uses": "star, priority, directory, directory",
         "notes": ""
     },
     "dir_rbsBook": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsBook2": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsCollection": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsCollection2": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsModule": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsModule2": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsRole2": {
-        "uses": "role, checkmark, user, person, role-based, service, directory",
+        "uses": "role, checkmark, user, person, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsScope": {
-        "uses": "scope, check, role-based, service, directory",
+        "uses": "scope, check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsScope2": {
-        "uses": "scope, check, role-based, service, directory",
+        "uses": "scope, check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsTask": {
-        "uses": "check, role-based, service, directory",
+        "uses": "check, role-based, service, directory, role-based, service, directory",
         "notes": ""
     },
     "dir_rbsTask2": {
-        "uses": "check, directory",
+        "uses": "check, directory, directory",
         "notes": ""
     },
     "dir_sasPostLoginMethod": {
-        "uses": "check, arrow, password, security, directory",
+        "uses": "check, arrow, password, security, directory, directory",
         "notes": ""
     },
     "dir_sasPostLoginMethodContainer": {
-        "uses": "arrow, password, security, directory",
+        "uses": "arrow, password, security, directory, directory",
         "notes": ""
     },
     "dir_snmpAdmin": {
-        "uses": "simple, network, management, protocol, directory",
+        "uses": "simple, network, management, protocol, directory, directory",
         "notes": ""
     },
     "dir_snmpGroup": {
-        "uses": "simple, network, management, protocol, directory",
+        "uses": "simple, network, management, protocol, directory, directory",
         "notes": ""
     },
     "dir_snmpMessageGroup": {
-        "uses": "simple, network, management, protocol, directory",
+        "uses": "simple, network, management, protocol, directory, directory",
         "notes": ""
     },
     "dir_sssServerPolicies": {
-        "uses": "secret, store, lock, box, directory",
+        "uses": "secret, store, lock, box, directory, directory",
         "notes": ""
     },
     "dir_sssServerPolicyOverride": {
-        "uses": "secret, store, lock, box, directory",
+        "uses": "secret, store, lock, box, directory, directory",
         "notes": ""
     },
     "dir_trustees": {
-        "uses": "user, key, directory",
+        "uses": "user, key, directory, directory",
         "notes": ""
     },
     "dir_domain": {
-        "uses": "area, directory",
+        "uses": "area, directory, directory",
         "notes": ""
     },
     "arrow_down": {
-        "uses": "arrow, down",
+        "uses": "arrow, downarrow, down",
         "notes": ""
     },
     "arrow_left": {
-        "uses": "arrow, left",
+        "uses": "arrow, leftarrow, left",
         "notes": ""
     },
     "arrow_right": {
-        "uses": "arrow, right",
+        "uses": "arrow, rightarrow, right",
         "notes": ""
     },
     "arrow_up": {
-        "uses": "arrow, up",
+        "uses": "arrow, uparrow, up",
         "notes": ""
     },
     "partition": {
@@ -1821,7 +1822,7 @@
         "notes": ""
     },
     "merge": {
-        "uses": "arrows, together, up",
+        "uses": "arrows, together, ups, together, up",
         "notes": ""
     },
     "flex_OTP": {
@@ -1829,7 +1830,7 @@
         "notes": "AA, Advanced Authorization method"
     },
     "multi_paths": {
-        "uses": "arrows, path, many",
+        "uses": "arrows, path, manys, path, many",
         "notes": ""
     },
     "index": {
@@ -1936,7 +1937,7 @@
         "uses": "status, stop, circle, off",
         "notes": ""
     },
-    "status_stop_fill": {
+    "status_stop_fill_fill": {
         "uses": "status, stop, circle, off, reverse, filled",
         "notes": ""
     },
@@ -2615,6 +2616,14 @@
     "operator_ends_with_not": {
         "uses": "operation, action, math, does not end with, az",
         "notes": "policy rule operator"
+    },
+    "ball": {
+        "uses": "noun, verb, object, baseball",
+        "notes": "operator type"
+    },
+    "ball_2": {
+        "uses": "noun, verb, object, play, kids, toy",
+        "notes": "operator type"
     },
     "noun": {
         "uses": "type, noun, verb, object, cube",
