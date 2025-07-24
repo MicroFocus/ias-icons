@@ -1028,7 +1028,7 @@
         "notes": ""
     },
     "publish": {
-        "uses": "",
+        "uses": "publisher, publish, world, upload, arrow",
         "notes": ""
     },
     "move": {
@@ -1891,6 +1891,66 @@
     "app_simple": {
         "uses": "application, pencil",
         "notes": "Federated Single Sign-on"
+    },
+    "app_apple": {
+        "uses": "application, pencil, apple, apps, logo",
+        "notes": ""
+    },
+    "app_attribute": {
+        "uses": "application, pencil, attribute, class, apps",
+        "notes": ""
+    },
+    "app_class": {
+        "uses": "application, pencil, attribute, class, apps",
+        "notes": ""
+    },
+    "app_cloud": {
+        "uses": "application, cloud, apps",
+        "notes": ""
+    },
+    "app_config": {
+        "uses": "application, pencil, configure, cog",
+        "notes": ""
+    },
+    "app_details": {
+        "uses": "application, pencil, details, text, info",
+        "notes": ""
+    },
+    "app_global": {
+        "uses": "application, world, global, all",
+        "notes": ""
+    },
+    "app_group": {
+        "uses": "application, group, user, apps",
+        "notes": ""
+    },
+    "app_linux": {
+        "uses": "application, linux, apps, logo",
+        "notes": ""
+    },
+    "app_mac": {
+        "uses": "application, macintosh, apps, logo",
+        "notes": ""
+    },
+    "app_mobile": {
+        "uses": "application, mobile, phone, apps",
+        "notes": ""
+    },
+    "app_resource": {
+        "uses": "application, resources, apps",
+        "notes": ""
+    },
+    "app_security": {
+        "uses": "application, secure, security, fingerprint, apps",
+        "notes": ""
+    },
+    "app_suse": {
+        "uses": "application, suse,linux, apps, logo",
+        "notes": ""
+    },
+    "app_windows": {
+        "uses": "application, windows, apps, logo",
+        "notes": ""
     },
     "idm_driver": {
         "uses": "identity manager, IDM, idm, ying, yang, driver",
