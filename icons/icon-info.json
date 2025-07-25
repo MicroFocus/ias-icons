@@ -1220,7 +1220,11 @@
         "notes": ""
     },
     "policy": {
-        "uses": "",
+        "uses": "text, checkmark, policy",
+        "notes": ""
+    },
+    "policy_sim": {
+        "uses": "simulate, simulation, text, checkmark, policy",
         "notes": ""
     },
     "policy_certificate": {
@@ -1922,6 +1926,10 @@
     },
     "app_group": {
         "uses": "application, group, user, apps",
+        "notes": ""
+    },
+    "app_graph": {
+        "uses": "application, graph, chart, analyse, analysis, apps",
         "notes": ""
     },
     "app_linux": {
