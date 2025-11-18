@@ -605,7 +605,7 @@
     },
     "fingerprint_2": {
         "uses": "application, secure, security, fingerprint, apps",
-        "notes": "This specic icon represents Advanced Authorization and it's console and clients."
+        "notes": "Used to represent Advanced Authorization and it's console and clients."
     },
     "card_thin": {
         "uses": "",
@@ -2216,7 +2216,7 @@
         "uses": "identity, credentials, system, passport, user",
         "notes": ""
     },
-    "ID_credentials": {
+    "credentials": {
         "uses": "identity, credentials, system, passport, user, checkmark",
         "notes": "Used for Credential Management Service"
     },
