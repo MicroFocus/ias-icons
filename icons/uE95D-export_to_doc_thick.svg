@@ -1,1 +1,21 @@
-<svg id="SVG_icons" data-name="SVG icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><defs><style>.cls-1{fill:gray;}</style></defs><title>m_057</title><g id="Export_to_Doc" data-name="Export to Doc"><g id="_Group_" data-name="&lt;Group&gt;"><path class="cls-1" d="M44.62,25.72H26.67a2,2,0,0,1,0-4H44.62a2,2,0,0,1,0,4Z"/></g><g id="_Group_2" data-name="&lt;Group&gt;"><path class="cls-1" d="M44.62,34.82H26.67a2,2,0,0,1,0-4H44.62a2,2,0,0,1,0,4Z"/></g><g id="_Group_3" data-name="&lt;Group&gt;"><path class="cls-1" d="M54.28,59.71h-37a4,4,0,0,1-4-4V13.06a4,4,0,0,1,4-4H42.69a4,4,0,0,1,2.7,1.05L57,20.79a4,4,0,0,1,1.29,2.93v32A4,4,0,0,1,54.28,59.71Zm0-4v0ZM42.68,13.07H17.32l0,42.65H54.26v-32Z"/></g><g id="Go_to_Next" data-name="Go to Next"><g id="_Path_" data-name="&lt;Path&gt;"><polygon class="cls-1" points="44.73 52.98 35.65 43.91 26.57 52.98 23.74 50.16 35.65 38.25 47.55 50.16 44.73 52.98"/></g><g id="_Group_4" data-name="&lt;Group&gt;"><rect class="cls-1" x="33.65" y="41.19" width="4" height="26.75"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="Export_to_Doc">
+    <g id="_Group_">
+      <path d="M44.6,25.7h-17.9c-1.1,0-2-.9-2-2s.9-2,2-2h17.9c1.1,0,2,.9,2,2s-.9,2-2,2Z"/>
+    </g>
+    <g id="_Group_2">
+      <path d="M44.6,34.8h-17.9c-1.1,0-2-.9-2-2s.9-2,2-2h17.9c1.1,0,2,.9,2,2s-.9,2-2,2Z"/>
+    </g>
+    <g id="_Group_3">
+      <path d="M54.3,59.7H17.3c-2.2,0-4-1.8-4-4V13.1c0-2.2,1.8-4,4-4h25.4c1,0,2,.4,2.7,1.1l11.6,10.7c.8.8,1.3,1.8,1.3,2.9v32c0,2.2-1.8,4-4,4h0ZM54.3,55.7h0ZM42.7,13.1h-25.4v42.7h36.9V23.7l-11.6-10.7Z"/>
+    </g>
+    <g id="Go_to_Next">
+      <g id="_Path_">
+        <polygon points="44.7 53 35.7 43.9 26.6 53 23.7 50.2 35.7 38.2 47.5 50.2 44.7 53"/>
+      </g>
+      <g id="_Group_4">
+        <rect x="33.7" y="41.2" width="4" height="26.8"/>
+      </g>
+    </g>
+  </g>
+</svg>
