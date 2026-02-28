@@ -1,8 +1,9 @@
 # Micro Focus ias-icons
 
-This project is the icon font for CyberRes Identity and Access products,
-which contains an official icon font for web applications built by Micro Focus Identity and 
-Access Management Group. The icon font helps provide a consistent icon look and feel 
+This project is the icon font for Cybersecurity Identity and Access products,
+which contains an official icon font for web applications built by Micro Focus (now Opentext) 
+Identity and Access Management Group. The icon font includes specific icons designed for 
+Identity and Access Management concepts, and helps provide a consistent icon look and feel 
 throughout these applications.
 
 ### Helpful Links
@@ -46,5 +47,5 @@ The icons can be referenced by class name, as shown in the following example:
 ```
 All svg files are copyrighted to Lynn Christensen and Microfocus.
 
-Copyright 2008-2023 Lynn Christensen and Microfocus. All rights reserved.
+Copyright 2008-2025 Lynn Christensen and Microfocus. All rights reserved.
 
