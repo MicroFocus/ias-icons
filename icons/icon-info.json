@@ -1240,7 +1240,7 @@
         "notes": ""
     },
     "policy_sim": {
-        "uses": "simulate, simulation, text, checkmark, policy",
+        "uses": "simulate, run, simulation, text, checkmark, policy",
         "notes": ""
     },
     "policy_certificate": {
@@ -1252,7 +1252,7 @@
         "notes": ""
     },
     "parameters": {
-        "uses": "parameters, preferences",
+        "uses": "parameters, preferences, settings, configure",
         "notes": ""
     },
     "user_history": {
@@ -1980,6 +1980,10 @@
         "uses": "identity manager, IDM, idm, ying, yang, driver",
         "notes": ""
     },
+    "driver_2": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver",
+        "notes": ""
+    },
     "idm_driverset": {
         "uses": "identity manager, IDM, idm, ying, yang, driver, driverset",
         "notes": ""
@@ -2002,6 +2006,30 @@
     },
     "idm_overview": {
         "uses": "identity manager, IDM, idm, ying, yang, driver, driverset, overview",
+        "notes": ""
+    },
+    "idm_publisher": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, publisher, policy",
+        "notes": ""
+    },
+    "idm_subscriber": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, subscriber, policy",
+        "notes": ""
+    },
+    "channel_publisher": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, publisher, channel",
+        "notes": ""
+    },
+    "channel_subscriber": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, subscriber, channel",
+        "notes": ""
+    },
+    "driver_container": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, folder, container",
+        "notes": ""
+    },
+    "filter_driver": {
+        "uses": "identity manager, IDM, idm, ying, yang, driver, filter",
         "notes": ""
     },
     "dashboard_1": {
@@ -2080,6 +2108,10 @@
         "uses": "file, import, arrow, down, file action",
         "notes": ""
     },
+    "file_export": {
+        "uses": "file, export, arrow, up, file action",
+        "notes": ""
+    },
     "file_rights": {
         "uses": "file, rights, checkmark, grant, file action",
         "notes": ""
@@ -2098,6 +2130,10 @@
     },
     "file_config": {
         "uses": "file, configure, cog, file action",
+        "notes": ""
+    },
+    "file_config_thin": {
+        "uses": "file, configure, cog, file action, thin",
         "notes": ""
     },
     "trace_monitor": {
@@ -2129,11 +2165,19 @@
         "notes": ""
     },
     "add_row": {
-        "uses": "new, row, column, plus, grid, table",
+        "uses": "new, row, column, row, plus, grid, table",
+        "notes": ""
+    },
+    "delete_row": {
+        "uses": "remove, row, column, row, minus, grid, table",
         "notes": ""
     },
     "add_column": {
         "uses": "new, row, column, plus, grid, table",
+        "notes": ""
+    },
+    "delete_column": {
+        "uses": "remove, row, column, minus, grid, table",
         "notes": ""
     },
     "secure_login": {
@@ -2617,7 +2661,7 @@
         "notes": ""
     },
     "verified": {
-        "uses": "verified, attestation, approved, seal, checkmark",
+        "uses": "verified, entitled, attestation, approved, seal, checkmark",
         "notes": ""
     },
     "console_object": {
@@ -2752,10 +2796,6 @@
         "uses": "type, noun, verb, action, run, kick",
         "notes": "operator type"
     },
-    "sort_a_z": {
-        "uses": "sort, arrow, alpha, numeric",
-        "notes": ""
-    },
     "sort_z_a": {
         "uses": "sort, arrow, alpha, numeric",
         "notes": ""
@@ -2791,5 +2831,310 @@
     "user_certificate": {
         "uses": "certificate, text, certify, user",
         "notes": ""
+    },
+    "code_es": {
+        "uses": "code, ecmascript, javascript",
+        "notes": ""
+    },
+    "commit": {
+        "uses": "save, send, commit, changes, checkmark",
+        "notes": ""
+    },
+    "files_next": {
+        "uses": "file, down, up, move, file action",
+        "notes": ""
+    },
+    "files_prev": {
+        "uses": "file, down, up, move, file action",
+        "notes": ""
+    },
+    "files_update": {
+        "uses": "file, changes, edits, update, file action, file management, arrow",
+        "notes": ""
+    },
+    "file_sync": {
+        "uses": "file, syncronize, sync, update, file action, file management",
+        "notes": ""
+    },
+    "script_policy": {
+        "uses": "script, policy, code, checkmark",
+        "notes": ""
+    },
+    "page_wide_col": {
+        "uses": "page, column, layout, text",
+        "notes": ""
+    },
+    "file_compare_left": {
+        "uses": "file, compare, left, file action, file management",
+        "notes": ""
+    },
+    "file_compare_right": {
+        "uses": "file, compare, right, file action, file management",
+        "notes": ""
+    },
+    "file_blank": {
+        "uses": "file, empty, blank, file action, file management",
+        "notes": ""
+    },
+    "file_css": {
+        "uses": "file, type, stylesheet, css, file action, file management",
+        "notes": ""
+    },
+    "file_curves": {
+        "uses": "file, curves, graph, chart, type, file management",
+        "notes": ""
+    },
+    "badge_detail": {
+        "uses": "file, object, badge, details, overlay",
+        "notes": ""
+    },
+    "badge_list": {
+        "uses": "file, object, badge, list, overlay",
+        "notes": ""
+    },
+    "badge_lock": {
+        "uses": "file, object, badge, lock, overlay",
+        "notes": ""
+    },
+    "badge_mandatory": {
+        "uses": "file, object, badge, mandatory, overlay",
+        "notes": ""
+    },
+    "badge_stylesheet": {
+        "uses": "file, object, badge, stylesheet, overlay",
+        "notes": ""
+    },
+    "badge_mapping": {
+        "uses": "file, object, badge, mapping, overlay",
+        "notes": ""
+    },
+    "badge_file_tar": {
+        "uses": "file, type, badge, tar, overlay",
+        "notes": ""
+    },
+    "badge_file_text": {
+        "uses": "file, type, badge, text, overlay",
+        "notes": ""
+    },
+    "badge_file_yml": {
+        "uses": "file, type, badge, yaml, overlay",
+        "notes": ""
+    },
+    "badge_file_zip": {
+        "uses": "file, type, badge, zip, overlay",
+        "notes": ""
+    },
+    "badge_file_pdf": {
+        "uses": "file, type, badge, pdf, overlay",
+        "notes": ""
+    },
+    "badge_driver": {
+        "uses": "file, object, badge, driver, overlay",
+        "notes": ""
+    },
+    "designer": {
+        "uses": "identity manager, designer, idm, ying, yang, canvas, compass",
+        "notes": ""
+    },
+    "policy_sm": {
+        "uses": "policy, text, checkmark, small",
+        "notes": ""
+    },
+    "policy_mandatory": {
+        "uses": "policy, text, checkmark",
+        "notes": ""
+    },
+    "policy_stylesheet": {
+        "uses": "policy, text, checkmark",
+        "notes": ""
+    },
+    "identity_vault": {
+        "uses": "identity manager, safe, vault, idm",
+        "notes": ""
+    },
+    "resave": {
+        "uses": "save, resave",
+        "notes": ""
+    },
+    "radius_client": {
+        "uses": "advanced authentication, radius, client, network, monitor",
+        "notes": ""
+    },
+    "notify_template": {
+        "uses": "idm, template, notification, messages",
+        "notes": ""
+    },
+    "notify_template_container": {
+        "uses": "idm, templates, notification, messages",
+        "notes": ""
+    },
+    "page_art": {
+        "uses": "page, file, artwork, graphic, type",
+        "notes": ""
+    },
+    "page_columns": {
+        "uses": "page, file, layout, type, text",
+        "notes": ""
+    },
+    "page_generate": {
+        "uses": "page, policy, flow, simulate, generate, run",
+        "notes": ""
+    },
+    "page_layout": {
+        "uses": "page, file, layout, type, text",
+        "notes": ""
+    },
+    "page_outline": {
+        "uses": "page, file, outline, type, text",
+        "notes": ""
+    },
+    "page_spreadsheet": {
+        "uses": "page, file, grid, calculate, type",
+        "notes": ""
+    },
+    "page_table": {
+        "uses": "page, file, table, type, text",
+        "notes": ""
+    },
+    "page_text": {
+        "uses": "page, file, layout, type, text",
+        "notes": ""
+    },
+    "page_database": {
+        "uses": "page, file, database, type, text",
+        "notes": ""
+    },
+    "page_driver": {
+        "uses": "page, file, driver, idm, identity, type, text",
+        "notes": ""
+    },
+    "page_graphic": {
+        "uses": "page, file, layout, artwork, graphic, type, text",
+        "notes": ""
+    },
+    "page_html": {
+        "uses": "page, file, html, web, type, text",
+        "notes": ""
+    },
+    "page_java": {
+        "uses": "page, file, code, java, type, text",
+        "notes": ""
+    },
+    "page_list": {
+        "uses": "page, file, list, type, text",
+        "notes": ""
+    },
+    "page_photo": {
+        "uses": "page, file, picture, photo, user, palm tree, type",
+        "notes": ""
+    },
+    "page_settings": {
+        "uses": "page, file, configure, settings, type",
+        "notes": ""
+    },
+    "page_text2": {
+        "uses": "page, file, thin, type, text",
+        "notes": ""
+    },
+    "badge_file_gif": {
+        "uses": "file, type, badge, gif, overlay",
+        "notes": ""
+    },
+    "badge_file_gz": {
+        "uses": "file, type, badge, gzip, overlay",
+        "notes": ""
+    },
+    "badge_file_html": {
+        "uses": "file, type, badge, html, overlay",
+        "notes": ""
+    },
+    "badge_file_ini": {
+        "uses": "file, type, badge, ini, overlay",
+        "notes": ""
+    },
+    "badge_file_jpg": {
+        "uses": "file, type, badge, jpg, overlay",
+        "notes": ""
+    },
+    "badge_file_png": {
+        "uses": "file, type, badge, png, overlay",
+        "notes": ""
+    },
+    "badge_file_rar": {
+        "uses": "file, type, badge, rar, overlay",
+        "notes": ""
+    },
+    "badge_file_sql": {
+        "uses": "file, type, badge, sql, overlay",
+        "notes": ""
+    },
+    "badge_file_svg": {
+        "uses": "file, type, badge, svg, overlay",
+        "notes": ""
+    },
+    "files_1": {
+        "uses": "files, container, type, file management, folder",
+        "notes": ""
+    },
+    "files_2": {
+        "uses": "files, container, type, file management, folder",
+        "notes": ""
+    },
+    "files_3": {
+        "uses": "files, container, type, file management, folder",
+        "notes": ""
+    },
+     "files_version": {
+        "uses": "files, container, type, file management, folder, versioning",
+        "notes": ""
+    },
+     "folder_2": {
+        "uses": "files, container, file management, folder",
+        "notes": ""
+    },
+     "hierarchal_view": {
+        "uses": "directory, tree, hierarchy, structure",
+        "notes": ""
+    },
+     "package": {
+        "uses": "container, box, package",
+        "notes": ""
+    },
+     "library_2": {
+        "uses": "container, books, library, bookshelf",
+        "notes": ""
+    },
+     "entitlement": {
+        "uses": "file, configure, resource, entitlements, approved, text, checkmark",
+        "notes": ""
+    },
+     "outline": {
+        "uses": "outline, text",
+        "notes": ""
+    },
+     "prompt": {
+        "uses": "input, sign-in, text",
+        "notes": ""
+    },
+     "settings": {
+        "uses": "form, settings, configure, properties",
+        "notes": ""
+    },
+     "job": {
+        "uses": "job, task, workflow, process",
+        "notes": ""
+    },
+     "jobs_container": {
+        "uses": "jobs, container, tasks, workflow, process",
+        "notes": ""
+    },
+     "mapping_list": {
+        "uses": "attribute, mappings, list",
+        "notes": ""
+    },
+     "data_flow_sim": {
+        "uses": "simulate, run, simulation  dataflow, policy",
+        "notes": ""
     }
+
 }
