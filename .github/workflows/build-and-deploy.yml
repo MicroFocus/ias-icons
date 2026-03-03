@@ -40,7 +40,7 @@ jobs:
       - name: Publish the ias-icons package to npm
         uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          token: ${{ secrets.NPM_IAS_ICONS }}
           package: dist/generated-font/package.json
 
   build-and-deploy-to-gh-pages:
