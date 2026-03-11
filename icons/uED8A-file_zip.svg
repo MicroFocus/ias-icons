@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="SVG_icons" data-name="SVG icons">
+    <g id="Document">
+      <path d="M54.09,64.21H17.14c-1.78,0-3.23-1.45-3.23-3.24V11.25c0-1.78,1.45-3.23,3.23-3.23h25.37c.81,0,1.59.3,2.19.85l11.58,10.67c.66.61,1.04,1.48,1.04,2.38v39.06c0,1.78-1.45,3.24-3.23,3.24h0ZM17.14,10.52c-.4,0-.73.33-.73.73v49.72c0,.41.33.74.73.74h36.96c.4,0,.73-.33.73-.74V21.92c0-.21-.09-.4-.24-.54l-11.58-10.67c-.14-.12-.31-.19-.5-.19,0,0-25.37,0-25.37,0Z"/>
+    </g>
+  </g>
+  <g id="Rectangles">
+    <rect x=".36" y=".36" width="71.28" height="71.28" fill="none"/>
+  </g>
+  <rect x="25.51" y="52.05" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="25.51" y="58.34" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.42" y="55.29" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.42" y="48.8" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="25.51" y="39.26" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="25.51" y="45.56" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.42" y="42.51" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.42" y="36.02" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="24.51" y="26.48" width="8.87" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="25.51" y="32.77" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.42" y="29.72" width="8.92" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="35.47" y="23.23" width="8.87" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="23.51" y="19.89" width="8.87" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="36.47" y="16.65" width="8.87" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="21.5" y="13.4" width="8.87" height="3.24" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="46.34 13.4 38.48 13.4 38.48 10.16 42.88 10.04 46.34 13.4" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
