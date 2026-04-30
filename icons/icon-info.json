@@ -2496,6 +2496,10 @@
         "uses": "web, globe, world, app, federated, trust, secure, identity, provider",
         "notes": ""
     },
+    "app_ai": {
+        "uses": "app, provider, ai, artificial intelligence, machine learning",
+        "notes": ""
+    },
     "web_service_trust": {
         "uses": "web, globe, world, app, federated, trust, secure",
         "notes": ""
@@ -2556,12 +2560,40 @@
         "uses": "console, monitor, policy, builder",
         "notes": ""
     },
+    "console_identity_governance": {
+        "uses": "console, monitor, identity, governance, person, user",
+        "notes": ""
+    },
     "console_policy_sim": {
         "uses": "console, monitor, policy, builder, simulation",
         "notes": ""
     },
     "brand_console": {
         "uses": "console, monitor, branding, color, palette",
+        "notes": ""
+    },
+    "cache": {
+        "uses": "cache, storage, memory, database",
+        "notes": ""
+    },
+    "sync_data_1": {
+        "uses": "synchronize, sync, arrows, database",
+        "notes": ""
+    },
+    "sync_data_2": {
+        "uses": "synchronize, sync, arrows",
+        "notes": ""
+    },
+    "sync_files": {
+        "uses": "synchronize, sync, arrows, files",
+        "notes": ""
+    },
+    "sync_user": {
+        "uses": "synchronize, sync, arrows, user",
+        "notes": ""
+    },
+    "sync_group": {
+        "uses": "synchronize, sync, arrows, user, group",
         "notes": ""
     },
     "secure_session": {
@@ -3135,6 +3167,105 @@
      "data_flow_sim": {
         "uses": "simulate, run, simulation  dataflow, policy",
         "notes": ""
+    },
+    "agent": {
+        "uses": "agent, service, process, background",
+        "notes": ""
+    },
+    "agent_user": {
+        "uses": "user, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_workflow": {
+        "uses": "workflow, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_web": {
+        "uses": "world, globe, global, internet, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_service": {
+        "uses": "wrench, tool,agent, service, process, background",
+        "notes": ""
+    },
+    "agent_server": {
+        "uses": "server, box, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_code": {
+        "uses": "run, code, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_email": {
+        "uses": "email, message, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_identity": {
+        "uses": "user, identity, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_job": {
+        "uses": "audit, review, job,agent, service, process, background",
+        "notes": ""
+    },
+    "agent_message": {
+        "uses": "text, message, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_moblie": {
+        "uses": "cellphone, mobile, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_network": {
+        "uses": "internet, network, computer, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_policy": {
+        "uses": "policies, policy, checkmark,agent, service, process, background",
+        "notes": ""
+    },
+    "agent_security": {
+        "uses": "secure, shield, security, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_access": {
+        "uses": "access, arrow, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_ai": {
+        "uses": "ai, artificial intelligence, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_api": {
+        "uses": "application programming interface, api, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_auth": {
+        "uses": "authentication, fingerprint, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_cloud": {
+        "uses": "cloud, agent, service, process, background",
+        "notes": ""
+    },
+    "agent_risk": {
+        "uses": "risk, scale, measurement, agent, service, process, background",
+        "notes": ""
+    },
+    "measure_1": {
+        "uses": "scale, weight, risk, measurement",
+        "notes": ""
+    },
+    "measure_2": {
+        "uses": "scale, weight, measurement, tape measure",
+        "notes": ""
+    },
+    "technology": {
+        "uses": "chip, cpu, technology, microprocessor, circuit board",
+        "notes": ""
+    },
+    "technology_ai": {
+        "uses": "chip, cpu, technology, microprocessor, circuit board, ai, artificial intelligence, machine learning",
+        "notes": ""
     }
-
 }
