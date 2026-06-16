@@ -529,11 +529,15 @@
     },
     "phone_thick": {
         "uses": "",
-        "notes": "AA, Advanced Authorization method, Voice OTP"
+        "notes": ""
     },
     "phone_mobile_thick": {
         "uses": "",
         "notes": ""
+    },
+    "phone_voice": {
+        "uses": "",
+        "notes": "AA, Advanced Authorization method, Voice OTP"
     },
     "notify_thick": {
         "uses": "",
@@ -1077,7 +1081,7 @@
     },
     "network": {
         "uses": "computer, node",
-        "notes": "AA, Advanced Authorization method, RADIUS client"
+        "notes": ""
     },
     "microphone": {
         "uses": "advanced auth, method",
@@ -1593,11 +1597,11 @@
         "notes": ""
     },
     "server_radius": {
-        "uses": "phone",
-        "notes": ""
+        "uses": "computer, client, radius, R",
+        "notes": "AA, Advanced Authorization method, RADIUS server"
     },
     "radius_protected": {
-        "uses": "server, secure, phone, dial, checkmark",
+        "uses": "server, secure, computer, dial, checkmark",
         "notes": ""
     },
     "server_services": {
@@ -2146,7 +2150,7 @@
     },
     "access": {
         "uses": "access, application, arrow, square",
-        "notes": "Used as the Access Manager product icon"
+        "notes": "Access Manager product icon"
     },
     "shop2": {
         "uses": "shopping, cart, buy, purchase",
@@ -2774,11 +2778,11 @@
     },
     "identity_lifecycle": {
         "uses": "identity, idm, user, lifecycle, list, detail",
-        "notes": "Identity Lifecycle Manager product icon"
+        "notes": "Identity Lifecycle Manager (ILM) product icon"
     },
     "identity_governance": {
         "uses": "identity, idm, user",
-        "notes": "Identity Governance Administration"
+        "notes": "Identity Governance (IG) product icon"
     },
     "operator_equals": {
         "uses": "operation, action, math, equals, equal to",
@@ -2966,7 +2970,15 @@
     },
     "designer": {
         "uses": "identity manager, designer, idm, ying, yang, canvas, compass",
-        "notes": ""
+        "notes": "ILM Designer product icon"
+    },
+    "designer_filled": {
+        "uses": "identity manager, designer, idm, ying, yang, canvas, compass",
+        "notes": "ILM Designer product icon"
+    },
+    "designer_simple": {
+        "uses": "identity manager, designer, idm, ying, yang, canvas, compass",
+        "notes": "ILM Designer product icon"
     },
     "policy_sm": {
         "uses": "policy, text, checkmark, small",
@@ -2990,8 +3002,7 @@
     },
     "radius_client": {
         "uses": "advanced authentication, radius, client, network, monitor",
-        "notes": ""
-    },
+        "notes": "AA, Advanced Authorization method, RADIUS client"    },
     "notify_template": {
         "uses": "idm, template, notification, messages",
         "notes": ""
@@ -3258,6 +3269,10 @@
     },
     "measure_2": {
         "uses": "scale, weight, measurement, tape measure",
+        "notes": ""
+    },
+    "enroll_user": {
+        "uses": "user, enrollment, registration, sign-up",
         "notes": ""
     },
     "technology": {
