@@ -8,8 +8,9 @@
     color: $ias-dark-gray;
     height: 185px;
     width: 182px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
     &:hover {
         background-color: $ias-light-gray;
