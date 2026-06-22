@@ -29,7 +29,7 @@
                 [ngClass]="{'ias-icon-color-blue': showDetailedList}"></i>
         </button>
     </div>
-    <div class="icon-count">Number of icons: {{iconInfoList.value.length}}</div>
+    <div class="icon-count">Number of icons: <span class="ias-icon-count">   {{iconInfoList.value.length}}</span></div>
     <app-detailed-list *ngIf="showDetailedList" [iconInfoList$]="iconInfoList"></app-detailed-list>
     <app-tiled-list *ngIf="!showDetailedList" [iconInfoList$]="iconInfoList"></app-tiled-list>
 </div>

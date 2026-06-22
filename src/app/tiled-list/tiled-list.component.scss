@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
 
     .ias-icon {
         font-size: 100px;
