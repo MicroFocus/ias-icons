@@ -3342,11 +3342,11 @@
     "secure_ai": {
         "uses": "security, shield, technology, ai, artificial intelligence, machine learning",
         "notes": ""
-    }
+    },
     "secure_tech": {
         "uses": "security, shield, ai, chip, cpu, technology, microprocessor, circuit board",
         "notes": ""
-    }
+    },
     "technology_ai": {
         "uses": "chip, cpu, technology, microprocessor, circuit board, ai, artificial intelligence, machine learning",
         "notes": ""
