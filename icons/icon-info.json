@@ -1505,11 +1505,15 @@
         "notes": ""
     },
     "script_code": {
-        "uses": "script, code, splash",
+        "uses": "script, code, splash, scroll",
+        "notes": ""
+    },
+    "script_simple": {
+        "uses": "script, code, text, scroll",
         "notes": ""
     },
     "script_text": {
-        "uses": "script, code, text",
+        "uses": "script, code, text, scroll",
         "notes": ""
     },
     "dir_SASlogin_policy": {
@@ -1980,8 +1984,44 @@
         "uses": "application, windows, apps, logo",
         "notes": ""
     },
+    "app_server": {
+        "uses": "application, server, apps",
+        "notes": ""
+    },
     "idm_driver": {
         "uses": "identity manager, IDM, idm, ying, yang, driver",
+        "notes": ""
+    },
+    "app_database": {
+        "uses": "application, database, apps",
+        "notes": ""
+    },
+    "app_desktop": {
+        "uses": "application, desktop, computer, apps",
+        "notes": ""
+    },
+    "app_enterprise": {
+        "uses": "application, desktop, computer, apps",
+        "notes": ""
+    },
+    "app_business": {
+        "uses": "application, business, spreadsheet, apps",
+        "notes": ""
+    },
+    "app_desktop": {
+        "uses": "application, desktop, computer, apps",
+        "notes": ""
+    },
+    "app_shared": {
+        "uses": "application, users, shared, apps",
+        "notes": ""
+    },
+    "app_security": {
+        "uses": "application, shield, secure, checkmark, apps",
+        "notes": ""
+    },
+    "app_network": {
+        "uses": "application, network, computer, apps",
         "notes": ""
     },
     "driver_2": {
@@ -2138,6 +2178,10 @@
     },
     "file_config_thin": {
         "uses": "file, configure, cog, file action, thin",
+        "notes": ""
+    },
+    "file_simple": {
+        "uses": "file, text",
         "notes": ""
     },
     "trace_monitor": {
@@ -2314,6 +2358,10 @@
     },
     "add_enterprise": {
         "uses": "tenant, onboarding, add, enterprise",
+        "notes": ""
+    },
+    "enterprise": {
+        "uses": "enterprise, buildings, city",
         "notes": ""
     },
     "add_cloud": {
@@ -2784,6 +2832,10 @@
         "uses": "identity, idm, user",
         "notes": "Identity Governance (IG) product icon"
     },
+    "identity_intelligence": {
+        "uses": "identity, , user, ai, technology, artificial intelligence",
+        "notes": "Identity Intelligence (IDI) product icon"
+    },
     "operator_equals": {
         "uses": "operation, action, math, equals, equal to",
         "notes": "policy rule operator"
@@ -3172,7 +3224,7 @@
         "notes": ""
     },
      "mapping_list": {
-        "uses": "attribute, mappings, list",
+        "uses": "attribute, mappings, list, arrows",
         "notes": ""
     },
      "data_flow_sim": {
@@ -3263,6 +3315,14 @@
         "uses": "risk, scale, measurement, agent, service, process, background",
         "notes": ""
     },
+    "agent_comment": {
+        "uses": "agent, comment, message, process",
+        "notes": ""
+    },
+    "comment_agent": {
+        "uses": "agent, comment, message, process",
+        "notes": ""
+    },
     "measure_1": {
         "uses": "scale, weight, risk, measurement",
         "notes": ""
@@ -3279,6 +3339,14 @@
         "uses": "chip, cpu, technology, microprocessor, circuit board",
         "notes": ""
     },
+    "secure_ai": {
+        "uses": "security, shield, technology, ai, artificial intelligence, machine learning",
+        "notes": ""
+    }
+    "secure_tech": {
+        "uses": "security, shield, ai, chip, cpu, technology, microprocessor, circuit board",
+        "notes": ""
+    }
     "technology_ai": {
         "uses": "chip, cpu, technology, microprocessor, circuit board, ai, artificial intelligence, machine learning",
         "notes": ""
