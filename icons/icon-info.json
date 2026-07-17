@@ -2016,7 +2016,7 @@
         "uses": "application, users, shared, apps",
         "notes": ""
     },
-    "app_security": {
+    "app_secure": {
         "uses": "application, shield, secure, checkmark, apps",
         "notes": ""
     },
@@ -2184,6 +2184,42 @@
         "uses": "file, text",
         "notes": ""
     },
+    "file_share": {
+        "uses": "file, share, network, connect",
+        "notes": ""
+    },
+    "file_verified": {
+        "uses": "file, verify, verified",
+        "notes": ""
+    },
+    "file_group": {
+        "uses": "file, shared, group, user",
+        "notes": ""
+    },
+    "file_properties": {
+        "uses": "file, text, properties, settings, configure, text",
+        "notes": ""
+    },
+    "file_reset": {
+        "uses": "file, reset, back, arrow",
+        "notes": ""
+    },
+    "file_resource": {
+        "uses": "file, resource",
+        "notes": ""
+    },
+    "file_disable": {
+        "uses": "file, disable, cancel",
+        "notes": ""
+    },
+    "file_lock2": {
+        "uses": "file, lock",
+        "notes": ""
+    },
+    "file_access": {
+        "uses": "file, access, available, rights",
+        "notes": ""
+    },
     "trace_monitor": {
         "uses": "computer, monitor, graph, chart, trace",
         "notes": ""
@@ -2246,6 +2282,14 @@
     },
     "link_small": {
         "uses": "chain, link",
+        "notes": ""
+    },
+    "unlink": {
+        "uses": "chain, link, unlink",
+        "notes": ""
+    },
+    "unlink_small": {
+        "uses": "chain, link, unlink",
         "notes": ""
     },
     "enhanced_bg_auth": {
@@ -2745,7 +2789,7 @@
         "notes": ""
     },
     "verified": {
-        "uses": "verified, entitled, attestation, approved, seal, checkmark",
+        "uses": "verify, entitled, attestation, approved, seal, checkmark",
         "notes": ""
     },
     "console_object": {
@@ -3200,7 +3244,7 @@
         "notes": ""
     },
      "entitlement": {
-        "uses": "file, configure, resource, entitlements, approved, text, checkmark",
+        "uses": "file, configure, resource, entitlements, verify, verified, approved, text, checkmark",
         "notes": ""
     },
      "outline": {
